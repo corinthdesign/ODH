@@ -26,9 +26,3 @@ var menu = [
 
 
 ]
-
-
-function pizzaUpdate() {
-   menu[3] = (document.getElementById("pizzaSpecial").value);
-   console.log(menu); //to confirm it has been added to the array
-}
