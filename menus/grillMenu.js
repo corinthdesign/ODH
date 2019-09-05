@@ -10,11 +10,11 @@ var menu = [
 
 
 
-  "Cheese Pizza",
-  "Pepperoni Pizza",
-  "Sausage Pizza",
+  "Cheese Burgers",
+  "Hot Dogs",
+  "Quesadillas",
   //Daily Special//
-  "Veggie Pizza"
+  "Philly Cheese Steaks"
 
 
 

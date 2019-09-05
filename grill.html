@@ -4,6 +4,10 @@
 <title>Sodexo Menuboard HTML5 Test Page</title>
 <link rel="stylesheet" href="grill.css">
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:900|Trade+Winds&display=swap" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -12,20 +16,22 @@
 <section class="grill_menu">
   <h1>The Grill</h1>
   <div class="items">
-  <p>Quesadillas</p>
-  <p>Cheeseburgers</p>
-  <p>Hotdogs</p>
-  <p>Chili Dogs</p>
+    <p id="menu1"></p>
+    <p id="menu2"></p>
+    <p id="menu3"></p>
+    <p id="menu4"></p>
 </div>
 </section>
 
 <!--Video Background-->
 <section class="background">
   <video autoplay muted loop>
-    <source src="media/grill.mp4" type="video/mp4">
+    <source src="https://corinthdesign.com/private/HTML_menuboards/media/grill.mp4" type="video/mp4">
   </video>
 </section>
 
+<script src="menus/grillMenu.js"></script>
+<script src="js/menuLoader.js"></script>
 </body>
 
 <footer>

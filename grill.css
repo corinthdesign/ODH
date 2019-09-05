@@ -45,7 +45,7 @@ p {
 	text-align: left;
 	letter-spacing: auto;
 	text-transform: uppercase;
-	line-height: 0.5em;
+	line-height: 0.85em;
 	color: #fff;
 }
 
@@ -62,6 +62,7 @@ p {
 
 .items {
 	padding: 0 0em;
+	width: 48%;
 
 }
 
