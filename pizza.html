@@ -4,6 +4,10 @@
 <title>Sodexo Menuboard HTML5 Test Page</title>
 <link rel="stylesheet" href="pizza.css">
 <link href="https://fonts.googleapis.com/css?family=Rye|Bitter&display=swap" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -13,9 +17,10 @@
     <h1>Pizza</h1>
     <h1 style="line-height: 0.05em">Station</h1>
   <div class="items">
-  <p>Pepperoni Pizza</p>
-  <p>Cheese Pizza</p>
-  <p>Meat Lover's Pizza</p>
+  <p id="menu1"></p>
+  <p id="menu2"></p>
+  <p id="menu3"></p>
+  <p id="menu4"></p>
 </div>
 </section>
 
@@ -26,6 +31,8 @@
   </video>
 </section>
 
+  <script src="menus/pizzaMenu.js"></script>
+  <script src="js/menuLoader.js"></script>
 </body>
 
 <footer>
