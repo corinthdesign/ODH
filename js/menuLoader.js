@@ -72,13 +72,61 @@ $(document).ready(function menuLoader() {
   console.log(menu[5]);
   console.log(menu[6]);
 
-
-
-  document.getElementById("menu1").innerHTML = a;
-  document.getElementById("menu2").innerHTML = b;
-  document.getElementById("menu3").innerHTML = c;
-  document.getElementById("menu4").innerHTML = d;
-  document.getElementById("menu5").innerHTML = e;
-  document.getElementById("menu6").innerHTML = f;
-  document.getElementById("menu7").innerHTML = g;
+/////////Below code places menu items///////////
+//Monday
+  document.getElementById("menu1").innerHTML = a1;
+  document.getElementById("menu2").innerHTML = b1;
+  document.getElementById("menu3").innerHTML = c1;
+  document.getElementById("menu4").innerHTML = d1;
+  document.getElementById("menu5").innerHTML = e1;
+  document.getElementById("menu6").innerHTML = f1;
+  document.getElementById("menu7").innerHTML = g1;
+//Tuesday
+  document.getElementById("menu1").innerHTML = a2;
+  document.getElementById("menu2").innerHTML = b2;
+  document.getElementById("menu3").innerHTML = c2;
+  document.getElementById("menu4").innerHTML = d2;
+  document.getElementById("menu5").innerHTML = e2;
+  document.getElementById("menu6").innerHTML = f2;
+  document.getElementById("menu7").innerHTML = g2;
+//Wednesday
+  document.getElementById("menu1").innerHTML = a3;
+  document.getElementById("menu2").innerHTML = b3;
+  document.getElementById("menu3").innerHTML = c3;
+  document.getElementById("menu4").innerHTML = d3;
+  document.getElementById("menu5").innerHTML = e3;
+  document.getElementById("menu6").innerHTML = f3;
+  document.getElementById("menu7").innerHTML = g3;
+//Thursday
+  document.getElementById("menu1").innerHTML = a4;
+  document.getElementById("menu2").innerHTML = b4;
+  document.getElementById("menu3").innerHTML = c4;
+  document.getElementById("menu4").innerHTML = d4;
+  document.getElementById("menu5").innerHTML = e4;
+  document.getElementById("menu6").innerHTML = f4;
+  document.getElementById("menu7").innerHTML = g4;
+//FRIDAY
+document.getElementById("menu1").innerHTML = a5;
+document.getElementById("menu2").innerHTML = b5;
+document.getElementById("menu3").innerHTML = c5;
+document.getElementById("menu4").innerHTML = d5;
+document.getElementById("menu5").innerHTML = e5;
+document.getElementById("menu6").innerHTML = f5;
+document.getElementById("menu7").innerHTML = g5;
+//SATURDAY
+document.getElementById("menu1").innerHTML = a6;
+document.getElementById("menu2").innerHTML = b6;
+document.getElementById("menu3").innerHTML = c6;
+document.getElementById("menu4").innerHTML = d6;
+document.getElementById("menu5").innerHTML = e6;
+document.getElementById("menu6").innerHTML = f6;
+document.getElementById("menu7").innerHTML = g6;
+//SUNDAY
+document.getElementById("menu1").innerHTML = a7;
+document.getElementById("menu2").innerHTML = b7;
+document.getElementById("menu3").innerHTML = c7;
+document.getElementById("menu4").innerHTML = d7;
+document.getElementById("menu5").innerHTML = e7;
+document.getElementById("menu6").innerHTML = f7;
+document.getElementById("menu7").innerHTML = g7;
 });
