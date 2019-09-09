@@ -16,7 +16,7 @@ var menu = [
   "Pepperoni Pizza",
   "Sausage Pizza",
   //Daily Special//
-  "Veggie Pizza"
+  "Taco Pizza"
 
 
 
