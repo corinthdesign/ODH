@@ -2,7 +2,7 @@
 //PIZZA MENU FOR ODH
 
 
-var menu = [
+var menu_monday = [
 
 //Please do not altar any text other than the menu directly below
 //In order for each menu item to properly display,
