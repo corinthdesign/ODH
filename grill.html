@@ -8,6 +8,12 @@
   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
   crossorigin="anonymous"></script>
+
+<!--Forces Cache Clear-->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
 </head>
 
 <body>
@@ -16,10 +22,11 @@
 <section class="grill_menu">
   <h1>The Grill</h1>
   <div class="items">
-    <p id="menu1"></p>
-    <p id="menu2"></p>
-    <p id="menu3"></p>
-    <p id="menu4"></p>
+    <!--Dynamic Menu Item-->
+      <p id="grillOfTheDay"></p>
+    <p>Cheese Burgers</p>
+    <p>Quesadillas</p>
+    <p>Texas Grilled Cheese</p>
 </div>
 </section>
 
@@ -30,8 +37,7 @@
   </video>
 </section>
 
-<script src="grillMenu.js"></script>
-<script src="js/menuLoader.js"></script>
+<script src="menus/grillMenu.js"></script>
 </body>
 
 <footer>
