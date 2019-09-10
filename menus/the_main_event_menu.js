@@ -5,13 +5,10 @@
 var lunch_menu =
 {
 
-//Please do not altar any text other than the menu directly below
+//Please do not altar any text other than the menu directly below in green text.
 //In order for each menu item to properly display,
 //please put each item in quotations. ex. "Cheese Pizza"
 //Each item must be followed with a comma, except for the last item
-
-//ALL MEALS HAVE CHEESE AND PEPPORONI OPTIONS LISTED FIRST. YOU ARE ONLY
-//CHANGING THE DAILY SPECIAL FOR EACH DAY.
 
 "Monday" : "Chicken Pitas",
 "Tuesday" : "Sizzling Chicken Caesar Salad",
@@ -27,13 +24,7 @@ var lunch_menu =
 var dinner_menu =
 {
 
-//Please do not altar any text other than the menu directly below
-//In order for each menu item to properly display,
-//please put each item in quotations. ex. "Cheese Pizza"
-//Each item must be followed with a comma, except for the last item
-
-//ALL MEALS HAVE CHEESE AND PEPPORONI OPTIONS LISTED FIRST. YOU ARE ONLY
-//CHANGING THE DAILY SPECIAL FOR EACH DAY.
+//Please do not altar any text other than the menu directly below in green text.
 
 "Monday" : "Mediterranean Chicken",
 "Tuesday" : "Seafood Newburg",

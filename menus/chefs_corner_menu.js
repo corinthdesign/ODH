@@ -10,9 +10,6 @@ var lunch_menu =
 //please put each item in quotations. ex. "Cheese Pizza"
 //Each item must be followed with a comma, except for the last item
 
-//ALL MEALS HAVE CHEESE AND PEPPORONI OPTIONS LISTED FIRST. YOU ARE ONLY
-//CHANGING THE DAILY SPECIAL FOR EACH DAY.
-
 "Monday" : "Beefy Mac Casserole",
 "Tuesday" : "Meatball Subs",
 "Wednesday" : "Baked Ziti w/Marinara",
@@ -27,13 +24,7 @@ var lunch_menu =
 var dinner_menu =
 {
 
-//Please do not altar any text other than the menu directly below
-//In order for each menu item to properly display,
-//please put each item in quotations. ex. "Cheese Pizza"
-//Each item must be followed with a comma, except for the last item
-
-//ALL MEALS HAVE CHEESE AND PEPPORONI OPTIONS LISTED FIRST. YOU ARE ONLY
-//CHANGING THE DAILY SPECIAL FOR EACH DAY.
+//Please do not altar any text other than the menu directly below in green text.
 
 "Monday" : "Nacho Bar",
 "Tuesday" : "Balsamic Turkey London Broil",

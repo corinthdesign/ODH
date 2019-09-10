@@ -5,14 +5,12 @@
 var menu =
 {
 
-//Please do not altar any text other than the menu directly below.
+//Please do not altar any text other than the menu directly below in green text.
 //In order for each menu item to properly display,
 //please put each item in quotations. ex. "Cheese Pizza"
-//Each item must be followed with a comma, except for the last item
+//Each item must be followed with a comma, except for the last item.
 
-
-//ALL MEALS HAVE CHEESE AND PEPPORONI OPTIONS LISTED FIRST. YOU ARE ONLY
-//CHANGING THE DAILY SPECIAL FOR EACH DAY.
+//ALL MEALS ALSO DISPLAY QUESADILLAS, CHEESEBURGERS, AND TEXAS GRILLED CHEESE.
 
 "Monday" : "Philly Cheesesteak Sandwich",
 "Tuesday" : "Fried Cod Filet w/Tartar",
