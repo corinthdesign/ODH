@@ -14,7 +14,7 @@ var menu =
 //CHANGING THE DAILY SPECIAL FOR EACH DAY.
 
 "Monday" : "Meat Lover's Pizza",
-"Tuesday" : "Chicken Pizza",
+"Tuesday" : "Grilled Vegetable Pizza",
 "Wednesday" : "Cheeseburger Pizza",
 "Thursday" : "Mac and Cheese Pizza",
 "Friday" : "Tandoori Chicken Pizza",
