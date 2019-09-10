@@ -13,13 +13,13 @@ var lunch_menu =
 //ALL MEALS HAVE CHEESE AND PEPPORONI OPTIONS LISTED FIRST. YOU ARE ONLY
 //CHANGING THE DAILY SPECIAL FOR EACH DAY.
 
-"Monday" : "Beefy Mac Casserole",
-"Tuesday" : "Meatball Subs",
-"Wednesday" : "Baked Ziti w/Marinara",
-"Thursday" : "Big Ole Burrito",
-"Friday" : "Philly Chicken Caccitore Sandwich",
-"Saturday" : "",
-"Sunday" : ""
+"Monday" : "Chicken Pitas",
+"Tuesday" : "Sizzling Chicken Caesar Salad",
+"Wednesday" : "Augie Bowls",
+"Thursday" : "Shrimp and Andouille Jambalaya",
+"Friday" : "Korean Pork Bao",
+"Saturday" : "BBQ Chicken Leg Quarters",
+"Sunday" : "Pineapple Brown Sugar Glazed Ham"
 
 
 }
@@ -35,13 +35,13 @@ var dinner_menu =
 //ALL MEALS HAVE CHEESE AND PEPPORONI OPTIONS LISTED FIRST. YOU ARE ONLY
 //CHANGING THE DAILY SPECIAL FOR EACH DAY.
 
-"Monday" : "Nacho Bar",
-"Tuesday" : "Balsamic Turkey London Broil",
-"Wednesday" : "Slow Roasted Chicken & Potatoes",
-"Thursday" : "Herb Crusted Pork Loin",
-"Friday" : "Chicken and Dumplings",
-"Saturday" : "Chicken Nuggets",
-"Sunday" : "Hot Roast Beef Sandwich"
+"Monday" : "Mediterranean Chicken",
+"Tuesday" : "Seafood Newburg",
+"Wednesday" : "BBQ Beef Brisket",
+"Thursday" : "General Tso's Chicken",
+"Friday" : "Salisbury Steak",
+"Saturday" : "Pork Chops",
+"Sunday" : "Spaghetti & Marinara"
 
 
 }
@@ -53,7 +53,7 @@ var dayOfWeek = date.toLocaleDateString("en-gb", { weekday: 'long' });
 
 var today = new Date().getHours();
 if (today >= 00 && today <= 15) {
-   document.getElementById("chefsLunchOfTheDay").innerHTML = lunch_menu[dayOfWeek];
+   document.getElementById("mainLunchOfTheDay").innerHTML = lunch_menu[dayOfWeek];
 } else {
-  document.getElementById("chefsDinnerOfTheDay").innerHTML = dinner_menu[dayOfWeek];
+  document.getElementById("mainDinnerOfTheDay").innerHTML = dinner_menu[dayOfWeek];
 };
