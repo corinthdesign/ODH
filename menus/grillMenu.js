@@ -6,9 +6,17 @@ var menu =
 {
 
 //Please do not altar any text other than the menu directly below
+=======
+var menu = [
+
+
+
+
+//Please do not altar any text other than the menu directly below.
 //In order for each menu item to properly display,
 //please put each item in quotations. ex. "Cheese Pizza"
 //Each item must be followed with a comma, except for the last item
+
 
 //ALL MEALS HAVE CHEESE AND PEPPORONI OPTIONS LISTED FIRST. YOU ARE ONLY
 //CHANGING THE DAILY SPECIAL FOR EACH DAY.
