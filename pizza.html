@@ -8,6 +8,12 @@
   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
   crossorigin="anonymous"></script>
+
+<!--Forces Cache Clear-->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
 </head>
 
 <body>
@@ -17,10 +23,10 @@
     <h1>Pizza</h1>
     <h1 style="line-height: 0.05em">Station</h1>
   <div class="items">
-  <p id="menu1"></p>
-  <p id="menu2"></p>
-  <p id="menu3"></p>
-  <p id="menu4"></p>
+  <p>Cheese Pizza</p>
+  <p>Pepperoni Pizza</p>
+<!--Dynamic Menu Item-->
+  <p id="pizzaOfTheDay"></p>
 </div>
 </section>
 
@@ -32,7 +38,6 @@
 </section>
 
   <script src="menus/pizzaMenu.js"></script>
-  <script src="js/menuLoader.js"></script>
 </body>
 
 <footer>
