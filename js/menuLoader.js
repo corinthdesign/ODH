@@ -1,12 +1,18 @@
 
 //MONDAY
-var a = menu[0]
-var b = menu[1]
-var c = menu[2]
-var d = menu[3]
-var e = menu[4]
-var f = menu[5]
-var g = menu[6]
+var a0 = menu[0]
+//TUESDAY
+var b1 = menu[1]
+//WEDNESDAY
+var c2 = menu[2]
+//THURSDAY
+var d3 = menu[3]
+//FRIDAY
+var e4 = menu[4]
+//SATURDAY
+var f5 = menu[5]
+//SUNDAY
+var g6 = menu[6]
 
 $(document).ready(function menuLoader() {
   console.log(menu[0]);
@@ -19,11 +25,11 @@ $(document).ready(function menuLoader() {
 
 /////////Below code places menu items///////////
 //Monday
-  document.getElementById("menu1").innerHTML = a;
-  document.getElementById("menu2").innerHTML = b;
-  document.getElementById("menu3").innerHTML = c;
-  document.getElementById("menu4").innerHTML = d;
-  document.getElementById("menu5").innerHTML = e;
-  document.getElementById("menu6").innerHTML = f;
-  document.getElementById("menu7").innerHTML = g;
+  document.getElementById("pizza1").innerHTML = a0;
+  document.getElementById("pizza2").innerHTML = b1;
+  document.getElementById("pizza3").innerHTML = c2;
+  document.getElementById("pizza4").innerHTML = d3;
+  document.getElementById("pizza5").innerHTML = e4;
+  document.getElementById("pizza6").innerHTML = f5;
+  document.getElementById("pizza7").innerHTML = g6;
 });
