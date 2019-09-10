@@ -10,8 +10,6 @@ html, body {
 
 body{
 	overflow-x: hidden;
-	width: 960px;
-	height: 1080px;
 }
 
 body::-webkit-scrollbar {
@@ -19,7 +17,7 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-	font-family: 'Italiana', sans-serif;
+	font-family: 'Bungee Shade', sans-serif;
 	font-size: 8em;
 	text-align: center;
 	letter-spacing: auto;
@@ -30,7 +28,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Cabin Sketch', sans-serif;
+	font-family: 'Seaweed Script', sans-serif;
 	font-size: 7em;
 	text-align: center;
 	font-weight: black;
@@ -40,28 +38,38 @@ h2 {
 }
 
 p {
-	font-family: 'Cabin Sketch', sans-serif;
+	font-family: 'Scheherazade', sans-serif;
 	font-size: 7em;
-	font-weight: 900;
+	font-weight: 300;
 	text-align: center;
-	letter-spacing: auto;
+	letter-spacing: .1em;
 	text-transform: uppercase;
 	line-height: 1em;
 	color: #fff;
 }
 
-.grill_menu {
-	padding: 2em 750px 0 0;
+.main_event_menu {
+	padding: 2em;
 	margin: 0;
 	display: block;
 	position: relative;
 	height: 100vh;
 	width: 100vw;
-	text-shadow: 0px 0px 10px #000;
 	z-index: 100;
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
+#main_event_logo {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background-image: url(images/the_main_event_logo.png);
+	background-repeat:no-repeat;
+	background-size: contain;
+	background-position: center center;
+	width: 75vw;
+	height: 40vh;
+}
 .items {
 	padding: 2em 0 0 0;
 }
@@ -70,15 +78,12 @@ p {
 	position: relative;
 	display: block;
 	top: -100vh;
-	max-width: 960px;
-	overflow: hidden;
 	z-index: 0;
 }
 
 .background video {
 	position: relative;
 	display: block;
-	left:-400px;
-	width: 105vw;
+	width: 200vw;
 	height: auto;
 }

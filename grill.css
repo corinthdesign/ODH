@@ -70,12 +70,10 @@ p {
 	position: relative;
 	display: block;
 	top: -100vh;
-	max-width: 960px;
-	overflow: hidden;
 	z-index: 0;
 }
 
 .background video {
-	width: 120vw;
+	width: 200vw;
 	height: auto;
 }
