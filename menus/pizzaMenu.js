@@ -1,7 +1,7 @@
 
 //PIZZA MENU FOR ODH
 
-var val = '<?php echo $result ?>';
+var data = '<?php echo $row['menuItem'] ?>';
 
 var menu =
 {
