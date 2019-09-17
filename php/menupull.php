@@ -29,7 +29,7 @@ $datafetch = mysqli_query($conn, "select menuItem from pizza");
 while($row=mysqli_fetch_array($datafetch))
 {
 
-echo $row['menuItem']
+echo $row
 
 ;
 //while($result = mysql_fetch_array($datafetch)) {
