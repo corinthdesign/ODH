@@ -1,6 +1,6 @@
 <?php
     $ini = parse_ini_file('.config/settings.ini');
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($server_name, $db_user, $db_password, $db_name);
 
 //    if ($conn->connect_error) {
 //        die("Connection failed: " . $conn->connect_error);
