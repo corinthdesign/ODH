@@ -29,4 +29,15 @@ var date = new Date();
 var dayOfWeek = date.toLocaleDateString("en-gb", { weekday: 'long' });
 
 document.getElementById("pizzaOfTheDay").innerHTML = menu[dayOfWeek];
-console.log(data);
+
+//Experimental JSON PHP Connection
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var pizzaData = JSON.parse(this.responseText);
+    document.getElementById("demo").innerHTML = myObj[2];
+  }
+};
+xmlhttp.open("data", "php/menupull.php", true);
+xmlhttp.send();
