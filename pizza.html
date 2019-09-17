@@ -51,11 +51,11 @@ var xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-    myObj = JSON.parse(this.responseText);
-    document.getElementById("demo").innerHTML = myObj.name;
+    row = JSON.parse(this.responseText);
+    document.getElementById("demo").innerHTML = row.menuItem;
   }
 };
-xmlhttp.open("GET", "php/test.php", true);
+xmlhttp.open("GET", "php/menupull.php", true);
 xmlhttp.send();
 </script>
 </body>
