@@ -1,8 +1,6 @@
 
 //PIZZA MENU FOR ODH
 
-var data = '<?php echo $row['menuItem'] ?>';
-
 var menu =
 {
 
@@ -41,3 +39,5 @@ xmlhttp.onreadystatechange = function() {
 };
 xmlhttp.open("data", "php/menupull.php", true);
 xmlhttp.send();
+
+console.log("pizzaData");
