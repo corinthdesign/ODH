@@ -26,7 +26,7 @@ $datafetch = mysqli_query($conn, "select menuItem from pizza");
 while($row=mysqli_fetch_array($datafetch))
 {
 
-echo $row["menuItem"]
+print json_encode[$row];
 
 ;
 //while($result = mysql_fetch_array($datafetch)) {
