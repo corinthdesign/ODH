@@ -1,5 +1,5 @@
 # protect wpconfig.php
-<files config.php>
+<files settings.php>
 order allow,deny
 deny from all
 </files>
