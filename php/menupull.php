@@ -24,9 +24,15 @@ $dbname = "menus";
 
 $dataArray = array();
 
-$datafetch = "SELECT menuItem FROM pizza";
+$datafetch = mysqli_query($conn, "select * from pizza");
 
-while($result = mysql_fetch_array($datafetch)) {
-    $dataArray[$result['menuItem']] = $result['name'];
+while($row=mysqli_fetch_array($datafetch))
+{
+
+echo $row['menuItem']
+
+}
+//while($result = mysql_fetch_array($datafetch)) {
+//    $dataArray[$result['menuItem']] = $result['name'];
 }
 ?>
