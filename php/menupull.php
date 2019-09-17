@@ -1,8 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "tim";
-$password = "THeah71412!";
-$dbname = "menus";
+    $ini = parse_ini_file('.config/settings.ini');
     $conn = new mysqli($servername, $username, $password, $dbname);
 
 //    if ($conn->connect_error) {
