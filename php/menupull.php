@@ -29,7 +29,7 @@ $datafetch = mysqli_query($conn, "select * from pizza");
 while($row=mysqli_fetch_array($datafetch))
 {
 
-echo $row['menuItem']
+echo implode(", ", $row)
 
 ;
 //while($result = mysql_fetch_array($datafetch)) {
