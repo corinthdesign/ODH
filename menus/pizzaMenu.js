@@ -40,4 +40,4 @@ xmlhttp.onreadystatechange = function() {
 xmlhttp.open("data", "php/menupull.php", true);
 xmlhttp.send();
 
-console.log("pizzaData");
+console.log('pizzaData');
