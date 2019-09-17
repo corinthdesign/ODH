@@ -24,12 +24,12 @@ $dbname = "menus";
 
 $dataArray = array();
 
-$datafetch = mysqli_query($conn, "select menuItem from pizza");
+$datafetch = mysqli_query($conn, "select * from pizza");
 
 while($row=mysqli_fetch_array($datafetch))
 {
 
-echo implode(", ", $row)
+echo $row['menuItem']
 
 ;
 //while($result = mysql_fetch_array($datafetch)) {
