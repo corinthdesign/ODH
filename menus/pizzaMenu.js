@@ -29,4 +29,4 @@ var date = new Date();
 var dayOfWeek = date.toLocaleDateString("en-gb", { weekday: 'long' });
 
 document.getElementById("pizzaOfTheDay").innerHTML = menu[dayOfWeek];
-console.log(val);
+console.log(data);
