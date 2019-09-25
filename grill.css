@@ -67,10 +67,12 @@ p {
 }
 
 .background {
-	position: relative;
+	position: absolute;
 	display: block;
-	top: -100vh;
-	z-index: 0;
+	float: left;
+	top: 0;
+	left: 0;
+	z-index: -100;
 }
 
 .background video {

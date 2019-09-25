@@ -19,8 +19,8 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-	font-family: 'Trade Winds', sans-serif;
-	font-size: 8em;
+	font-family: 'Big Shoulders Display', sans-serif;
+	font-size: 4em;
 	text-align: left;
 	letter-spacing: auto;
 	text-transform: uppercase;
@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Big Shoulders Display', sans-serif;
 	font-size: 7em;
 	text-align: left;
 	font-weight: black;
@@ -39,8 +39,8 @@ h2 {
 }
 
 p {
-	font-family: 'Work Sans', sans-serif;
-	font-size: 3.75em;
+	font-family: 'Big Shoulders Display', sans-serif;
+	font-size: 2em;
 	font-weight: 900;
 	text-align: left;
 	letter-spacing: auto;
@@ -50,7 +50,7 @@ p {
 }
 
 .action_menu {
-	padding: 2em 5em;
+	padding: 2em 5em 2em 3em;
 	margin: 0;
 	display: block;
 	position: relative;
@@ -58,22 +58,29 @@ p {
 	width: 100vw;
 	text-shadow: 0px 0px 10px #000;
 	z-index: 100;
+	transition: all 0.4s ease;
 }
 
-.items {
+.action_menu.active {
+	opacity: 1;
+	padding: 2em 5em 2em 5em;
+}
+
+#items p {
 	padding: 0 0em;
 	width: 48%;
-
 }
 
 .background {
-	position: relative;
+	position: absolute;
 	display: block;
-	top: -100vh;
-	z-index: 0;
+	float: left;
+	top: 0;
+	left: 0;
+	z-index: -200;
 }
 
-.background video {
-	width: 200vw;
-	height: auto;
+.background video, .background iframe {
+	width: 100vw;
+	height: 100vh;
 }
