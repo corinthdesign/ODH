@@ -12,10 +12,11 @@ body{
 	padding: 2em;
 	margin: 0;
 	display: block;
+	float: left;
 	position: relative;
 	margin: 0 auto;
 	height: 100vh;
-	width: 100vw;
+	width: 50vw;
 	z-index: 100;
 }
 
@@ -25,8 +26,10 @@ body{
   background-image: url(images/augie_dining_services_new_color.png);
   background-repeat:no-repeat;
   background-size: contain;
-  width: 50%;
-  height: 10%;
+  width: 100%;
+  min-width: 265px;
+  height: 12%;
+  border: black dashed 1px;
 }
 h1 {
 	font-family: sans-serif;
@@ -47,7 +50,14 @@ h2 {
 	color: #545454;
 }
 
-p {
+h3 {
+	font-family: sans-serif;
+	color: #545454;
+	text-transform: uppercase;
+
+}
+
+p, label {
 	font-family: sans-serif;
 	font-size: .75em;
 	font-weight: 900;
@@ -56,3 +66,15 @@ p {
 	text-transform: uppercase;
 	color: #545454;
 }
+
+form div{
+	border-bottom: inset 2px white;
+	padding: 0 2em 2em;
+}
+
+.day_selection {
+	background: #fff;
+	margin: .5em;
+	padding: 2em;
+}
+
