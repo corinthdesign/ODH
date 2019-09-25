@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+body{
+	overflow-x: hidden;
+	width: 960px;
+	height: 1080px;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+h1 {
+	font-family: 'Big Shoulders Display', sans-serif;
+	font-size: 4em;
+	text-align: left;
+	letter-spacing: auto;
+	text-transform: uppercase;
+	line-height: 0.5em;
+	color: #fff;
+}
+
+h2 {
+	font-family: 'Big Shoulders Display', sans-serif;
+	font-size: 7em;
+	text-align: left;
+	font-weight: black;
+	letter-spacing: auto;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+p {
+	font-family: 'Big Shoulders Display', sans-serif;
+	font-size: 2em;
+	font-weight: 900;
+	text-align: left;
+	letter-spacing: auto;
+	text-transform: uppercase;
+	line-height: 0.65em;
+	color: #fff;
+}
+
+.omelette_menu {
+	padding: 2em 5em 2em 3em;
+	margin: 0;
+	display: block;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	text-shadow: 0px 0px 10px #000;
+	z-index: 100;
+	transition: all 0.4s ease;
+}
+
+.omelette_menu.active {
+	opacity: 1;
+	padding: 2em 5em 2em 5em;
+}
+
+#items p {
+	padding: 0 0em;
+	width: 48%;
+}
+
+.background {
+	position: absolute;
+	display: block;
+	float: left;
+	top: 0;
+	left: 0;
+	z-index: -200;
+}
+
+.background video, .background iframe {
+	width: 100vw;
+	height: 100vh;
+}
