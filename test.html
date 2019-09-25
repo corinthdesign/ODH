@@ -6,7 +6,7 @@
 <h1 class="demo">Placeholder</h1>
 </body>
 
-<script>
+<!--script>
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -16,4 +16,9 @@
   };
   xmlhttp.open("GET", "php/test.php", true);
   xmlhttp.send();
+</script-->
+<script>
+myObj = {name: "John", age: 31, city: "New York"};
+myJSON = JSON.stringify(myObj);
+localStorage.setItem("testJSON", myJSON);
 </script>
