@@ -8,71 +8,408 @@
   <section class="menu">
     <div class="logo"></div>
   <h1>Menu Update System</h1>
-  <h3>Input the new menuboard item into the appropriate field. Blank fields will not update the menuboard item. To finish updating the menu, press Submit.</h3>
-  <p>*Please direct any bug-fixes to <a href="mailto:tklopfenstein@augie.edu" target="_blank" style="color: #262626;">tklopfenstein@augie.edu</a></p>
-
+  <h3>Input the new menuboard item into the appropriate field. Fields left alone will not update on the menuboard. To finish updating the menu, press "Update Menu".
+    After selecting the day of your choice, you can see the current menu on the right for each item. Use this to make sure your input was recorded.</h3>
+  <p style="padding-top: 1em; margin: 0 auto; text-align: center;">*Please direct any bug-fixes to <a href="mailto:tklopfenstein@augie.edu" target="_blank" style="color: #262626;">tklopfenstein@augie.edu</a></p>
+  </section>
 <section class="fields">
-    <form>
+    <form class="parameters">
       <div class="day_selection">
-      <h2>Select Which Day:</h2>
-	<input type="radio" name="day" value="Monday" checked><label> Monday</label><br>
-	<input type="radio" name="day" value="Tuesday"><label> Tuesday</label><br>
-	<input type="radio" name="day" value="Wednesday"><label> Wednesday</label><br>
-	<input type="radio" name="day" value="Thursday"><label> Thursday</label><br>
-	<input type="radio" name="day" value="Friday"><label> Friday</label><br>
-	<input type="radio" name="day" value="Saturday"><label> Saturday</label><br>
-	<input type="radio" name="day" value="Sunday"><label> Sunday</label><br>
+          <h3>Which Day?</h3>
+          <select>
+            	<option id="day" name="day" value="Monday"><label> Monday</label><br>
+            	<option id="day" name="day" value="Tuesday"><label> Tuesday</label><br>
+            	<option id="day" name="day" value="Wednesday"><label> Wednesday</label><br>
+            	<option id="day" name="day" value="Thursday"><label> Thursday</label><br>
+            	<option id="day" name="day" value="Friday"><label> Friday</label><br>
+            	<option id="day" name="day" value="Saturday"><label> Saturday</label><br>
+            	<option id="day" name="day" value="Sunday"><label> Sunday</label><br>
+          </select>
+      </div>
+      <div class="meal_selection">
+          <h3>Which Meal?</h3>
+          <select>
+              <option name="meal" value="Breakfast"><label> Breakfast</label><br>
+              <option name="meal" value="Brunch" checked><label> Brunch</label><br>
+              <option name="meal" value="Lunch"><label> Lunch</label><br>
+              <option name="meal" value="Dinner"><label> Dinner</label><br>
+          </select>
+      </div>
+      </form>
+
+      <form>
+      <div>
+	<a href="chefs_corner.html" target=_blank ><h3>Chef's Corner</h3></a>
+  <input style="border-radius: 100000px 0 0 100000px;" type="text" placeholder="Breakfast"></input>
+  <input type="text" placeholder="Brunch"></input>
+  <input type="text" placeholder="Lunch"></input>
+  <input style="border-radius: 0 100000px 100000px 0;" type="text" placeholder="Dinner"></input>
       </div>
       <div>
-	<h3>Line 1</h3>
-      	<p>Breakfast (lines 1&2):</p><input type="text" name="Breakfast (lines 1&2)"></input>
-      	<p>Lunch:</p><input type="text"></input>
-      	<p>Dinner:</p><input type="text"></input>
+  <h3>The Main Event</h3>
+  <input style="border-radius: 100000px 0 0 100000px;" type="text" placeholder="Breakfast"></input>
+  <input type="text" placeholder="Brunch"></input>
+  <input type="text" placeholder="Lunch"></input>
+  <input style="border-radius: 0 100000px 100000px 0;" type="text" placeholder="Dinner"></input>
       </div>
-      <div>	
-	<h3>Line 2</h3>
-      	<p>Lunch:</p><input type="text"></input>
-      	<p>Dinner:</p><input type="text"></input>
+      <div>
+  <h3>The Vegetarian Option</h3>
+  <input style="border-radius: 100000px 0 0 100000px;" type="text" placeholder="Breakfast"></input>
+  <input type="text" placeholder="Brunch"></input>
+  <input type="text" placeholder="Lunch"></input>
+  <input style="border-radius: 0 100000px 100000px 0;" type="text" placeholder="Dinner"></input>
       </div>
-      <div>      
-	<h3>Vegetarian</h3>
-      	<p>Lunch:</p><input type="text"></input>
-      	<p>Dinner:</p><input type="text"></input>
-      </div>
-      <div>      
-	<h3>Action Station</h3>
-      	<p>Breakfast (both lines):</p><input type="text></input>
-      	<p>Lunch:</p><input type="text"></input>
-      	<p>Dinner:</p><input type="text"></input>
-      </div>
-      <div>      
-	<h3>Pizza Station</h3>
-      	<p>Lunch:</p><input type="text"></input>
-      	<p>Dinner:</p><input type="text"></input>
+      <div>
+	<a href="pizza.html" target=_blank><h3>Pizza Station</h3></a>
+  <input style="border-radius: 100000px 0 0 100000px;" type="text" placeholder="Breakfast"></input>
+  <input type="text" placeholder="Brunch"></input>
+  <input type="text" placeholder="Lunch"></input>
+  <input style="border-radius: 0 100000px 100000px 0;" type="text" placeholder="Dinner"></input>
       </div>
       <div>
 	<h3>The Grill</h3>
-     	 <p>Breakfast (both lines):</p><input type="text"></input>
-      	<p>Lunch:</p><input type="text"></input>
-      	<p>Dinner:</p><input type="text"></input>
-      </div>
-      <div>      
-	<h3>The Deli</h3>
-      	<p>Lunch:</p><input type="text"></input>
-      	<p>Dinner:</p><input type="text"></input>
+  <input style="border-radius: 100000px 0 0 100000px;" type="text" placeholder="Breakfast"></input>
+  <input type="text" placeholder="Brunch"></input>
+  <input type="text" placeholder="Lunch"></input>
+  <input style="border-radius: 0 100000px 100000px 0;" type="text" placeholder="Dinner"></input>
       </div>
       <div>
-      	<h3>Main Entrance</h3>
-      	<p>Breakfast:</p><input type="text" name="Breakfast (li$
-      	<p>Lunch:</p><input type="text"></input>
-      	<p>Dinner:</p><input type="text"></input>
+	<h3>The Deli</h3>
+  <input style="border-radius: 100000px 0 0 100000px;" type="text" placeholder="Breakfast"></input>
+  <input type="text" placeholder="Brunch"></input>
+  <input type="text" placeholder="Lunch"></input>
+  <input style="border-radius: 0 100000px 100000px 0;" type="text" placeholder="Dinner"></input>
+      </div>
+      <div>
+	<h3>Soups</h3>
+  <input style="border-radius: 100000px 0 0 100000px;" type="text" class="soups" placeholder="Soup 1"></input>
+  <input style="border-radius: 0 100000px 100000px 0;" type="text" class="soups" placeholder="Soup 2"></input>
+      </div>
+      <div>
+        <input id="submit" type="submit" value="Update Menu"></input>
       </div>
 </section>
 <section class="preview">
-
+  <h2 style="text-align: center;" id="preview-title">Dynamic Day</h2>
+  <table>
+    <tr>
+      <td><h3>Chef's Corner</h3></td>
+      <td><h3>The Main Event</h3></td>
+      <td><h3>The Vegetarian Option</h3></td>
+      <td><h3>Pizza Station</h3></td>
+      <td><h3>The Grill</h3></td>
+      <td><h3>The Deli</h3></td>
+      <td><h3>Soups</h3></td>
+    </tr>
+    <tr>
+      <td><p>Breakfast: </p><p id="ccb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="grb"> Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="delb">Dynamic Content</p></td>
+      <td><p>Soup 1: </p><p id="soup1">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Brunch (Lines 1&2): </p><p id="ccbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="mebr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="vegbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="pizbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="grbr"> Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="delbr">Dynamic Content</p></td>
+      <td><p>Soup 2: </p><p id="soup2">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Lunch: </p><p id="ccl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="mel">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="vegl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="pizl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="grl"> Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="dell">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Dinner: </p><p id="ccd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="med">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="vegd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="pizd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="grd"> Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="deld">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+  </table>
 </section>
 
 </body>
+
+<script>
+  //MONDAY//
+  var breakfast_mon = ["Pancakes", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
+  var brunch_mon = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
+  var lunch_mon = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
+  var dinner_mon = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
+  var soup_mon = ["Tomato Soup", "Chicken Noodle Soup"];
+  //TUESDAY//
+  var breakfast_tue = ["Pancakes", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
+  var brunch_tue = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
+  var lunch_tue = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
+  var dinner_tue = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
+  var soup_tue = ["Tomato Soup", "Chicken Noodle Soup"];
+  //WEDNESDAY//
+  var breakfast_wed = ["Pancakes", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
+  var brunch_wed = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
+  var lunch_wed = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
+  var dinner_wed = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
+  var soup_wed = ["Tomato Soup", "Chicken Noodle Soup"];
+  //THURSDAY//
+  var breakfast_thu = ["Pancakes", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
+  var brunch_thu = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
+  var lunch_thu = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
+  var dinner_thu = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
+  var soup_thu = ["Tomato Soup", "Chicken Noodle Soup"];
+  //FRIDAY//
+  var breakfast_fri = ["Pancakes", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
+  var brunch_fri = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
+  var lunch_fri = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
+  var dinner_fri = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
+  var soup_fri = ["Tomato Soup", "Chicken Noodle Soup"];
+  //SATURDAY//
+  var breakfast_sat = ["Pancakes", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
+  var brunch_sat = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
+  var lunch_sat = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
+  var dinner_sat = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
+  var soup_sat = ["Tomato Soup", "Chicken Noodle Soup"];
+  //SUNDAY//
+  var breakfast_sun = ["Pancakes", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
+  var brunch_sun = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
+  var lunch_sun = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
+  var dinner_sun = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
+  var soup_sun = ["Tomato Soup", "Chicken Noodle Soup"];
+
+  var weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satuday", "Sunday"];
+
+//BREAKFAST//
+  document.getElementById("ccb").innerHTML = breakfast_mon[0];
+  document.getElementById("meb").innerHTML = breakfast_mon[1];
+  document.getElementById("vegb").innerHTML = breakfast_mon[2];
+  document.getElementById("pizb").innerHTML = breakfast_mon[3];
+  document.getElementById("grb").innerHTML = breakfast_mon[4];
+  document.getElementById("delb").innerHTML = breakfast_mon[5];
+
+  document.getElementById("ccb").innerHTML = breakfast_tue[0];
+  document.getElementById("meb").innerHTML = breakfast_tue[1];
+  document.getElementById("vegb").innerHTML = breakfast_tue[2];
+  document.getElementById("pizb").innerHTML = breakfast_tue[3];
+  document.getElementById("grb").innerHTML = breakfast_tue[4];
+  document.getElementById("delb").innerHTML = breakfast_tue[5];
+
+  document.getElementById("ccb").innerHTML = breakfast_wed[0];
+  document.getElementById("meb").innerHTML = breakfast_wed[1];
+  document.getElementById("vegb").innerHTML = breakfast_wed[2];
+  document.getElementById("pizb").innerHTML = breakfast_wed[3];
+  document.getElementById("grb").innerHTML = breakfast_wed[4];
+  document.getElementById("delb").innerHTML = breakfast_wed[5];
+
+  document.getElementById("ccb").innerHTML = breakfast_thu[0];
+  document.getElementById("meb").innerHTML = breakfast_thu[1];
+  document.getElementById("vegb").innerHTML = breakfast_thu[2];
+  document.getElementById("pizb").innerHTML = breakfast_thu[3];
+  document.getElementById("grb").innerHTML = breakfast_thu[4];
+  document.getElementById("delb").innerHTML = breakfast_thu[5];
+
+  document.getElementById("ccb").innerHTML = breakfast_fri[0];
+  document.getElementById("meb").innerHTML = breakfast_fri[1];
+  document.getElementById("vegb").innerHTML = breakfast_fri[2];
+  document.getElementById("pizb").innerHTML = breakfast_fri[3];
+  document.getElementById("grb").innerHTML = breakfast_fri[4];
+  document.getElementById("delb").innerHTML = breakfast_fri[5];
+
+  document.getElementById("ccb").innerHTML = breakfast_sat[0];
+  document.getElementById("meb").innerHTML = breakfast_sat[1];
+  document.getElementById("vegb").innerHTML = breakfast_sat[2];
+  document.getElementById("pizb").innerHTML = breakfast_sat[3];
+  document.getElementById("grb").innerHTML = breakfast_sat[4];
+  document.getElementById("delb").innerHTML = breakfast_sat[5];
+
+  document.getElementById("ccb").innerHTML = breakfast_sun[0];
+  document.getElementById("meb").innerHTML = breakfast_sun[1];
+  document.getElementById("vegb").innerHTML = breakfast_sun[2];
+  document.getElementById("pizb").innerHTML = breakfast_sun[3];
+  document.getElementById("grb").innerHTML = breakfast_sun[4];
+  document.getElementById("delb").innerHTML = breakfast_sun[5];
+
+//BRUNCH//
+  document.getElementById("ccbr").innerHTML = brunch_mon[0];
+  document.getElementById("mebr").innerHTML = brunch_mon[1];
+  document.getElementById("vegbr").innerHTML = brunch_mon[2];
+  document.getElementById("pizbr").innerHTML = brunch_mon[3];
+  document.getElementById("grbr").innerHTML = brunch_mon[4];
+  document.getElementById("delbr").innerHTML = brunch_mon[5];
+
+  document.getElementById("ccbr").innerHTML = brunch_tue[0];
+  document.getElementById("mebr").innerHTML = brunch_tue[1];
+  document.getElementById("vegbr").innerHTML = brunch_tue[2];
+  document.getElementById("pizbr").innerHTML = brunch_tue[3];
+  document.getElementById("grbr").innerHTML = brunch_tue[4];
+  document.getElementById("delbr").innerHTML = brunch_tue[5];
+
+  document.getElementById("ccbr").innerHTML = brunch_wed[0];
+  document.getElementById("mebr").innerHTML = brunch_wed[1];
+  document.getElementById("vegbr").innerHTML = brunch_wed[2];
+  document.getElementById("pizbr").innerHTML = brunch_wed[3];
+  document.getElementById("grbr").innerHTML = brunch_wed[4];
+  document.getElementById("delbr").innerHTML = brunch_wed[5];
+
+  document.getElementById("ccbr").innerHTML = brunch_thu[0];
+  document.getElementById("mebr").innerHTML = brunch_thu[1];
+  document.getElementById("vegbr").innerHTML = brunch_thu[2];
+  document.getElementById("pizbr").innerHTML = brunch_thu[3];
+  document.getElementById("grbr").innerHTML = brunch_thu[4];
+  document.getElementById("delbr").innerHTML = brunch_thu[5];
+
+  document.getElementById("ccbr").innerHTML = brunch_fri[0];
+  document.getElementById("mebr").innerHTML = brunch_fri[1];
+  document.getElementById("vegbr").innerHTML = brunch_fri[2];
+  document.getElementById("pizbr").innerHTML = brunch_fri[3];
+  document.getElementById("grbr").innerHTML = brunch_fri[4];
+  document.getElementById("delbr").innerHTML = brunch_fri[5];
+
+  document.getElementById("ccbr").innerHTML = brunch_sat[0];
+  document.getElementById("mebr").innerHTML = brunch_sat[1];
+  document.getElementById("vegbr").innerHTML = brunch_sat[2];
+  document.getElementById("pizbr").innerHTML = brunch_sat[3];
+  document.getElementById("grbr").innerHTML = brunch_sat[4];
+  document.getElementById("delbr").innerHTML = brunch_sat[5];
+
+  document.getElementById("ccbr").innerHTML = brunch_sun[0];
+  document.getElementById("mebr").innerHTML = brunch_sun[1];
+  document.getElementById("vegbr").innerHTML = brunch_sun[2];
+  document.getElementById("pizbr").innerHTML = brunch_sun[3];
+  document.getElementById("grbr").innerHTML = brunch_sun[4];
+  document.getElementById("delbr").innerHTML = brunch_sun[5];
+
+//LUNCH//
+  document.getElementById("ccl").innerHTML =lunch_mon[0];
+  document.getElementById("mel").innerHTML = lunch_mon[1];
+  document.getElementById("vegl").innerHTML = lunch_mon[2];
+  document.getElementById("pizl").innerHTML = lunch_mon[3];
+  document.getElementById("grl").innerHTML = lunch_mon[4];
+  document.getElementById("dell").innerHTML = lunch_mon[5];
+
+  document.getElementById("ccl").innerHTML =lunch_tue[0];
+  document.getElementById("mel").innerHTML = lunch_tue[1];
+  document.getElementById("vegl").innerHTML = lunch_tue[2];
+  document.getElementById("pizl").innerHTML = lunch_tue[3];
+  document.getElementById("grl").innerHTML = lunch_tue[4];
+  document.getElementById("dell").innerHTML = lunch_tue[5];
+
+  document.getElementById("ccl").innerHTML =lunch_wed[0];
+  document.getElementById("mel").innerHTML = lunch_wed[1];
+  document.getElementById("vegl").innerHTML = lunch_wed[2];
+  document.getElementById("pizl").innerHTML = lunch_wed[3];
+  document.getElementById("grl").innerHTML = lunch_wed[4];
+  document.getElementById("dell").innerHTML = lunch_wed[5];
+
+  document.getElementById("ccl").innerHTML =lunch_thu[0];
+  document.getElementById("mel").innerHTML = lunch_thu[1];
+  document.getElementById("vegl").innerHTML = lunch_thu[2];
+  document.getElementById("pizl").innerHTML = lunch_thu[3];
+  document.getElementById("grl").innerHTML = lunch_thu[4];
+  document.getElementById("dell").innerHTML = lunch_thu[5];
+
+  document.getElementById("ccl").innerHTML =lunch_fri[0];
+  document.getElementById("mel").innerHTML = lunch_fri[1];
+  document.getElementById("vegl").innerHTML = lunch_fri[2];
+  document.getElementById("pizl").innerHTML = lunch_fri[3];
+  document.getElementById("grl").innerHTML = lunch_fri[4];
+  document.getElementById("dell").innerHTML = lunch_fri[5];
+
+  document.getElementById("ccl").innerHTML =lunch_sat[0];
+  document.getElementById("mel").innerHTML = lunch_sat[1];
+  document.getElementById("vegl").innerHTML = lunch_sat[2];
+  document.getElementById("pizl").innerHTML = lunch_sat[3];
+  document.getElementById("grl").innerHTML = lunch_sat[4];
+  document.getElementById("dell").innerHTML = lunch_sat[5];
+
+  document.getElementById("ccl").innerHTML =lunch_sun[0];
+  document.getElementById("mel").innerHTML = lunch_sun[1];
+  document.getElementById("vegl").innerHTML = lunch_sun[2];
+  document.getElementById("pizl").innerHTML = lunch_sun[3];
+  document.getElementById("grl").innerHTML = lunch_sun[4];
+  document.getElementById("dell").innerHTML = lunch_sun[5];
+
+//DINNER//
+  document.getElementById("ccd").innerHTML = dinner_mon[0];
+  document.getElementById("med").innerHTML = dinner_mon[1];
+  document.getElementById("vegd").innerHTML = dinner_mon[2];
+  document.getElementById("pizd").innerHTML = dinner_mon[3];
+  document.getElementById("grd").innerHTML = dinner_mon[4];
+  document.getElementById("deld").innerHTML = dinner_mon[5];
+
+  document.getElementById("ccd").innerHTML = dinner_tue[0];
+  document.getElementById("med").innerHTML = dinner_tue[1];
+  document.getElementById("vegd").innerHTML = dinner_tue[2];
+  document.getElementById("pizd").innerHTML = dinner_tue[3];
+  document.getElementById("grd").innerHTML = dinner_tue[4];
+  document.getElementById("deld").innerHTML = dinner_tue[5];
+
+  document.getElementById("ccd").innerHTML = dinner_wed[0];
+  document.getElementById("med").innerHTML = dinner_wed[1];
+  document.getElementById("vegd").innerHTML = dinner_wed[2];
+  document.getElementById("pizd").innerHTML = dinner_wed[3];
+  document.getElementById("grd").innerHTML = dinner_wed[4];
+  document.getElementById("deld").innerHTML = dinner_wed[5];
+
+  document.getElementById("ccd").innerHTML = dinner_thu[0];
+  document.getElementById("med").innerHTML = dinner_thu[1];
+  document.getElementById("vegd").innerHTML = dinner_thu[2];
+  document.getElementById("pizd").innerHTML = dinner_thu[3];
+  document.getElementById("grd").innerHTML = dinner_thu[4];
+  document.getElementById("deld").innerHTML = dinner_thu[5];
+
+  document.getElementById("ccd").innerHTML = dinner_fri[0];
+  document.getElementById("med").innerHTML = dinner_fri[1];
+  document.getElementById("vegd").innerHTML = dinner_fri[2];
+  document.getElementById("pizd").innerHTML = dinner_fri[3];
+  document.getElementById("grd").innerHTML = dinner_fri[4];
+  document.getElementById("deld").innerHTML = dinner_fri[5];
+
+  document.getElementById("ccd").innerHTML = dinner_sat[0];
+  document.getElementById("med").innerHTML = dinner_sat[1];
+  document.getElementById("vegd").innerHTML = dinner_sat[2];
+  document.getElementById("pizd").innerHTML = dinner_sat[3];
+  document.getElementById("grd").innerHTML = dinner_sat[4];
+  document.getElementById("deld").innerHTML = dinner_sat[5];
+
+  document.getElementById("ccd").innerHTML = dinner_sun[0];
+  document.getElementById("med").innerHTML = dinner_sun[1];
+  document.getElementById("vegd").innerHTML = dinner_sun[2];
+  document.getElementById("pizd").innerHTML = dinner_sun[3];
+  document.getElementById("grd").innerHTML = dinner_sun[4];
+  document.getElementById("deld").innerHTML = dinner_sun[5];
+
+//SOUP//
+  document.getElementById("soup1").innerHTML = soup_mon[0];
+  document.getElementById("soup2").innerHTML = soup_mon[1];
+
+  document.getElementById("soup1").innerHTML = soup_tue[0];
+  document.getElementById("soup2").innerHTML = soup_tue[1];
+
+  document.getElementById("soup1").innerHTML = soup_wed[0];
+  document.getElementById("soup2").innerHTML = soup_wed[1];
+
+  document.getElementById("soup1").innerHTML = soup_thu[0];
+  document.getElementById("soup2").innerHTML = soup_thu[1];
+
+  document.getElementById("soup1").innerHTML = soup_fri[0];
+  document.getElementById("soup2").innerHTML = soup_fri[1];
+
+  document.getElementById("soup1").innerHTML = soup_sat[0];
+  document.getElementById("soup2").innerHTML = soup_sat[1];
+
+  document.getElementById("soup1").innerHTML = soup_sun[0];
+  document.getElementById("soup2").innerHTML = soup_sun[1];
+</script>
 <footer>
 
 </footer>
