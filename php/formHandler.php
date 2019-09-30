@@ -27,6 +27,5 @@ if($_POST['submit'] == "Update Menu")
     header("Location: formSubmit.html");
     exit;
   }
-  ?>
 
 ?>
