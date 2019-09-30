@@ -20,7 +20,7 @@ if($_POST['submit'] == "Update Menu")
   }
   else
   {
-    $ret = file_put_contents('/tmp/mydata.txt', $data, FILE_APPEND | LOCK_EX);
+    $ret = file_put_contents('mydata.txt', $data, FILE_APPEND | LOCK_EX);
     fwrite($fs,$varDay . ", " . $varMeal . "\n");
     fclose($fs);
 
