@@ -20,7 +20,7 @@ if($_POST['submit'] == "Update Menu")
   }
   else
   {
-    $fs = fopen("mydata.txt","w");
+    $fs = fopen("/var/www/997-augie/ODH/php/mydata.txt","w");
     fwrite($fs,$varDay . ", " . $varMeal . "\n");
     fclose($fs);
 
