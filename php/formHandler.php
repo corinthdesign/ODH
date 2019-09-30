@@ -22,7 +22,7 @@ if($_POST['submit'] == "Update Menu")
 //Write Data to file/mySQLserver Section
   else
   {
-    $fs = fopen("data/mydata.csv","a");
+    $fs = fopen("data/mydata.txt","a");
     fwrite($fs,$varDay . ", " . $varMeal . "\n");
     fclose($fs);
 
@@ -35,7 +35,8 @@ if($_POST['submit'] == "Update Menu")
       }
 
         // Attempt insert query execution
-          $sql = "INSERT INTO menutest (day, meal) VALUES ($varDay, $varMeal)";
+          $sql = "INSERT INTO menutest (day, meal)
+          VALUES ($varDay, $varMeal)";
           if(mysqli_query($link, $sql)){
             echo "Records inserted successfully.";
           } else{
