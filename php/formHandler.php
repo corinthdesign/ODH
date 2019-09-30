@@ -24,7 +24,7 @@ if($_POST['submit'] == "Update Menu")
     fwrite($fs,$varDay . ", " . $varMeal . "\n");
     fclose($fs);
 
-    header("Location: formSubmit.html");
+    header("Location: ../formSubmit.html");
     exit;
   }
 
