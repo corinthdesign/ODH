@@ -1,6 +1,10 @@
 <DOCTYPE! html>
 <head>
 <link rel="stylesheet" href="interface.css">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -13,10 +17,12 @@
   <p style="padding-top: 1em; margin: 0 auto; text-align: center;">*Please direct any bug-fixes to <a href="mailto:tklopfenstein@augie.edu" target="_blank" style="color: #262626;">tklopfenstein@augie.edu</a></p>
   </section>
 <section class="fields">
-    <form class="parameters">
+  <form action="php/formHandler.php" method="post">
+    <div class="parameters">
       <div class="day_selection">
-          <h3>Which Day?</h3>
-          <select>
+          <label for="day_select">Which Day?</label>
+          <select id="day_select" name="day">
+              <option id="day" name="day" value="N/A"><label></label><br>
             	<option id="day" name="day" value="Monday"><label> Monday</label><br>
             	<option id="day" name="day" value="Tuesday"><label> Tuesday</label><br>
             	<option id="day" name="day" value="Wednesday"><label> Wednesday</label><br>
@@ -26,18 +32,17 @@
             	<option id="day" name="day" value="Sunday"><label> Sunday</label><br>
           </select>
       </div>
-      <div class="meal_selection">
-          <h3>Which Meal?</h3>
-          <select>
+      <div class="meal_selection" id="otherFieldDiv">
+          <label>Which Meal?</label>
+          <select id="otherField" name="meal">
+              <option name="meal" value="N/A"><label></label><br>
               <option name="meal" value="Breakfast"><label> Breakfast</label><br>
               <option name="meal" value="Brunch" checked><label> Brunch</label><br>
               <option name="meal" value="Lunch"><label> Lunch</label><br>
               <option name="meal" value="Dinner"><label> Dinner</label><br>
           </select>
       </div>
-      </form>
-
-      <form>
+      </div>
       <div>
 	<a href="chefs_corner.html" target=_blank ><h3>Chef's Corner</h3></a>
   <input style="border-radius: 100000px 0 0 100000px;" type="text" placeholder="Breakfast"></input>
@@ -86,7 +91,7 @@
   <input style="border-radius: 0 100000px 100000px 0;" type="text" class="soups" placeholder="Soup 2"></input>
       </div>
       <div>
-        <input id="submit" type="submit" value="Update Menu"></input>
+        <input id="submit" type="submit" name="submit" value="Update Menu"></input>
       </div>
 </section>
 <section class="preview">
@@ -139,7 +144,6 @@
     </tr>
   </table>
 </section>
-
 </body>
 
 <script>
@@ -410,6 +414,7 @@
   document.getElementById("soup1").innerHTML = soup_sun[0];
   document.getElementById("soup2").innerHTML = soup_sun[1];
 </script>
+
 <footer>
 
 </footer>

@@ -104,6 +104,11 @@ p, label {
   padding-right: 30vw;
 }
 
+.day_selection label, .meal_selection label {
+  position: relative;
+  left: 10.5em;
+}
+
 .day_selection h3, .day_selection select, .meal_selection h3, .meal_selection select {
   text-align: center;
   display: block;
