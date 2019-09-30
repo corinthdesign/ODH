@@ -27,7 +27,7 @@ if($_POST['submit'] == "Update Menu")
     fclose($fs);
 
 //mySQLserver connection
-    $link = mysqli_connect("localhost", "root", "password", "menu");
+    $link = mysqli_connect("localhost", "tim", "password", "menu");
 
     // Check connection
       if($link === false){
