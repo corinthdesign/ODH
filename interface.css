@@ -34,7 +34,7 @@ body{
   background-position: center;
   background-size: contain;
   width: 80%;
-  margin: 0 auto;
+  margin: 2em auto 0 auto;
   min-width: 265px;
   height: 12%;
 }
