@@ -8,6 +8,10 @@ body{
 	overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .menu {
 	margin: 0;
 	display: block;
@@ -61,7 +65,107 @@ h3 {
 	font-family: sans-serif;
 	color: #545454;
 	text-transform: uppercase;
+  transition: all 0.35s ease;
+}
 
+.link {
+  width: 8.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.link a {
+  color: #545454;
+  transition: all 0.2s ease;
+}
+
+.link a:hover, .veglink a:hover {
+  color: #0090ff;
+}
+
+.link:hover {
+  color: #949494;
+  width: 20em;
+}
+
+.pizlink {
+  width: 7.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.pizlink:hover {
+  color: #949494;
+  width: 25em;
+}
+
+.pizlink a {
+  color: #545454;
+  transition: all 0.2s ease;
+}
+
+.pizlink a:hover {
+  color: #0090ff;
+}
+
+.grilllink {
+  width: 5.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.grilllink:hover {
+  color: #949494;
+  width: 25em;
+}
+
+.grilllink a {
+  color: #545454;
+  transition: all 0.2s ease;
+}
+
+.grilllink a:hover {
+  color: #0090ff;
+}
+
+.veglink {
+  width: 13em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.veglink:hover {
+  color: #949494;
+  width: 25em;
+}
+
+.veglink a {
+  color: #545454;
+  transition: all 0.2s ease;
+}
+
+.veglink a:hover {
+  color: #0090ff;
+}
+
+.link a {
+  color: #545454;
+  text-decoration: underline;
+}
+
+.link_none {
+  color: #545454;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.link_none:hover {
+  color: #0090ff;
+  width: 25em;
 }
 
 p, label {
