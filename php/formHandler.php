@@ -11,8 +11,13 @@ if($_POST['submit'] == "Update Menu")
   {
     $errorMessage .= "<li>Please select with meal you are submitting</li>";
   }
+  if(empty($_POST['item']))
+  {
+    $errorMessage .= "<li>Please enter a menu item to update</li>";
+  }
     $varDay = $_POST['day'];
     $varMeal = $_POST['meal'];
+    $varItem = $_POST['item'];
   }
   if($errorMessage != "")
   {
@@ -23,7 +28,7 @@ if($_POST['submit'] == "Update Menu")
   else
   {
     $fs = fopen("data/mydata.txt","a");
-    fwrite($fs,$varDay . ", " . $varMeal . "\n");
+    fwrite($fs,$varDay . ", " . $varMeal . ", " . $varItem . "\n");
     fclose($fs);
 
 //mySQLserver connection
@@ -35,7 +40,7 @@ if($_POST['submit'] == "Update Menu")
       }
 
         // Attempt insert query execution
-          $sql = "INSERT INTO menutest SET day = '$varDay', meal = '$varMeal'";
+          $sql = "INSERT INTO menutest SET day = '$varDay', meal = '$varMeal', item = '$varItem'";
           if(mysqli_query($link, $sql)){
             echo "Records inserted successfully.";
           } else{
