@@ -6,7 +6,7 @@ if($_POST['submit'] == "Update Menu")
   {
     $errorMessage .= "<li>Please select which day you are submitting.</li>";
   }
-  if(empty($_POST['formName']))
+  if(empty($_POST['meal']))
   {
     $errorMessage .= "<li>Please select with meal you are submitting</li>";
   }
