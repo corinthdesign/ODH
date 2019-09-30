@@ -40,7 +40,7 @@ if($_POST['submit'] == "Update Menu")
       }
 
         // Attempt insert query execution
-          $sql = "INSERT INTO chefsCorner SET day = '$varDay', meal = '$varMeal', item = '$varItem'";
+          $sql = "REPLACE INTO chefsCorner SET day = '$varDay', meal = '$varMeal', item = '$varItem'";
           if(mysqli_query($link, $sql)){
             echo "Records inserted successfully.";
           } else{
