@@ -20,17 +20,9 @@ if($_POST['submit'] == "Update Menu")
   }
   else
   {
-    $ret = file_put_contents('mydata.txt', $data, FILE_APPEND | LOCK_EX);
-        if($ret === false) {
-            die('There was an error writing this file');
-        }
-        if else {
-            echo "$ret bytes written to file";
-        }
-    }
-    else {
-       die('no post data to process');
-    }
+    $ret = file_put_contents('/tmp/mydata.txt', $data, FILE_APPEND | LOCK_EX);
+    fwrite($fs,$varDay . ", " . $varMeal . "\n");
+    fclose($fs);
 
     header("Location: ../formSubmit.html");
     exit;
