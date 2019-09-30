@@ -27,7 +27,7 @@ if($_POST['submit'] == "Update Menu")
 //Write Data to file/mySQLserver Section
   else
   {
-    $fs = fopen("data/mydata.txt","a");
+    $fs = fopen("data/datalog.txt","a");
     fwrite($fs,$varDay . ", " . $varMeal . ", " . $varItem . "\n");
     fclose($fs);
 
@@ -40,7 +40,7 @@ if($_POST['submit'] == "Update Menu")
       }
 
         // Attempt insert query execution
-          $sql = "UPDATE chefsCorner SET item = '$varItem' WHERE day ='$varDay' AND meal ='$varMeal'";
+          $sql = "UPDATE chefsCorner SET item = '$varItem' WHERE day = '$varDay' AND meal = '$varMeal'";
           if(mysqli_query($link, $sql)){
             echo "Records inserted successfully.";
           } else{
