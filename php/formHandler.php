@@ -1,6 +1,7 @@
 <?php
 if($_POST['submit'] == "Update Menu")
 {
+//Error Reporting and Validation
   $errorMessage = "";
   if(empty($_POST['day']))
   {
@@ -18,14 +19,33 @@ if($_POST['submit'] == "Update Menu")
     echo("<p>There was an error:</p>\n");
     echo("<ul>" . $errorMessage . "</ul>\n");
   }
+//Write Data to file/mySQLserver Section
   else
   {
     $fs = fopen("data/mydata.csv","a");
     fwrite($fs,$varDay . ", " . $varMeal . "\n");
     fclose($fs);
 
-    header("Location: ../formSubmit.html");
-    exit;
-  }
+//mySQLserver connection
+    $link = mysqli_connect("localhost", "root", "", "menu");
 
+    // Check connection
+      if($link === false){
+          die("ERROR: Could not connect. " . mysqli_connect_error());
+      }
+
+        // Attempt insert query execution
+          $sql = "INSERT INTO menutest (day, meal) VALUES ($varDay, $varMeal)";
+          if(mysqli_query($link, $sql)){
+            echo "Records inserted successfully.";
+          } else{
+            echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+          }
+
+    // Close connection
+      mysqli_close($link);
+
+header("Location: ../formSubmit.html");
+exit;
+  }
 ?>
