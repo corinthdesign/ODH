@@ -35,12 +35,11 @@ if($_POST['submit'] == "Update Menu")
       }
 
         // Attempt insert query execution
-          $sql = "INSERT INTO menutest (day, meal)
-          VALUES ($varDay, $varMeal)";
+          $sql = "INSERT INTO menutest SET day = '$varDay', meal = '$varMeal'";
           if(mysqli_query($link, $sql)){
             echo "Records inserted successfully.";
           } else{
-            echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+            echo "ERROR: Could not execute $sql. " . mysqli_error($link);
           }
 
     // Close connection
