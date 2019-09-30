@@ -24,7 +24,7 @@ if($_POST['submit'] == "Update Menu")
         if($ret === false) {
             die('There was an error writing this file');
         }
-        else {
+        if else {
             echo "$ret bytes written to file";
         }
     }
