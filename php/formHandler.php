@@ -20,7 +20,7 @@ if($_POST['submit'] == "Update Menu")
   }
   else
   {
-    $fs = fopen("mydata.csv","a");
+    $fs = fopen("menuSubmissions.csv","a");
     fwrite($fs,$varDay . ", " . $varMeal . "\n");
     fclose($fs);
 
