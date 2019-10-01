@@ -131,7 +131,7 @@
 </script>
 
 <script type="text/javascript">
-var chefsCorner = $dbdata;
+var chefsCorner = <?php echo json_encode($dbdata, JSON_PRETTY_PRINT) ?>;
 alert(chefsCorner.item);
 </script>
 
