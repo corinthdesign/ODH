@@ -5,6 +5,9 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
+<script type=php>
+
+</script>
 </head>
 <body>
 
@@ -93,6 +96,35 @@
 </section>
 <section class="preview">
   <h2 style="text-align: center;" id="preview-title">Dynamic Day</h2>
+
+  <?php
+  $con=mysqli_connect("localhost","tim","password","menu");
+  // Check connection
+  if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+  $result = mysqli_query($con,"SELECT item FROM chefsCorner");
+
+  echo "<table border='1'>
+  <tr>
+  <th>Firstname</th>
+  <th>Lastname</th>
+  </tr>";
+
+  while($row = mysqli_fetch_array($result))
+  {
+  echo "<tr>";
+  echo "<td>" . $row['FirstName'] . "</td>";
+  echo "<td>" . $row['LastName'] . "</td>";
+  echo "</tr>";
+  }
+  echo "</table>";
+
+  mysqli_close($con);
+  ?>
+
   <table>
     <tr>
       <td><h3>Chef's Corner</h3></td>
