@@ -5,9 +5,24 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
-<script type=php>
+<!--Retrieve JSON data-->
+  <script>
+      function reqListener () {
+        console.log(this.responseText);
+      }
 
-</script>
+      var oReq = new XMLHttpRequest(); // New request object
+      oReq.onload = function() {
+          // This is where you handle what to do with the response.
+          // The actual data is found on this.responseText
+          alert(this.responseText); // Will alert: 42
+      };
+      oReq.open("get", "get-data.php", true);
+      //                               ^ Don't block the rest of the execution.
+      //                                 Don't wait until the request finishes to
+      //                                 continue.
+      oReq.send();
+  </script>
 </head>
 <body>
 
@@ -96,39 +111,6 @@
 </section>
 <section class="preview">
   <h2 style="text-align: center;" id="preview-title">Dynamic Day</h2>
-
-<script type=php>
-
-  // Initialize variable for database credentials
-  $dbhost = 'localhost';
-  $dbuser = 'tim';
-  $dbpass = 'password';
-  $dbname = 'menu';
-
-  //Create database connection
-    $dblink = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
-
-  //Check connection was successful
-    if ($dblink->connect_errno) {
-       printf("Failed to connect to database");
-       exit();
-    }
-
-  //Fetch 3 rows from actor table
-    $result = $dblink->query("SELECT item FROM chefsCorner");
-
-  //Initialize array variable
-    $dbdata = array();
-
-  //Fetch into associative array
-    while ( $row = $result->fetch_assoc())  {
-  	$dbdata[]=$row;
-    }
-
-  //Print array in JSON format
-   echo json_encode($dbdata);
-
-</script>
 
 <script type="text/javascript">
 var chefsCorner = <?php echo json_encode($dbdata, JSON_PRETTY_PRINT) ?>;
