@@ -7,30 +7,14 @@
   crossorigin="anonymous"></script>
 <!--Retrieve JSON data-->
   <script>
-      function reqListener () {
-        console.log(this.responseText);
-      }
-
-    //  var chefsCornerJSON = this.responseText;
-    //  obj = JSON.parse(chefsCornerJSON);
-
-      var oReq = new XMLHttpRequest(); // New request object
-      oReq.onload = function() {
-          // This is where you handle what to do with the response.
-          // The actual data is found on this.responseText
-          alert(this.responseText); // Will alert: JSON object contents
-          var ccdata = JSON_parse(oReq);
-          document.getElementById("ccb").innerHTML = ccdata[0];
-
-          console.log(obj.item);
-          // expected output: 42
-
-      };
-      oReq.open("get", "php/get-data.php", true);
-      //                               ^ Don't block the rest of the execution.
-      //                                 Don't wait until the request finishes to
-      //                                 continue.
-      oReq.send();
+    $.ajax({
+        type: 'POST',
+        url: 'support.php',
+        success: function(result) {
+            var data = jQuery.parseJSON(result);
+            alert(data.item);
+        }
+    });
   </script>
 </head>
 <body>
