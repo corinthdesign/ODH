@@ -3,7 +3,7 @@ if($_POST['submit'] == "Update Menu")
 {
 //Error Reporting and Validation
   $errorMessage = "";
-  if(empty($_POST['days']))
+  if(empty($_POST['day']))
   {
     $errorMessage .= "<li>Please select which day you are submitting.</li>";
   }
@@ -15,7 +15,7 @@ if($_POST['submit'] == "Update Menu")
   {
     $errorMessage .= "<li>Please enter a menu item to update</li>";
   }
-    $varDay = $_POST['days'];
+    $varDay = $_POST['day'];
     $varMeal = $_POST['meal'];
     $varItem = $_POST['item'];
   }

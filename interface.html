@@ -32,14 +32,15 @@
     <div class="parameters">
       <div class="day_selection">
         <label for="day_select">Which Day?</label>
-        <Select id="day_selector">
-           <option id="days" value="Monday">Monday</option>
-           <option id="days" value="Tuesday">Tuesday</option>
-           <option id="days" value="Wednesday">Wednesday</option>
-           <option id="days" value="Thursday">Thursday</option>
-           <option id="days" value="Friday">Friday</option>
-           <option id="days" value="Saturday">Saturday</option>
-           <option id="days" value="Sunday">Sunday</option>
+        <Select id="day_selector" name="day">
+           <option disabled selected value> -- select an option -- </option>
+           <option name="day" value="Monday">Monday</option>
+           <option name="day" value="Tuesday">Tuesday</option>
+           <option name="day" value="Wednesday">Wednesday</option>
+           <option name="day" value="Thursday">Thursday</option>
+           <option name="day" value="Friday">Friday</option>
+           <option name="day" value="Saturday">Saturday</option>
+           <option name="day" value="Sunday">Sunday</option>
         </Select>
       </div>
       <div class="meal_selection" id="otherFieldDiv">
