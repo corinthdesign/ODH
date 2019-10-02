@@ -11,8 +11,14 @@
         type: 'POST',
         url: 'php/get-data.php',
         success: function(result) {
-            var data = jQuery.parseJSON(result);
-            document.getElementById("ccb").innerHTML = data[0].item;
+            var ccdata = jQuery.parseJSON(result);
+            document.getElementById("ccb0").innerHTML = ccdata[0].item;
+            document.getElementById("ccb1").innerHTML = ccdata[1].item;
+            document.getElementById("ccb2").innerHTML = ccdata[2].item;
+            document.getElementById("ccb3").innerHTML = ccdata[3].item;
+            document.getElementById("ccb4").innerHTML = ccdata[4].item;
+            document.getElementById("ccb5").innerHTML = ccdata[5].item;
+            document.getElementById("ccb6").innerHTML = ccdata[6].item;
         }
     });
   </script>
@@ -103,7 +109,7 @@
         <td><h3>Soups</h3></td>
       </tr>
       <tr>
-        <td><p>Breakfast: </p><p id="ccb">Monday</p></td>
+        <td><p>Breakfast: </p><p id="ccb0">Monday</p></td>
         <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
@@ -153,7 +159,7 @@
         <td><h3>Soups</h3></td>
       </tr>
       <tr>
-        <td><p>Breakfast: </p><p id="ccb">Tuesday</p></td>
+        <td><p>Breakfast: </p><p id="ccb1">Tuesday</p></td>
         <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
@@ -203,7 +209,7 @@
         <td><h3>Soups</h3></td>
       </tr>
       <tr>
-        <td><p>Breakfast: </p><p id="ccb">Wednesday</p></td>
+        <td><p>Breakfast: </p><p id="ccb2">Wednesday</p></td>
         <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
@@ -253,7 +259,7 @@
         <td><h3>Soups</h3></td>
       </tr>
       <tr>
-        <td><p>Breakfast: </p><p id="ccb">Thursday</p></td>
+        <td><p>Breakfast: </p><p id="ccb3">Thursday</p></td>
         <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
@@ -303,7 +309,7 @@
         <td><h3>Soups</h3></td>
       </tr>
       <tr>
-        <td><p>Breakfast: </p><p id="ccb">Friday</p></td>
+        <td><p>Breakfast: </p><p id="ccb4">Friday</p></td>
         <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
@@ -353,7 +359,7 @@
         <td><h3>Soups</h3></td>
       </tr>
       <tr>
-        <td><p>Breakfast: </p><p id="ccb">Saturday</p></td>
+        <td><p>Breakfast: </p><p id="ccb5">Saturday</p></td>
         <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
@@ -403,7 +409,7 @@
         <td><h3>Soups</h3></td>
       </tr>
       <tr>
-        <td><p>Breakfast: </p><p id="ccb">Sunday</p></td>
+        <td><p>Breakfast: </p><p id="ccb6">Sunday</p></td>
         <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
         <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
