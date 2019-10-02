@@ -39,7 +39,7 @@ if($_POST['submit'] == "Update Menu")
         // Attempt insert query execution
           $sql = "UPDATE daily SET chefs = '$varChefs' WHERE day = '$varDay' AND meal = '$varMeal'";
 
-          if(mysqli_multi_query($link, $sql){
+          if(mysqli_query($link, $sql){
             echo "Records inserted successfully.";
           } else{
             echo "ERROR: Could not execute $sql. " . mysqli_error($link);
