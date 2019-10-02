@@ -230,7 +230,7 @@ p, label {
 }
 
 .fields input {
-  width: 115px;
+  width: 100%;
 }
 
 .days {
