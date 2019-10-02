@@ -11,14 +11,14 @@
         type: 'POST',
         url: 'php/get-data.php',
         success: function(result) {
-            var ccdata = jQuery.parseJSON(result);
-            document.getElementById("ccb0").innerHTML = ccdata[0].item;
-            document.getElementById("ccb1").innerHTML = ccdata[1].item;
-            document.getElementById("ccb2").innerHTML = ccdata[2].item;
-            document.getElementById("ccb3").innerHTML = ccdata[3].item;
-            document.getElementById("ccb4").innerHTML = ccdata[4].item;
-            document.getElementById("ccb5").innerHTML = ccdata[5].item;
-            document.getElementById("ccb6").innerHTML = ccdata[6].item;
+            var data = jQuery.parseJSON(result);
+            document.getElementById("ccb0").innerHTML = data[0].item;
+            document.getElementById("ccb1").innerHTML = data[1].item;
+            document.getElementById("ccb2").innerHTML = data[2].item;
+            document.getElementById("ccb3").innerHTML = data[3].item;
+            document.getElementById("ccb4").innerHTML = data[4].item;
+            document.getElementById("ccb5").innerHTML = data[5].item;
+            document.getElementById("ccb6").innerHTML = data[6].item;
         }
     });
   </script>
