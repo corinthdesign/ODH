@@ -155,18 +155,6 @@
 </section>
 </body>
 
-<script type="javascript">
-
-$(document).ready(function(){
-  $(function() {
-        $('#day_select').change(function(){
-            $('.day').hide();
-            $('#' + $(this).val()).show();
-        });
-    });
-});
-
-</script>
 
 <script>
 /*  //MONDAY//
@@ -435,6 +423,19 @@ $(document).ready(function(){
   document.getElementById("soup1").innerHTML = soup_sun[0];
   document.getElementById("soup2").innerHTML = soup_sun[1];
   */
+</script>
+
+<script type="javascript">
+
+$(document).ready(function(){
+  $(function() {
+        $('#day_select').change(function(){
+            $('.day').hide();
+            $('#' + $(this).val()).show();
+        });
+    });
+});
+
 </script>
 <footer>
 
