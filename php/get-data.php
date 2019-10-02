@@ -4,7 +4,7 @@
   $dbhost = 'localhost';
   $dbuser = 'tim';
   $dbpass = 'password';
-  $dbname = 'daily';
+  $dbname = 'menu';
 
   //Create database connection
     $dblink = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
@@ -16,7 +16,7 @@
     }
 
   //Fetch rows from Chefs Corner table
-    $result = $dblink->query("SELECT item FROM chefsCorner");
+    $result = $dblink->query("SELECT chefs FROM daily");
 
   //Initialize array variable
     $dbdata = array();
