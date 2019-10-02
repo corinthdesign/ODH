@@ -31,7 +31,7 @@ if($_POST['submit'] == "Update Menu")
   else
   {
     $fs = fopen("data/datalog.txt","a");
-    fwrite($fs,$varDay . ", " . $varMeal . ", " . $varChefs . ", " . $varMain . "\n");
+    fwrite($fs,$varDay . ", " . $varMeal . ", " . $varChefs . ", " . $varMain . ", " . $varVeg . ", " . $varPiz . ", " . $varGrill . ", " . $varDeli . ", " . $varSoup . "\n");
     fclose($fs);
 
 //mySQLserver connection
@@ -52,10 +52,17 @@ if($_POST['submit'] == "Update Menu")
           $sql7 = "UPDATE daily SET soup = '$varSoup' WHERE day = '$varDay' AND meal = '$varMeal'";
           $sql8 = "UPDATE daily SET soup2 = '$varSoup2' WHERE day = '$varDay' AND meal = '$varMeal'";
 
-          if(mysqli_query($link, $sql)){
+          if(mysqli_query($link, $sql1, $sql2, $sql3, $sql4, $sql5, $sql6, $sql7, $sql8)){
             echo "Records inserted successfully.";
           } else{
-            echo "ERROR: Could not execute $sql. " . mysqli_error($link);
+            echo "ERROR: Could not execute $sql1. " . mysqli_error($link);
+            echo "ERROR: Could not execute $sql2. " . mysqli_error($link);
+            echo "ERROR: Could not execute $sql3. " . mysqli_error($link);
+            echo "ERROR: Could not execute $sql4. " . mysqli_error($link);
+            echo "ERROR: Could not execute $sql5. " . mysqli_error($link);
+            echo "ERROR: Could not execute $sql6. " . mysqli_error($link);
+            echo "ERROR: Could not execute $sql7. " . mysqli_error($link);
+            echo "ERROR: Could not execute $sql8. " . mysqli_error($link);
           }
 
     // Close connection
