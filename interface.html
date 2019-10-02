@@ -12,7 +12,7 @@
         url: 'php/get-data.php',
         success: function(result) {
             var ccdata = jQuery.parseJSON(result);
-            alert.console(result);
+            alert(result);
             document.getElementById("ccb0").innerHTML = ccdata[0].item;
             document.getElementById("ccb1").innerHTML = ccdata[1].item;
             document.getElementById("ccb2").innerHTML = ccdata[2].item;
