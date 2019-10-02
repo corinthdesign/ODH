@@ -20,7 +20,7 @@
           // The actual data is found on this.responseText
           alert(this.responseText); // Will alert: JSON object contents
           var ccdata = JSON_parse(this.responseText);
-          document.getElementById("ccb").innerHTML = ccdata[0];
+          document.getElementById("ccb").innerHTML = oReq[0];
 
           console.log(obj.item);
           // expected output: 42
