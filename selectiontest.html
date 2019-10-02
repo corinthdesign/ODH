@@ -14,11 +14,33 @@
 <div id="yellow" class="colors" style="display:none"> yellow.. </div>
 <div id="blue" class="colors" style="display:none"> blue.. </div>
 
+<select id="day_select">
+    <option disabled selected value> -- select an option -- </option><br>
+    <option id="Monday" class="day" value="Monday"><label> Monday</label><br>
+    <option id="Tuesday" class="day" value="Tuesday"><label> Tuesday</label><br>
+    <option id="Wednesday" class="day" value="Wednesday"><label> Wednesday</label><br>
+    <option id="Thursday" class="day" value="Thursday"><label> Thursday</label><br>
+    <option id="Friday" class="day" value="Friday"><label> Friday</label><br>
+    <option id="Saturday" class="day" value="Saturday"><label> Saturday</label><br>
+    <option id="Sunday" class="day" value="Sunday"><label> Sunday</label><br>
+</select>
+
 <script>
 
     $(function() {
         $('#colorselector').change(function(){
             $('.colors').hide();
+            $('#' + $(this).val()).show();
+        });
+    });
+
+</script>
+
+<script type="javascript">
+
+  $(function() {
+        $('#day_select').change(function(){
+            $('.day').hide();
             $('#' + $(this).val()).show();
         });
     });
