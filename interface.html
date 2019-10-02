@@ -102,8 +102,8 @@
         <input id="submit" type="submit" name="submit" value="Update Menu"></input>
       </div>
 </section>
-<section class="preview">
-  <h2 style="text-align: center;" id="preview-title">Dynamic Day</h2>
+<section id="monday_preview" class="previews" style="display: none;">
+  <h2 style="text-align: center;" id="preview-title">Monday's Menu</h2>
 
   <table>
     <tr>
@@ -155,8 +155,19 @@
 </section>
 </body>
 
+<script type="javascript">
+
+  $(function() {
+        $('.day_selection').change(function(){
+            $('.previews').hide();
+            $('#' + $(this).val()).show();
+        });
+    });
+
+</script>
+
 <script>
-  //MONDAY//
+/*  //MONDAY//
   var breakfast_mon = ["Turtles", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
   var brunch_mon = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
   var lunch_mon = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
@@ -423,7 +434,6 @@
   document.getElementById("soup2").innerHTML = soup_sun[1];
   */
 </script>
-
 <footer>
 
 </footer>
