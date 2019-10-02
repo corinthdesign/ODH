@@ -19,7 +19,7 @@
           // This is where you handle what to do with the response.
           // The actual data is found on this.responseText
           alert(this.responseText); // Will alert: JSON object contents
-          var ccdata = this.responseText;
+          var ccdata = JSON_parse(this.responseText);
           document.getElementById("ccb").innerHTML = ccdata[0];
 
           console.log(obj.item);
