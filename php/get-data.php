@@ -4,7 +4,7 @@
   $dbhost = 'localhost';
   $dbuser = 'tim';
   $dbpass = 'password';
-  $dbname = 'menu';
+  $dbname = 'daily';
 
   //Create database connection
     $dblink = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
