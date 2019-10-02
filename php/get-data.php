@@ -1,4 +1,4 @@
-//Chefs Corner
+
 <?php
   // Initialize variable for database credentials
   $dbhost = 'localhost';
