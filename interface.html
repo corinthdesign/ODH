@@ -157,12 +157,14 @@
 
 <script type="javascript">
 
+$(document).ready(function(){
   $(function() {
         $('#day_select').change(function(){
             $('.day').hide();
             $('#' + $(this).val()).show();
         });
     });
+});
 
 </script>
 
