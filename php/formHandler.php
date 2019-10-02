@@ -31,7 +31,7 @@ if($_POST['submit'] == "Update Menu")
   else
   {
     $fs = fopen("data/datalog.txt","a");
-    fwrite($fs,$varDay . ", " . $varMeal . ", " . $varChefs . "\n");
+    fwrite($fs,$varDay . ", " . $varMeal . ", " . $varChefs . ", " . $varMain . "\n");
     fclose($fs);
 
 //mySQLserver connection
