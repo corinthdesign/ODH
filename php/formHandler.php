@@ -56,13 +56,6 @@ if($_POST['submit'] == "Update Menu")
             echo "Records inserted successfully.";
           } else{
             echo "ERROR: Could not execute $sql. " . mysqli_error($link);
-            echo "ERROR: Could not execute $sql2. " . mysqli_error($link);
-            echo "ERROR: Could not execute $sql3. " . mysqli_error($link);
-            echo "ERROR: Could not execute $sql4. " . mysqli_error($link);
-            echo "ERROR: Could not execute $sql5. " . mysqli_error($link);
-            echo "ERROR: Could not execute $sql6. " . mysqli_error($link);
-            echo "ERROR: Could not execute $sql7. " . mysqli_error($link);
-            echo "ERROR: Could not execute $sql8. " . mysqli_error($link);
           }
 
     // Close connection
