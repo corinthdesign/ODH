@@ -11,7 +11,7 @@
         type: 'POST',
         url: 'php/get-data.php',
         success: function(result) {
-            var data = parseJSON(result);
+            var data = jquery.parseJSON(result);
             alert(data);
         }
     });
