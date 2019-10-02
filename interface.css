@@ -233,7 +233,7 @@ p, label {
   width: 115px;
 }
 
-#monday_preview {
+.days {
   display: inline-block;
   position: relative;
   float: right;
@@ -242,11 +242,11 @@ p, label {
   padding-right: 5em;
 }
 
-#monday_preview div {
+.days div {
   padding: 1em;
 }
 
-#monday_preview table {
+.days table {
   background-color: #f1f1f1;
   padding: 1em;
 }

@@ -5,42 +5,376 @@
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
 </head>
-<Select id="colorselector">
-   <option value="red">Red</option>
-   <option value="yellow">Yellow</option>
-   <option value="blue">Blue</option>
+<label for="day_select">Which Day?</label>
+<Select id="day_selector">
+   <option value="Monday">Monday</option>
+   <option value="Tuesday">Tuesday</option>
+   <option value="Wednesday">Wednesday</option>
+   <option value="Thursday">Thursday</option>
+   <option value="Friday">Friday</option>
+   <option value="Saturday">Saturday</option>
+   <option value="Sunday">Sunday</option>
 </Select>
-<div id="red" class="colors" style="display:none"> red... </div>
-<div id="yellow" class="colors" style="display:none"> yellow.. </div>
-<div id="blue" class="colors" style="display:none"> blue.. </div>
+<!--
+<div id="Monday" class="days" style="display:none"> Monday... </div>
+<div id="Tuesday" class="days" style="display:none"> Tuesday.. </div>
+<div id="blue" class="days" style="display:none"> blue.. </div>
+-->
+<div class="days" id="Monday" style="display: none;">
+  <table>
+    <tr>
+      <td><h3>Chef's Corner</h3></td>
+      <td><h3>The Main Event</h3></td>
+      <td><h3>The Vegetarian Option</h3></td>
+      <td><h3>Pizza Station</h3></td>
+      <td><h3>The Grill</h3></td>
+      <td><h3>The Deli</h3></td>
+      <td><h3>Soups</h3></td>
+    </tr>
+    <tr>
+      <td><p>Breakfast: </p><p id="ccb">Monday</p></td>
+      <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="grb"> Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="delb">Dynamic Content</p></td>
+      <td><p>Soup 1: </p><p id="soup1">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Brunch (Lines 1&2): </p><p id="ccbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="mebr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="vegbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="pizbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="grbr"> Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="delbr">Dynamic Content</p></td>
+      <td><p>Soup 2: </p><p id="soup2">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Lunch: </p><p id="ccl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="mel">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="vegl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="pizl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="grl"> Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="dell">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Dinner: </p><p id="ccd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="med">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="vegd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="pizd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="grd"> Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="deld">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
 
-<select id="day_select">
-    <option disabled selected value> -- select an option -- </option><br>
-    <option id="Monday" class="day" value="Monday"><label> Monday</label><br>
-    <option id="Tuesday" class="day" value="Tuesday"><label> Tuesday</label><br>
-    <option id="Wednesday" class="day" value="Wednesday"><label> Wednesday</label><br>
-    <option id="Thursday" class="day" value="Thursday"><label> Thursday</label><br>
-    <option id="Friday" class="day" value="Friday"><label> Friday</label><br>
-    <option id="Saturday" class="day" value="Saturday"><label> Saturday</label><br>
-    <option id="Sunday" class="day" value="Sunday"><label> Sunday</label><br>
-</select>
+<div class="days" id="Tuesday" style="display: none;">
+  <table>
+    <tr>
+      <td><h3>Chef's Corner</h3></td>
+      <td><h3>The Main Event</h3></td>
+      <td><h3>The Vegetarian Option</h3></td>
+      <td><h3>Pizza Station</h3></td>
+      <td><h3>The Grill</h3></td>
+      <td><h3>The Deli</h3></td>
+      <td><h3>Soups</h3></td>
+    </tr>
+    <tr>
+      <td><p>Breakfast: </p><p id="ccb">Tuesday</p></td>
+      <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="grb"> Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="delb">Dynamic Content</p></td>
+      <td><p>Soup 1: </p><p id="soup1">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Brunch (Lines 1&2): </p><p id="ccbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="mebr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="vegbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="pizbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="grbr"> Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="delbr">Dynamic Content</p></td>
+      <td><p>Soup 2: </p><p id="soup2">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Lunch: </p><p id="ccl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="mel">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="vegl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="pizl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="grl"> Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="dell">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Dinner: </p><p id="ccd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="med">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="vegd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="pizd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="grd"> Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="deld">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
 
+<div class="days" id="Wednesday" style="display: none;">
+  <table>
+    <tr>
+      <td><h3>Chef's Corner</h3></td>
+      <td><h3>The Main Event</h3></td>
+      <td><h3>The Vegetarian Option</h3></td>
+      <td><h3>Pizza Station</h3></td>
+      <td><h3>The Grill</h3></td>
+      <td><h3>The Deli</h3></td>
+      <td><h3>Soups</h3></td>
+    </tr>
+    <tr>
+      <td><p>Breakfast: </p><p id="ccb">Wednesday</p></td>
+      <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="grb"> Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="delb">Dynamic Content</p></td>
+      <td><p>Soup 1: </p><p id="soup1">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Brunch (Lines 1&2): </p><p id="ccbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="mebr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="vegbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="pizbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="grbr"> Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="delbr">Dynamic Content</p></td>
+      <td><p>Soup 2: </p><p id="soup2">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Lunch: </p><p id="ccl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="mel">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="vegl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="pizl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="grl"> Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="dell">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Dinner: </p><p id="ccd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="med">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="vegd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="pizd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="grd"> Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="deld">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+
+<div class="days" id="Thursday" style="display: none;">
+  <table>
+    <tr>
+      <td><h3>Chef's Corner</h3></td>
+      <td><h3>The Main Event</h3></td>
+      <td><h3>The Vegetarian Option</h3></td>
+      <td><h3>Pizza Station</h3></td>
+      <td><h3>The Grill</h3></td>
+      <td><h3>The Deli</h3></td>
+      <td><h3>Soups</h3></td>
+    </tr>
+    <tr>
+      <td><p>Breakfast: </p><p id="ccb">Thursday</p></td>
+      <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="grb"> Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="delb">Dynamic Content</p></td>
+      <td><p>Soup 1: </p><p id="soup1">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Brunch (Lines 1&2): </p><p id="ccbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="mebr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="vegbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="pizbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="grbr"> Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="delbr">Dynamic Content</p></td>
+      <td><p>Soup 2: </p><p id="soup2">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Lunch: </p><p id="ccl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="mel">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="vegl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="pizl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="grl"> Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="dell">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Dinner: </p><p id="ccd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="med">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="vegd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="pizd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="grd"> Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="deld">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+
+<div class="days" id="Friday" style="display: none;">
+  <table>
+    <tr>
+      <td><h3>Chef's Corner</h3></td>
+      <td><h3>The Main Event</h3></td>
+      <td><h3>The Vegetarian Option</h3></td>
+      <td><h3>Pizza Station</h3></td>
+      <td><h3>The Grill</h3></td>
+      <td><h3>The Deli</h3></td>
+      <td><h3>Soups</h3></td>
+    </tr>
+    <tr>
+      <td><p>Breakfast: </p><p id="ccb">Friday</p></td>
+      <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="grb"> Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="delb">Dynamic Content</p></td>
+      <td><p>Soup 1: </p><p id="soup1">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Brunch (Lines 1&2): </p><p id="ccbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="mebr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="vegbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="pizbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="grbr"> Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="delbr">Dynamic Content</p></td>
+      <td><p>Soup 2: </p><p id="soup2">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Lunch: </p><p id="ccl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="mel">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="vegl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="pizl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="grl"> Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="dell">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Dinner: </p><p id="ccd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="med">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="vegd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="pizd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="grd"> Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="deld">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+
+<div class="days" id="Saturday" style="display: none;">
+  <table>
+    <tr>
+      <td><h3>Chef's Corner</h3></td>
+      <td><h3>The Main Event</h3></td>
+      <td><h3>The Vegetarian Option</h3></td>
+      <td><h3>Pizza Station</h3></td>
+      <td><h3>The Grill</h3></td>
+      <td><h3>The Deli</h3></td>
+      <td><h3>Soups</h3></td>
+    </tr>
+    <tr>
+      <td><p>Breakfast: </p><p id="ccb">Saturday</p></td>
+      <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="grb"> Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="delb">Dynamic Content</p></td>
+      <td><p>Soup 1: </p><p id="soup1">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Brunch (Lines 1&2): </p><p id="ccbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="mebr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="vegbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="pizbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="grbr"> Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="delbr">Dynamic Content</p></td>
+      <td><p>Soup 2: </p><p id="soup2">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Lunch: </p><p id="ccl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="mel">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="vegl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="pizl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="grl"> Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="dell">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Dinner: </p><p id="ccd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="med">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="vegd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="pizd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="grd"> Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="deld">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+
+<div class="days" id="Sunday" style="display: none;">
+  <table>
+    <tr>
+      <td><h3>Chef's Corner</h3></td>
+      <td><h3>The Main Event</h3></td>
+      <td><h3>The Vegetarian Option</h3></td>
+      <td><h3>Pizza Station</h3></td>
+      <td><h3>The Grill</h3></td>
+      <td><h3>The Deli</h3></td>
+      <td><h3>Soups</h3></td>
+    </tr>
+    <tr>
+      <td><p>Breakfast: </p><p id="ccb">Sunday</p></td>
+      <td><p>Breakfast: </p><p id="meb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="vegb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="pizb">Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="grb"> Dynamic Content</p></td>
+      <td><p>Breakfast: </p><p id="delb">Dynamic Content</p></td>
+      <td><p>Soup 1: </p><p id="soup1">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Brunch (Lines 1&2): </p><p id="ccbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="mebr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="vegbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="pizbr">Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="grbr"> Dynamic Content</p></td>
+      <td><p>Brunch (Lines 1&2): </p><p id="delbr">Dynamic Content</p></td>
+      <td><p>Soup 2: </p><p id="soup2">Dynamic Content</p></td>
+    </tr>
+    <tr>
+      <td><p>Lunch: </p><p id="ccl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="mel">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="vegl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="pizl">Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="grl"> Dynamic Content</p></td>
+      <td><p>Lunch: </p><p id="dell">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Dinner: </p><p id="ccd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="med">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="vegd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="pizd">Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="grd"> Dynamic Content</p></td>
+      <td><p>Dinner: </p><p id="deld">Dynamic Content</p></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
 <script>
 
+
     $(function() {
-        $('#colorselector').change(function(){
-            $('.colors').hide();
-            $('#' + $(this).val()).show();
-        });
-    });
-
-</script>
-
-<script type="javascript">
-
-  $(function() {
-        $('#day_select').change(function(){
-            $('.day').hide();
+        $('#day_selector').change(function(){
+            $('.days').hide();
             $('#' + $(this).val()).show();
         });
     });
