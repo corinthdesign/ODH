@@ -11,9 +11,9 @@
         type: 'POST',
         url: 'php/get-data.php',
         success: function(result) {
-          var ccdata = jQuery.parseJSON(result);
-          document.getElementById("ccb0").innerHTML = ccdata[0].item;
-        },
+            var data = jQuery.parseJSON(result);
+            alert(data[0].item);
+        }
     });
   </script>
 </head>
