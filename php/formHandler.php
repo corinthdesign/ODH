@@ -11,7 +11,7 @@ if($_POST['submit'] == "Update Menu")
   {
     $errorMessage .= "<li>Please select with meal you are submitting</li>";
   }
-  if(empty($_POST['chefs'] && empty($_POST['main'] && empty($_POST['veg'] && empty($_POST['piz'] && empty($_POST['grill'] && empty($_POST['deli'] && empty($_POST['soup'] && empty($_POST['soup2']))
+  if(empty($_POST['chefs'] || empty($_POST['main'] || empty($_POST['veg'] || empty($_POST['piz'] || empty($_POST['grill'] || empty($_POST['deli'] || empty($_POST['soup'] || empty($_POST['soup2']))
   {
     $errorMessage .= "<li>Please enter at least 1 menu item to update.</li>";
   }
