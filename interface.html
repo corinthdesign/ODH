@@ -32,15 +32,15 @@
     <div class="parameters">
       <div class="day_selection">
           <label for="day_select">Which Day?</label>
-          <select id="day_select" name="day">
+          <select id="day_select">
               <option disabled selected value> -- select an option -- </option><br>
-            	<option id="day" name="day" value="Monday"><label> Monday</label><br>
-            	<option id="day" name="day" value="Tuesday"><label> Tuesday</label><br>
-            	<option id="day" name="day" value="Wednesday"><label> Wednesday</label><br>
-            	<option id="day" name="day" value="Thursday"><label> Thursday</label><br>
-            	<option id="day" name="day" value="Friday"><label> Friday</label><br>
-            	<option id="day" name="day" value="Saturday"><label> Saturday</label><br>
-            	<option id="day" name="day" value="Sunday"><label> Sunday</label><br>
+            	<option id="Monday" class="day" value="Monday"><label> Monday</label><br>
+            	<option id="Tuesday" class="day" value="Tuesday"><label> Tuesday</label><br>
+            	<option id="Wednesday" class="day" value="Wednesday"><label> Wednesday</label><br>
+            	<option id="Thursday" class="day" value="Thursday"><label> Thursday</label><br>
+            	<option id="Friday" class="day" value="Friday"><label> Friday</label><br>
+            	<option id="Saturday" class="day" value="Saturday"><label> Saturday</label><br>
+            	<option id="Sunday" class="day" value="Sunday"><label> Sunday</label><br>
           </select>
       </div>
       <div class="meal_selection" id="otherFieldDiv">
@@ -159,7 +159,7 @@
 
   $(function() {
         $('#day_select').change(function(){
-            $('.previews').hide();
+            $('.day').hide();
             $('#' + $(this).val()).show();
         });
     });
