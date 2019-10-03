@@ -10,7 +10,7 @@
         success: function(result) {
             var data = jQuery.parseJSON(result);
           /* ENABLE CODE TO SEE JSON PARSE RESULT */
-          /*  alert(result); */
+            alert(result); 
             document.getElementById("ccb0").innerHTML = data[0].chefs;
             document.getElementById("ccb1").innerHTML = data[1].chefs;
             document.getElementById("ccb2").innerHTML = data[2].chefs;
