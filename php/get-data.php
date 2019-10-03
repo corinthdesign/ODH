@@ -16,7 +16,7 @@
     }
 
   //Fetch rows from Chefs Corner table
-    $result = $dblink->query("SELECT chefs FROM daily");
+    $result = $dblink->query("SELECT * FROM daily");
 
   //Initialize array variable
     $dbdata = array();
