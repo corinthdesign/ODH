@@ -43,9 +43,9 @@ if($_POST['submit'] == "Update Menu")
       }
 
         // Attempt insert query execution
-          $sql = "UPDATE daily SET chefs = '$varChefs' WHERE day = '$varDay' AND meal = '$varMeal';
-                  UPDATE daily SET main = '$varMain' WHERE day = '$varDay' AND meal = '$varMeal';
-                  UPDATE daily SET veg = '$varVeg' WHERE day = '$varDay' AND meal = '$varMeal';
+          $sql = "UPDATE daily SET chefs = '$varChefs' WHERE day = '$varDay' AND meal = '$varMeal';"
+          $sql .= "UPDATE daily SET main = '$varMain' WHERE day = '$varDay' AND meal = '$varMeal';"
+          $sql .= "UPDATE daily SET veg = '$varVeg' WHERE day = '$varDay' AND meal = '$varMeal';"
                   UPDATE daily SET piz = '$varPiz' WHERE day = '$varDay' AND meal = '$varMeal';
                   UPDATE daily SET grill = '$varGrill' WHERE day = '$varDay' AND meal = '$varMeal';
                   UPDATE daily SET deli = '$varDeli' WHERE day = '$varDay' AND meal = '$varMeal';
