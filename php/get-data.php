@@ -1,3 +1,4 @@
+
 <?php
   // Initialize variable for database credentials
   $dbhost = 'localhost';
@@ -15,16 +16,16 @@
     }
 
   //Fetch rows from Chefs Corner table
-    $result = $dblink->query("SELECT * FROM daily WHERE day = "Thursday"");
+    $dbdata = $dblink->query("SELECT * FROM daily");
 
   //Initialize array variable
-    $thursday = array();
+    $dbdata = array();
 
   //Fetch into associative array
-    while ( $row = $result->fetch_assoc())  {
-  	$thursday[]=$row;
+    while ( $row = $dbdata->fetch_assoc())  {
+  	$dbdata[]=$row;
     }
 
   //Print array in JSON format
-   echo json_encode($thursday);
+   echo json_encode($dbdata);
 ?>
