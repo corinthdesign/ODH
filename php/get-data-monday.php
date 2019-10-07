@@ -17,7 +17,7 @@
     }
 
   //Fetch rows from Chefs Corner table
-    $monday = $dblink->query("SELECT * FROM daily WHERE day = "Monday"");
+    $monday = $dblink->query("SELECT * FROM daily WHERE day = 'Monday'");
 
   //Initialize array variable
     $monday = array();
