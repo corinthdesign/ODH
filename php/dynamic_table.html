@@ -22,10 +22,18 @@
     <input type="button" onclick="CreateTableFromJSON()" value="Create Table From JSON" />
     <p id="showData"></p>
 </body>
-
+<script>
+$.ajax({
+    type: 'POST',
+    url: 'get-data.php',
+    success: function(result) {
+        var data = jQuery.parseJSON(result);
+      /* ENABLE CODE TO SEE JSON PARSE RESULT */
+        alert(result);
+</script>
 <script>
     function CreateTableFromJSON() {
-        var myBooks = [
+        var data = [
             {
                 "Book ID": "1",
                 "Book Name": "Computer Architecture",
@@ -49,8 +57,8 @@
         // EXTRACT VALUE FOR HTML HEADER.
         // ('Book ID', 'Book Name', 'Category' and 'Price')
         var col = [];
-        for (var i = 0; i < myBooks.length; i++) {
-            for (var key in myBooks[i]) {
+        for (var i = 0; i < data.length; i++) {
+            for (var key in data[i]) {
                 if (col.indexOf(key) === -1) {
                     col.push(key);
                 }
@@ -71,13 +79,13 @@
         }
 
         // ADD JSON DATA TO THE TABLE AS ROWS.
-        for (var i = 0; i < myBooks.length; i++) {
+        for (var i = 0; i < data.length; i++) {
 
             tr = table.insertRow(-1);
 
             for (var j = 0; j < col.length; j++) {
                 var tabCell = tr.insertCell(-1);
-                tabCell.innerHTML = myBooks[i][col[j]];
+                tabCell.innerHTML = data[i][col[j]];
             }
         }
 
