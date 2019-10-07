@@ -18,6 +18,15 @@
             document.getElementById("pizb0").innerHTML = data[0].piz;
             document.getElementById("grb0").innerHTML = data[0].grill;
             document.getElementById("delb0").innerHTML = data[0].deli;
+        }
+    });
+  </script>
+  <script>
+    $.ajax({
+        type: 'POST',
+        url: 'php/get-data.php',
+        success: function(result) {
+            var data = jQuery.parseJSON(result);
 
             /*TUESDAY BREAKFAST DATA PLACEMENT*/
             document.getElementById("ccb1").innerHTML = data[1].chefs;
@@ -26,6 +35,15 @@
             document.getElementById("pizb1").innerHTML = data[1].piz;
             document.getElementById("grb1").innerHTML = data[1].grill;
             document.getElementById("delb1").innerHTML = data[1].deli;
+          }
+      });
+    </script>
+    <script>
+      $.ajax({
+          type: 'POST',
+          url: 'php/get-data.php',
+          success: function(result) {
+              var data = jQuery.parseJSON(result);
 
             /*WEDNESDAY BREAKFAST DATA PLACEMENT*/
             document.getElementById("ccb2").innerHTML = data[2].chefs;
@@ -34,6 +52,15 @@
             document.getElementById("pizb2").innerHTML = data[2].piz;
             document.getElementById("grb2").innerHTML = data[2].grill;
             document.getElementById("delb2").innerHTML = data[2].deli;
+          }
+      });
+    </script>
+    <script>
+      $.ajax({
+          type: 'POST',
+          url: 'php/get-data.php',
+          success: function(result) {
+              var data = jQuery.parseJSON(result);
 
             /*THURSDAY BREAKFAST DATA PLACEMENT*/
             document.getElementById("ccb3").innerHTML = data[3].chefs;
@@ -42,6 +69,15 @@
             document.getElementById("pizb3").innerHTML = data[3].piz;
             document.getElementById("grb3").innerHTML = data[3].grill;
             document.getElementById("delb3").innerHTML = data[3].deli;
+          }
+      });
+    </script>
+    <script>
+      $.ajax({
+          type: 'POST',
+          url: 'php/get-data.php',
+          success: function(result) {
+              var data = jQuery.parseJSON(result);
 
             /*FRIDAY BREAKFAST DATA PLACEMENT*/
             document.getElementById("ccb4").innerHTML = data[4].chefs;
@@ -50,6 +86,15 @@
             document.getElementById("pizb4").innerHTML = data[4].piz;
             document.getElementById("grb4").innerHTML = data[4].grill;
             document.getElementById("delb4").innerHTML = data[4].deli;
+          }
+      });
+    </script>
+    <script>
+      $.ajax({
+          type: 'POST',
+          url: 'php/get-data.php',
+          success: function(result) {
+              var data = jQuery.parseJSON(result);
 
             /*SATURDAY BRUNCH DATA PLACEMENT*/
             document.getElementById("ccb5").innerHTML = data[5].chefs;
@@ -58,7 +103,16 @@
             document.getElementById("pizb5").innerHTML = data[5].piz;
             document.getElementById("grb5").innerHTML = data[5].grill;
             document.getElementById("delb5").innerHTML = data[5].deli;
-
+          }
+      });
+    </script>
+    <script>
+      $.ajax({
+          type: 'POST',
+          url: 'php/get-data.php',
+          success: function(result) {
+              var data = jQuery.parseJSON(result);
+              
             /*SUNDAY BRUNCH DATA PLACEMENT*/
             document.getElementById("ccb6").innerHTML = data[6].chefs;
             document.getElementById("meb6").innerHTML = data[6].main;
