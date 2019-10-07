@@ -17,16 +17,16 @@
     }
 
   //Fetch rows from Chefs Corner table
-    $monday = $dblink->query("SELECT * FROM daily WHERE day = 'Monday'");
+    $dbdata = $dblink->query("SELECT * FROM daily WHERE day = 'Monday'");
 
   //Initialize array variable
-    $monday = array();
+    $dbdata = array();
 
   //Fetch into associative array
-    while ( $row = $monday->fetch_assoc())  {
-  	$monday[]=$row;
+    while ( $row = $dbdata->fetch_assoc())  {
+  	$dbdata[]=$row;
     }
 
   //Print array in JSON format
-   echo json_encode($monday);
+   echo json_encode($dbdata);
 ?>
