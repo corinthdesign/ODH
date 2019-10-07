@@ -40,8 +40,8 @@ function CreateTableFromJSON() {
         // EXTRACT VALUE FOR HTML HEADER.
         // ('Book ID', 'Book Name', 'Category' and 'Price')
         var col = [];
-        for (var i = 0; i < data.length; i++) {
-            for (var key in data[i]) {
+        for (var i = 0; i < rawData.length; i++) {
+            for (var key in rawData[i]) {
                 if (col.indexOf(key) === -1) {
                     col.push(key);
                 }
@@ -62,13 +62,13 @@ function CreateTableFromJSON() {
         }
 
         // ADD JSON DATA TO THE TABLE AS ROWS.
-        for (var i = 0; i < data.length; i++) {
+        for (var i = 0; i < rawData.length; i++) {
 
             tr = table.insertRow(-1);
 
             for (var j = 0; j < col.length; j++) {
                 var tabCell = tr.insertCell(-1);
-                tabCell.innerHTML = data[i][col[j]];
+                tabCell.innerHTML = RawData[i][col[j]];
             }
         }
 
