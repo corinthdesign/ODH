@@ -16,13 +16,13 @@
     }
 
   //Fetch rows from Chefs Corner table
-    $dbdata = $dblink->query("SELECT * FROM daily");
+    $result = $dblink->query("SELECT * FROM daily");
 
   //Initialize array variable
     $dbdata = array();
 
   //Fetch into associative array
-    while ( $row = $dbdata->fetch_assoc())  {
+    while ( $row = $result->fetch_assoc())  {
   	$dbdata[]=$row;
     }
 
