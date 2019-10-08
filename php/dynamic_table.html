@@ -31,10 +31,10 @@ $.ajax({
         var str = result; //Get-data.php JSON string object
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
         var data = parsed;                     // All data for console.log
-        var mon_breakfast = parsed[0];         // monday breakfast
-        var tues_breakfast = parsed[1];        // tuesday breakfast
+        var mon_breakfast = parsed.chefs;         // monday breakfast
+        var tues_breakfast = parsed.main;        // tuesday breakfast
 
-        alert(mon_breakfast.chefs);
+        alert(parsed.chefs);
         console.log(data);
       }
   })
