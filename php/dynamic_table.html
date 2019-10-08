@@ -31,7 +31,8 @@ $.ajax({
     success: function(result) {
         var str = result; //Get-data.php JSON string object
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
-        var data = parsed;                     // All data for console.log
+        var data = parsed;
+        console.log(parsed);                    // All data for console.log
 
         for (i = 0; i < parsed.length; i++) {
             document.write("<table>" + "<tr>");
