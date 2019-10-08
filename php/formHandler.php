@@ -11,16 +11,16 @@ if($_POST['submit'] == "Update Menu")
   {
     $errorMessage .= "<li>Please select with meal you are submitting</li>";
   }
-    $varDay = if ($_POST['day'];
-    $varMeal = if ($_POST['meal'];
-    $varChefs = if ($_POST['chefs'];
-    $varMain = if ($_POST['main'];
-    $varVeg = if ($_POST['veg'];
-    $varPiz = if ($_POST['piz'];
-    $varGrill = if ($_POST['grill'];
-    $varDeli = if ($_POST['deli'];
-    $varSoup = if ($_POST['soup'];
-    $varSoup2 = if $_POST['soup2'];
+    $varDay = $_POST['day'];
+    $varMeal = $_POST['meal'];
+    $varChefs = $_POST['chefs'];
+    $varMain = $_POST['main'];
+    $varVeg = $_POST['veg'];
+    $varPiz = $_POST['piz'];
+    $varGrill = $_POST['grill'];
+    $varDeli = $_POST['deli'];
+    $varSoup = $_POST['soup'];
+    $varSoup2 = $_POST['soup2'];
   }
   if($errorMessage != "")
   {
