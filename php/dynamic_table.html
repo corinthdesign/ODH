@@ -33,11 +33,11 @@ $.ajax({
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
         var data = parsed;                     // All data for console.log
 
-        for (i = 0; i < parsed.length; i++)
+        for (i = 0; i < parsed.length; i++) {
             document.write("<table>" + "<tr>");
             document.write("<td>" + parsed[i].chefs + "</td>");
             document.write("</tr>" + "</table>");
-
+          }
     }
 });
 
