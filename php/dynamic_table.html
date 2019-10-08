@@ -34,22 +34,24 @@ $.ajax({
         var data = parsed;
         console.log(parsed);                    // All data for console.log
 
+        document.write("<table>" + "<tr>");
         for (i = 0; i < parsed.length; i++) {
-            document.write("<table>" + "<tr>");
             document.write("<td>" + parsed[i].chefs + "</td>");
-            document.write("</tr>");
-          }
-        for (i = 0; i < parsed.length; i++) {
-            document.write("<tr>");
-            document.write("<td>" + parsed[i].main + "</td>");
-            document.write("</tr>");
           }
 
+        document.write("</tr>" + "<tr>")
+
         for (i = 0; i < parsed.length; i++) {
-            document.write("<tr>");
             document.write("<td>" + parsed[i].main + "</td>");
-            document.write("</tr>" + "</table>");
           }
+
+        document.write("</tr>" + "<tr>")
+
+        for (i = 0; i < parsed.length; i++) {
+            document.write("<td>" + parsed[i].main + "</td>");
+          }
+          
+        document.write("</tr>" + "</table>");
     }
 });
 
