@@ -29,7 +29,7 @@ $.ajax({
     url: 'get-data.php',
     success: function(result) {
         var str = result; //Get-data.php JSON string object
-        var parsed = jquery.parseJSON(str); // Parse the JSON string object to create a JS object
+        var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
         var data = parsed[0];         // a simple user
 
         alert(data.chefs);
