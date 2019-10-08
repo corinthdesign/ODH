@@ -26,6 +26,7 @@
 <script>
 $.ajax({
     type: 'POST',
+    datatype: 'json',
     url: 'get-data.php',
     success: function(result) {
         var str = result; //Get-data.php JSON string object
