@@ -30,11 +30,14 @@ $.ajax({
     success: function(result) {
         var str = result; //Get-data.php JSON string object
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
-        var data = parsed[0];         // a simple user
+        var data = parsed;                     // All data for console.log
+        var mon_breakfast = parsed[0];         // monday breakfast
+        var tues_breakfast = parsed[1];        // tuesday breakfast
 
-        alert(data);
+        alert(mon_breakfast);
         console.log(data);
-        document.write(data.chefs);
+        document.write(mon_breakfast.chefs);
+        document.write(tues_breakfast.chefs);
       }
   })
 
