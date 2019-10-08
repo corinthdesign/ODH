@@ -34,7 +34,10 @@ $.ajax({
 
         for (var key in parsed) {
           if (parsed.hasOwnProperty(key)) {
-            document.write(key + "<p>" + parsed[key] + "</p>");
+            document.write("<table>" + "<tr>");
+            document.write(key + "<td>" + parsed[key] + "</td>");
+            document.write("</tr>" + "</table>");
+
     }
 }
         console.log(parsed);
