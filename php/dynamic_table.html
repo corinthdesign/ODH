@@ -32,10 +32,9 @@ $.ajax({
         var str = result; //Get-data.php JSON string object
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
         var data = parsed;                     // All data for console.log
-        document.write(parsed.chefs(1));
-        for (var i = 0; i < parsed.chefs.length; i++) {
+
             document.write("<table>" + "<tr>");
-            document.write("<td>" + parsed.chefs[i] + "</td>");
+            document.write("<td>" + parsed.chefs[0] + "</td>");
             document.write("</tr>" + "</table>");
 
     }
