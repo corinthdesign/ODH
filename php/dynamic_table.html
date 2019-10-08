@@ -87,6 +87,62 @@ $.ajax({
           }
 
         document.write("</tr>" + "</table>");
+
+//LUNCH TABLE
+
+        document.write("<h1>" + "Lunch" + "</h1>");
+        document.write("<table>" + "<tr>");
+        document.write("<td>" + "<h3>" + "" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Monday" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Tuesday" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Wednesday" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Thursday" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Friday" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Saturday" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Sunday" + "</h3>" + "</td>");
+        document.write("</tr>" + "<tr>")
+
+        document.write("<td>" + "<h3>" + "Chef's Corner" + "</h3>" + "</td>");
+        for (i = 7; i < 14; i++) {
+            document.write("<td>" + parsed[i].chefs + "</td>");
+          }
+
+        document.write("</tr>" + "<tr>")
+
+        document.write("<td>" + "<h3>" + "The Main Event" + "</h3>" + "</td>");
+        for (i = 7; i < 14; i++) {
+            document.write("<td>" + parsed[i].main + "</td>");
+          }
+
+        document.write("</tr>" + "<tr>")
+
+        document.write("<td>" + "<h3>" + "The Vegetarian Option" + "</h3>" + "</td>");
+        for (i = 7; i < 14; i++) {
+            document.write("<td>" + parsed[i].veg + "</td>");
+          }
+
+        document.write("</tr>" + "<tr>")
+
+        document.write("<td>" + "<h3>" + "Pizza Station" + "</h3>" + "</td>");
+        for (i = 7; i < 14; i++) {
+            document.write("<td>" + parsed[i].piz + "</td>");
+          }
+
+        document.write("</tr>" + "<tr>")
+
+        document.write("<td>" + "<h3>" + "The Grill" + "</h3>" + "</td>");
+        for (i = 7; i < 14; i++) {
+            document.write("<td>" + parsed[i].grill + "</td>");
+          }
+
+        document.write("</tr>" + "<tr>")
+
+        document.write("<td>" + "<h3>" + "The Deli" + "</h3>" + "</td>");
+        for (i = 7; i < 14; i++) {
+            document.write("<td>" + parsed[i].deli + "</td>");
+          }
+
+        document.write("</tr>" + "</table>");
     }
 });
 
