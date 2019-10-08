@@ -34,7 +34,7 @@ $.ajax({
         var data = parsed;                     // All data for console.log
 
         for (var i = 0; i < parsed.chefs.length; i++) {
-          if (var key in parsed.chefs[i]) {
+          if (var key in [i]) {
             document.write("<table>" + "<tr>");
             document.write(key + "<td>" + parsed.chefs[i] + "</td>");
             document.write("</tr>" + "</table>");
@@ -51,7 +51,7 @@ function CreateTableFromJSON() {
         // ('Book ID', 'Book Name', 'Category' and 'Price')
         var col = [];
         for (var i = 0; i < parsed.chefs.length; i++) {
-            for (var key in parsed.chefs[i]) {
+            for (var key in [i]) {
                 if (col.indexOf(key) === -1) {
                     col.push(key);
                 }
