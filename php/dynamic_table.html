@@ -35,12 +35,13 @@ $.ajax({
         console.log(parsed);                    // All data for console.log
 
         document.write("<table>" + "<tr>");
-        document.write("<td>" + "<h3>" + "Chef's Corner" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "The Main Event" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "The Vegetarian Option" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "Pizza Station" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "The Grill" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "The Deli" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Monday" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Tuesday" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Wednesday" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Thursday" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Friday" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Saturday" + "</h3>" + "</td>");
+        document.write("<td>" + "<h3>" + "Sunday" + "</h3>" + "</td>");
         document.write("</tr>" + "<tr>")
         for (i = 0; i < parsed.length; i++) {
             document.write("<td>" + parsed[i].chefs + "</td>");
