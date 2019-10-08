@@ -61,62 +61,6 @@ $.ajax({
           }
 
         document.write("</tr>" + "</table>");
-//LUNCH TABLE
-        document.write("<h1>" + "Lunch" + "</h1>");
-        document.write("<table>" + "<tr>");
-        document.write("<td>" + "<h3>" + "Monday" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "Tuesday" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "Wednesday" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "Thursday" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "Friday" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "Saturday" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "Sunday" + "</h3>" + "</td>");
-        document.write("</tr>" + "<tr>")
-        for (l = 7 ; i < 14; l++) {
-            document.write("<td>" + parsed[l].chefs + "</td>");
-          }
-
-        document.write("</tr>" + "<tr>")
-
-        for (l = 0; l > 7 && l < 14; l++) {
-            document.write("<td>" + parsed[l].main + "</td>");
-          }
-
-        document.write("</tr>" + "<tr>")
-
-        for (l = 0; l > 7 && l < 14; l++) {
-            document.write("<td>" + parsed[l].veg + "</td>");
-          }
-
-        document.write("</tr>" + "</table>");
-//DINNER TABLE
-        document.write("<h1>" + "Dinner" + "</h1>");
-        document.write("<table>" + "<tr>");
-        document.write("<td>" + "<h3>" + "Monday" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "Tuesday" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "Wednesday" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "Thursday" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "Friday" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "Saturday" + "</h3>" + "</td>");
-        document.write("<td>" + "<h3>" + "Sunday" + "</h3>" + "</td>");
-        document.write("</tr>" + "<tr>")
-        for (i = 0; i < 7; i++) {
-            document.write("<td>" + parsed[i].chefs + "</td>");
-          }
-
-        document.write("</tr>" + "<tr>")
-
-        for (i = 0; i < 7; i++) {
-            document.write("<td>" + parsed[i].main + "</td>");
-          }
-
-        document.write("</tr>" + "<tr>")
-
-        for (i = 0; i < 7; i++) {
-            document.write("<td>" + parsed[i].veg + "</td>");
-          }
-
-        document.write("</tr>" + "</table>");
     }
 });
 
