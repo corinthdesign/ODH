@@ -31,11 +31,13 @@ $.ajax({
         var str = result; //Get-data.php JSON string object
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
         var data = parsed;                     // All data for console.log
-        var mon_breakfast = parsed.chefs;         // monday breakfast
-        var tues_breakfast = parsed.main;        // tuesday breakfast
 
-        alert(parsed.chefs);
-        console.log(data);
+        for (var key in parsed) {
+          if (parsed.hasOwnProperty(key)) {
+            alert(key + " -> " + parsed[key]);
+    }
+}
+        console.log(parsed);
       }
   })
 
