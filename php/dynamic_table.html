@@ -72,20 +72,20 @@ $.ajax({
         document.write("<td>" + "<h3>" + "Saturday" + "</h3>" + "</td>");
         document.write("<td>" + "<h3>" + "Sunday" + "</h3>" + "</td>");
         document.write("</tr>" + "<tr>")
-        for (i = 0; i > 7 && i < 14; i++) {
-            document.write("<td>" + parsed[i].chefs + "</td>");
+        for (l = 7 ; i < 14; l++) {
+            document.write("<td>" + parsed[l].chefs + "</td>");
           }
 
         document.write("</tr>" + "<tr>")
 
-        for (i = 0; i > 7 && i < 14; i++) {
-            document.write("<td>" + parsed[i].main + "</td>");
+        for (l = 0; l > 7 && l < 14; l++) {
+            document.write("<td>" + parsed[l].main + "</td>");
           }
 
         document.write("</tr>" + "<tr>")
 
-        for (i = 0; i > 7 && i < 14; i++) {
-            document.write("<td>" + parsed[i].veg + "</td>");
+        for (l = 0; l > 7 && l < 14; l++) {
+            document.write("<td>" + parsed[l].veg + "</td>");
           }
 
         document.write("</tr>" + "</table>");
