@@ -30,16 +30,11 @@ $.ajax({
     success: function(result) {
         var str = result; //Get-data.php JSON string object
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
-        var data = parsed[0];         // a simple user
+        var data = parsed[i];         // a simple user
 
-        alert(data.chefs);
+        alert(data);
         console.log(data);
-        document.write(data.chefs);
-        document.write(data.main);
-        document.write(data.veg);
-        document.write(data.piz);
-        document.write(data.grill);
-        document.write(data.deli);
+        document.write(data);
       }
   })
 
