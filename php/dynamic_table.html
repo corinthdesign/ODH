@@ -199,6 +199,56 @@ $.ajax({
                   }
 
                 document.write("</tr>" + "</table>");
+
+                //BRUNCH TABLE
+
+                        document.write("<h1>" + "BRUNCH" + "</h1>");
+                        document.write("<table>" + "<tr>");
+                        document.write("<td>" + "<h3>" + "Saturday" + "</h3>" + "</td>");
+                        document.write("<td>" + "<h3>" + "Sunday" + "</h3>" + "</td>");
+                        document.write("</tr>" + "<tr>")
+
+                        document.write("<td>" + "<h3>" + "Chef's Corner" + "</h3>" + "</td>");
+                        for (i = 21; i < 23; i++) {
+                            document.write("<td>" + parsed[i].chefs + "</td>");
+                          }
+
+                        document.write("</tr>" + "<tr>")
+
+                        document.write("<td>" + "<h3>" + "The Main Event" + "</h3>" + "</td>");
+                        for (i = 21; i < 23; i++) {
+                            document.write("<td>" + parsed[i].main + "</td>");
+                          }
+
+                        document.write("</tr>" + "<tr>")
+
+                        document.write("<td>" + "<h3>" + "The Vegetarian Option" + "</h3>" + "</td>");
+                        for (i = 21; i < 23; i++) {
+                            document.write("<td>" + parsed[i].veg + "</td>");
+                          }
+
+                        document.write("</tr>" + "<tr>")
+
+                        document.write("<td>" + "<h3>" + "Pizza Station" + "</h3>" + "</td>");
+                        for (i = 21; i < 23; i++) {
+                            document.write("<td>" + parsed[i].piz + "</td>");
+                          }
+
+                        document.write("</tr>" + "<tr>")
+
+                        document.write("<td>" + "<h3>" + "The Grill" + "</h3>" + "</td>");
+                        for (i = 21; i < 23; i++) {
+                            document.write("<td>" + parsed[i].grill + "</td>");
+                          }
+
+                        document.write("</tr>" + "<tr>")
+
+                        document.write("<td>" + "<h3>" + "The Deli" + "</h3>" + "</td>");
+                        for (i = 21; i < 23; i++) {
+                            document.write("<td>" + parsed[i].deli + "</td>");
+                          }
+
+                        document.write("</tr>" + "</table>");
     }
 });
 
