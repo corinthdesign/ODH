@@ -6,14 +6,232 @@
   <script>
     $.ajax({
         type: 'POST',
-        url: 'php/get-data.php',
+        datatype: 'json',
+        url: 'get-data.php',
         success: function(result) {
-            var data = jQuery.parseJSON(result);
-          /* ENABLE CODE TO SEE JSON PARSE RESULT */
-            alert(result);
-            /*MONDAY BREAKFAST DATA PLACEMENT*/
-    }
-  });
+            var str = result; //Get-data.php JSON string object
+            var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
+            var data = parsed;
+            console.log(parsed);                    // All data for console.log
+    //BREAKFAST TABLE
+            document.write("<h1>" + "Breakfast" + "</h1>");
+            document.write("<table>" + "<tr>");
+            document.write("<td>" + "<h3>" + "" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Monday" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Tuesday" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Wednesday" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Thursday" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Friday" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Saturday" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Sunday" + "</h3>" + "</td>");
+            document.write("</tr>" + "<tr>")
+
+            document.write("<td>" + "<h3>" + "Chef's Corner" + "</h3>" + "</td>");
+            for (i = 0; i < 7; i++) {
+                document.write("<td>" + parsed[i].chefs + "</td>");
+              }
+
+            document.write("</tr>" + "<tr>")
+
+            document.write("<td>" + "<h3>" + "The Main Event" + "</h3>" + "</td>");
+            for (i = 0; i < 7; i++) {
+                document.write("<td>" + parsed[i].main + "</td>");
+              }
+
+            document.write("</tr>" + "<tr>")
+
+            document.write("<td>" + "<h3>" + "The Vegetarian Option" + "</h3>" + "</td>");
+            for (i = 0; i < 7; i++) {
+                document.write("<td>" + parsed[i].veg + "</td>");
+              }
+
+            document.write("</tr>" + "<tr>")
+
+            document.write("<td>" + "<h3>" + "Pizza Station" + "</h3>" + "</td>");
+            for (i = 0; i < 7; i++) {
+                document.write("<td>" + parsed[i].piz + "</td>");
+              }
+
+            document.write("</tr>" + "<tr>")
+
+            document.write("<td>" + "<h3>" + "The Grill" + "</h3>" + "</td>");
+            for (i = 0; i < 7; i++) {
+                document.write("<td>" + parsed[i].grill + "</td>");
+              }
+
+            document.write("</tr>" + "<tr>")
+
+            document.write("<td>" + "<h3>" + "The Deli" + "</h3>" + "</td>");
+            for (i = 0; i < 7; i++) {
+                document.write("<td>" + parsed[i].deli + "</td>");
+              }
+
+            document.write("</tr>" + "</table>");
+
+    //LUNCH TABLE
+
+            document.write("<h1>" + "Lunch" + "</h1>");
+            document.write("<table>" + "<tr>");
+            document.write("<td>" + "<h3>" + "" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Monday" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Tuesday" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Wednesday" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Thursday" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Friday" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Saturday" + "</h3>" + "</td>");
+            document.write("<td>" + "<h3>" + "Sunday" + "</h3>" + "</td>");
+            document.write("</tr>" + "<tr>")
+
+            document.write("<td>" + "<h3>" + "Chef's Corner" + "</h3>" + "</td>");
+            for (i = 7; i < 14; i++) {
+                document.write("<td>" + parsed[i].chefs + "</td>");
+              }
+
+            document.write("</tr>" + "<tr>")
+
+            document.write("<td>" + "<h3>" + "The Main Event" + "</h3>" + "</td>");
+            for (i = 7; i < 14; i++) {
+                document.write("<td>" + parsed[i].main + "</td>");
+              }
+
+            document.write("</tr>" + "<tr>")
+
+            document.write("<td>" + "<h3>" + "The Vegetarian Option" + "</h3>" + "</td>");
+            for (i = 7; i < 14; i++) {
+                document.write("<td>" + parsed[i].veg + "</td>");
+              }
+
+            document.write("</tr>" + "<tr>")
+
+            document.write("<td>" + "<h3>" + "Pizza Station" + "</h3>" + "</td>");
+            for (i = 7; i < 14; i++) {
+                document.write("<td>" + parsed[i].piz + "</td>");
+              }
+
+            document.write("</tr>" + "<tr>")
+
+            document.write("<td>" + "<h3>" + "The Grill" + "</h3>" + "</td>");
+            for (i = 7; i < 14; i++) {
+                document.write("<td>" + parsed[i].grill + "</td>");
+              }
+
+            document.write("</tr>" + "<tr>")
+
+            document.write("<td>" + "<h3>" + "The Deli" + "</h3>" + "</td>");
+            for (i = 7; i < 14; i++) {
+                document.write("<td>" + parsed[i].deli + "</td>");
+              }
+
+            document.write("</tr>" + "</table>");
+
+            //DINNER TABLE
+
+                    document.write("<h1>" + "Dinner" + "</h1>");
+                    document.write("<table>" + "<tr>");
+                    document.write("<td>" + "<h3>" + "" + "</h3>" + "</td>");
+                    document.write("<td>" + "<h3>" + "Monday" + "</h3>" + "</td>");
+                    document.write("<td>" + "<h3>" + "Tuesday" + "</h3>" + "</td>");
+                    document.write("<td>" + "<h3>" + "Wednesday" + "</h3>" + "</td>");
+                    document.write("<td>" + "<h3>" + "Thursday" + "</h3>" + "</td>");
+                    document.write("<td>" + "<h3>" + "Friday" + "</h3>" + "</td>");
+                    document.write("<td>" + "<h3>" + "Saturday" + "</h3>" + "</td>");
+                    document.write("<td>" + "<h3>" + "Sunday" + "</h3>" + "</td>");
+                    document.write("</tr>" + "<tr>")
+
+                    document.write("<td>" + "<h3>" + "Chef's Corner" + "</h3>" + "</td>");
+                    for (i = 14; i < 21; i++) {
+                        document.write("<td>" + parsed[i].chefs + "</td>");
+                      }
+
+                    document.write("</tr>" + "<tr>")
+
+                    document.write("<td>" + "<h3>" + "The Main Event" + "</h3>" + "</td>");
+                    for (i = 14; i < 21; i++) {
+                        document.write("<td>" + parsed[i].main + "</td>");
+                      }
+
+                    document.write("</tr>" + "<tr>")
+
+                    document.write("<td>" + "<h3>" + "The Vegetarian Option" + "</h3>" + "</td>");
+                    for (i = 14; i < 21; i++) {
+                        document.write("<td>" + parsed[i].veg + "</td>");
+                      }
+
+                    document.write("</tr>" + "<tr>")
+
+                    document.write("<td>" + "<h3>" + "Pizza Station" + "</h3>" + "</td>");
+                    for (i = 14; i < 21; i++) {
+                        document.write("<td>" + parsed[i].piz + "</td>");
+                      }
+
+                    document.write("</tr>" + "<tr>")
+
+                    document.write("<td>" + "<h3>" + "The Grill" + "</h3>" + "</td>");
+                    for (i = 14; i < 21; i++) {
+                        document.write("<td>" + parsed[i].grill + "</td>");
+                      }
+
+                    document.write("</tr>" + "<tr>")
+
+                    document.write("<td>" + "<h3>" + "The Deli" + "</h3>" + "</td>");
+                    for (i = 14; i < 21; i++) {
+                        document.write("<td>" + parsed[i].deli + "</td>");
+                      }
+
+                    document.write("</tr>" + "</table>");
+
+                    //BRUNCH TABLE
+
+                            document.write("<h1>" + "BRUNCH" + "</h1>");
+                            document.write("<table>" + "<tr>");
+                            document.write("<td>" + "<h3>" + "" + "</h3>" + "</td>");
+                            document.write("<td>" + "<h3>" + "Saturday" + "</h3>" + "</td>");
+                            document.write("<td>" + "<h3>" + "Sunday" + "</h3>" + "</td>");
+                            document.write("</tr>" + "<tr>")
+
+                            document.write("<td>" + "<h3>" + "Chef's Corner" + "</h3>" + "</td>");
+                            for (i = 21; i < 23; i++) {
+                                document.write("<td>" + parsed[i].chefs + "</td>");
+                              }
+
+                            document.write("</tr>" + "<tr>")
+
+                            document.write("<td>" + "<h3>" + "The Main Event" + "</h3>" + "</td>");
+                            for (i = 21; i < 23; i++) {
+                                document.write("<td>" + parsed[i].main + "</td>");
+                              }
+
+                            document.write("</tr>" + "<tr>")
+
+                            document.write("<td>" + "<h3>" + "The Vegetarian Option" + "</h3>" + "</td>");
+                            for (i = 21; i < 23; i++) {
+                                document.write("<td>" + parsed[i].veg + "</td>");
+                              }
+
+                            document.write("</tr>" + "<tr>")
+
+                            document.write("<td>" + "<h3>" + "Pizza Station" + "</h3>" + "</td>");
+                            for (i = 21; i < 23; i++) {
+                                document.write("<td>" + parsed[i].piz + "</td>");
+                              }
+
+                            document.write("</tr>" + "<tr>")
+
+                            document.write("<td>" + "<h3>" + "The Grill" + "</h3>" + "</td>");
+                            for (i = 21; i < 23; i++) {
+                                document.write("<td>" + parsed[i].grill + "</td>");
+                              }
+
+                            document.write("</tr>" + "<tr>")
+
+                            document.write("<td>" + "<h3>" + "The Deli" + "</h3>" + "</td>");
+                            for (i = 21; i < 23; i++) {
+                                document.write("<td>" + parsed[i].deli + "</td>");
+                              }
+
+                            document.write("</tr>" + "</table>");
+        }
+    });
   </script>
 
 </head>
@@ -457,50 +675,6 @@
 
 
 <script>
-/*  //MONDAY//
-  var breakfast_mon = ["Turtles", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
-  var brunch_mon = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
-  var lunch_mon = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
-  var dinner_mon = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
-  var soup_mon = ["Tomato Soup", "Chicken Noodle Soup"];
-  //TUESDAY//
-  var breakfast_tue = ["Pancakes", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
-  var brunch_tue = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
-  var lunch_tue = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
-  var dinner_tue = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
-  var soup_tue = ["Tomato Soup", "Chicken Noodle Soup"];
-  //WEDNESDAY//
-  var breakfast_wed = ["Pancakes", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
-  var brunch_wed = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
-  var lunch_wed = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
-  var dinner_wed = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
-  var soup_wed = ["Tomato Soup", "Chicken Noodle Soup"];
-  //THURSDAY//
-  var breakfast_thu = ["Pancakes", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
-  var brunch_thu = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
-  var lunch_thu = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
-  var dinner_thu = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
-  var soup_thu = ["Tomato Soup", "Chicken Noodle Soup"];
-  //FRIDAY//
-  var breakfast_fri = ["Pancakes", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
-  var brunch_fri = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
-  var lunch_fri = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
-  var dinner_fri = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
-  var soup_fri = ["Tomato Soup", "Chicken Noodle Soup"];
-  //SATURDAY//
-  var breakfast_sat = ["Pancakes", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
-  var brunch_sat = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
-  var lunch_sat = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
-  var dinner_sat = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
-  var soup_sat = ["Tomato Soup", "Chicken Noodle Soup"];
-  //SUNDAY//
-  var breakfast_sun = ["Pancakes", "Eggs", "Bacon", "Toast", "Yogurt", "Bagels"];
-  var brunch_sun = ["Quiche", "Fruit", "Melon", "Bacon", "Jello", "Waffles"];
-  var lunch_sun = ["Carrots", "Fresh Sandwiches", "Beer Battered Cod", "Steak", "Turkey", "Candied Squid"];
-  var dinner_sun = ["Meatloaf", "Chicken Strips", "Pancetta", "Turtle Soup", "Antelope", "Bread Pudding"];
-  var soup_sun = ["Tomato Soup", "Chicken Noodle Soup"];
-
-  var weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satuday", "Sunday"];
 
 //BREAKFAST//
 /*  document.getElementById("meb").innerHTML = breakfast_mon[1];
