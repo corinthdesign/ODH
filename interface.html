@@ -45,7 +45,7 @@
       </div>
       <div class="meal_selection" id="otherFieldDiv">
           <label>Which Meal?</label>
-          <select id="otherField" name="meal">
+          <select id="meal_selector" name="meal">
               <option disabled selected value> -- select an option -- </option><br>
               <option name="meal" value="Breakfast"><label> Breakfast</label><br>
               <option name="meal" value="Brunch" checked><label> Brunch</label><br>
@@ -446,8 +446,8 @@
 
 
       $(function() {
-          $('#day_selector').change(function(){
-              $('.days').hide();
+          $('#meal_selector').change(function(){
+              $('.meals').hide();
               $('#' + $(this).val()).show();
           });
       });
