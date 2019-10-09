@@ -6,6 +6,7 @@ html, body {
 
 body{
 	overflow-x: hidden;
+  max-height: 130vh;
 }
 
 a {
