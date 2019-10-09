@@ -282,7 +282,7 @@ td {
 
 button {
   padding: .15em 1.25vw;
-	opacity: 0;
+	opacity: 1;
   margin: 2em 2em;
   width: 20vw;
   background-color: #0090ff;
