@@ -80,7 +80,7 @@
 
 <section>
 
-  <p id="showData"></p>
+  <div class="meals" id="Breakfast">
   <script>
   $.ajax({
       type: 'POST',
@@ -92,7 +92,6 @@
           var data = parsed;
           console.log(parsed);                    // All data for console.log
   //BREAKFAST TABLE
-          document.write("<div class='meals' id='Breakfast'>");
           document.write("<h1>" + "Breakfast" + "</h1>");
           document.write("<table>" + "<tr>");
           document.write("<td>" + "<h3>" + "" + "</h3>" + "</td>");
@@ -147,7 +146,8 @@
 
           document.write("</tr>" + "</table>");
           document.write("</div>")
-
+</script>
+</div>
   <div class="meals" id="Lunch" style="display: none;">
     <table>
       <tr>
