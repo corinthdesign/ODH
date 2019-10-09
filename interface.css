@@ -5,7 +5,7 @@ html, body {
 }
 
 body{
-	overflow-x: hidden;
+	overflow: hidden;
   max-height: 130vh;
 }
 
