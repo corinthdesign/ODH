@@ -47,15 +47,19 @@
 <p id="demo"></p>
 
 <script>
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    var myObj = JSON.parse(this.responseText);
-    document.getElementById("demo").innerHTML = myObj.name;
+$.ajax({
+    type: 'POST',
+    datatype: 'json',
+    url: 'get-data.php',
+    success: function(result) {
+        var str = result; //Get-data.php JSON string object
+        var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
+        var data = parsed;
+        console.log(parsed);                    // All data for console.log
+        document.getElementById("demo").innerHTML = parsed[0].pizza;
   }
-};
-xmlhttp.open("GET", "test.php", true);
-xmlhttp.send();
+});
+
 </script>
 </body>
 
