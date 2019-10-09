@@ -304,7 +304,7 @@ form select {
   font-weight: 100;
 }
 
-.preview_table {
+.preview_table, .preview_table iframe {
   position: relative;
   display: block;
   width: 100%;;
