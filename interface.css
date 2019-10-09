@@ -311,5 +311,6 @@ form select {
   height: 40vh;
   top: 200px;
   left: 100px;
+  border: 2px #0090fe 3px;
 }
 /* {border: 1px rgba(0, 0, 0, 0.2) dashed;}
