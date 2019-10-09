@@ -281,10 +281,10 @@ td {
 }
 
 button {
-  padding: .15em 1.25vw;
+  padding: .15em 5%;
 	opacity: 1;
-  margin: 2em 1vw;
-  width: 17vw;
+  margin: 2em 22.5%;
+  width: 50%;
   background-color: #0090ff;
   font-family: sans-serif;
   font-size: .8em;
@@ -298,9 +298,9 @@ button {
 }
 
 button:hover {
-  padding: .15em 2.25vw;
-  width: 19vw;
-  margin: 2em 0em;
+  padding: .15em 5%;
+  width: 60%;
+  margin: 2em 17.5%;
   cursor: pointer;
 }
 
