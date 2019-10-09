@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+<title>Sodexo Menuboard HTML5 Test Page</title>
+<link rel="stylesheet" href="pizza.css">
+<link href="https://fonts.googleapis.com/css?family=Rye|Bitter&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!--Forces Cache Clear-->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+</head>
+
+<body>
+
+<!--Hidden Menu Button-->
+<a href="index.html" style="display: block; position: absolute; width: 50px; height: 50px; z-index: 200; cursor: default;"></a>
+<!--Body-->
+<section class="pizza_menu">
+    <h1>Pizza</h1>
+    <h1 style="line-height: 0.05em">Station</h1>
+  <div class="items">
+  <p>Cheese Pizza</p>
+  <p>Pepperoni Pizza</p>
+<!--Dynamic Menu Item-->
+  <p id="demo"></p>
+</div>
+</section>
+
+<!--Video Background-->
+<section class="background">
+  <video autoplay muted loop>
+    <source src="https://corinthdesign.com/private/HTML_menuboards/media/pizza.mp4" type="video/mp4">
+  </video>
+</section>
+
+  <link src="php/menupull.php"></link>
+
+<!--  <script src="menus/pizzaMenu.js"></script> -->
+
+<!--JSON PHP TEST connection-->
+<p id="demo"></p>
+
+<script>
+$.ajax({
+    type: 'POST',
+    datatype: 'json',
+    url: '/../ODH/php/get-data.php',
+    success: function(result) {
+        var str = result; //Get-data.php JSON string object
+        var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
+        var data = parsed;
+        console.log(parsed);                    // All data for console.log
+        document.getElementById("demo").innerHTML = parsed[10].piz;
+  }
+});
+
+</script>
+</body>
+
+<footer>
+</footer>
