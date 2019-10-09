@@ -3,6 +3,18 @@
 <link rel="stylesheet" href="interface.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!--Retrieve JSON data-->
+  <script>
+    $.ajax({
+        type: 'POST',
+        url: 'php/get-data.php',
+        success: function(result) {
+            var data = jQuery.parseJSON(result);
+          /* ENABLE CODE TO SEE JSON PARSE RESULT */
+            alert(result);
+            document.getElementById("ccbr").innerHTML = data.chefs.join[i];
+    }
+  });
+  </script>
 
 </head>
 <body>
@@ -81,73 +93,56 @@
 <section>
 
   <p id="showData"></p>
-  <script>
-  $.ajax({
-      type: 'POST',
-      datatype: 'json',
-      url: 'get-data.php',
-      success: function(result) {
-          var str = result; //Get-data.php JSON string object
-          var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
-          var data = parsed;
-          console.log(parsed);                    // All data for console.log
-  //BREAKFAST TABLE
-          document.write("<div class='meals' id='Breakfast'>");
-          document.write("<h1>" + "Breakfast" + "</h1>");
-          document.write("<table>" + "<tr>");
-          document.write("<td>" + "<h3>" + "" + "</h3>" + "</td>");
-          document.write("<td>" + "<h3>" + "Monday" + "</h3>" + "</td>");
-          document.write("<td>" + "<h3>" + "Tuesday" + "</h3>" + "</td>");
-          document.write("<td>" + "<h3>" + "Wednesday" + "</h3>" + "</td>");
-          document.write("<td>" + "<h3>" + "Thursday" + "</h3>" + "</td>");
-          document.write("<td>" + "<h3>" + "Friday" + "</h3>" + "</td>");
-          document.write("<td>" + "<h3>" + "Saturday" + "</h3>" + "</td>");
-          document.write("<td>" + "<h3>" + "Sunday" + "</h3>" + "</td>");
-          document.write("</tr>" + "<tr>")
+  <div class="meals" id="Breakfast" style="display: none;">
+    <table>
+      <tr>
+        <td><h3>Chef's Corner</h3></td>
+        <td><h3>The Main Event</h3></td>
+        <td><h3>The Vegetarian Option</h3></td>
+        <td><h3>Pizza Station</h3></td>
+        <td><h3>The Grill</h3></td>
+        <td><h3>The Deli</h3></td>
+        <td><h3>Soups</h3></td>
+      </tr>
+      <tr>
+        <td><p>Breakfast: </p><p id="ccb0">Monday</p></td>
+        <td><p>Breakfast: </p><p id="meb0">Dynamic Content</p></td>
+        <td><p>Breakfast: </p><p id="vegb0">Dynamic Content</p></td>
+        <td><p>Breakfast: </p><p id="pizb0">Dynamic Content</p></td>
+        <td><p>Breakfast: </p><p id="grb0"> Dynamic Content</p></td>
+        <td><p>Breakfast: </p><p id="delb0">Dynamic Content</p></td>
+        <td><p>Soup 1: </p><p id="soup1">Dynamic Content</p></td>
+      </tr>
+      <tr>
+        <td><p>Brunch (Lines 1&2): </p><p id="ccbr">Dynamic Content</p></td>
+        <td><p>Brunch (Lines 1&2): </p><p id="mebr">Dynamic Content</p></td>
+        <td><p>Brunch (Lines 1&2): </p><p id="vegbr">Dynamic Content</p></td>
+        <td><p>Brunch (Lines 1&2): </p><p id="pizbr">Dynamic Content</p></td>
+        <td><p>Brunch (Lines 1&2): </p><p id="grbr"> Dynamic Content</p></td>
+        <td><p>Brunch (Lines 1&2): </p><p id="delbr">Dynamic Content</p></td>
+        <td><p>Soup 2: </p><p id="soup2">Dynamic Content</p></td>
+      </tr>
+      <tr>
+        <td><p>Lunch: </p><p id="ccl">Dynamic Content</p></td>
+        <td><p>Lunch: </p><p id="mel">Dynamic Content</p></td>
+        <td><p>Lunch: </p><p id="vegl">Dynamic Content</p></td>
+        <td><p>Lunch: </p><p id="pizl">Dynamic Content</p></td>
+        <td><p>Lunch: </p><p id="grl"> Dynamic Content</p></td>
+        <td><p>Lunch: </p><p id="dell">Dynamic Content</p></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><p>Dinner: </p><p id="ccd">Dynamic Content</p></td>
+        <td><p>Dinner: </p><p id="med">Dynamic Content</p></td>
+        <td><p>Dinner: </p><p id="vegd">Dynamic Content</p></td>
+        <td><p>Dinner: </p><p id="pizd">Dynamic Content</p></td>
+        <td><p>Dinner: </p><p id="grd"> Dynamic Content</p></td>
+        <td><p>Dinner: </p><p id="deld">Dynamic Content</p></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
 
-          document.write("<td>" + "<h3>" + "Chef's Corner" + "</h3>" + "</td>");
-          for (i = 0; i < 7; i++) {
-              document.write("<td>" + parsed[i].chefs + "</td>");
-            }
-
-          document.write("</tr>" + "<tr>")
-
-          document.write("<td>" + "<h3>" + "The Main Event" + "</h3>" + "</td>");
-          for (i = 0; i < 7; i++) {
-              document.write("<td>" + parsed[i].main + "</td>");
-            }
-
-          document.write("</tr>" + "<tr>")
-
-          document.write("<td>" + "<h3>" + "The Vegetarian Option" + "</h3>" + "</td>");
-          for (i = 0; i < 7; i++) {
-              document.write("<td>" + parsed[i].veg + "</td>");
-            }
-
-          document.write("</tr>" + "<tr>")
-
-          document.write("<td>" + "<h3>" + "Pizza Station" + "</h3>" + "</td>");
-          for (i = 0; i < 7; i++) {
-              document.write("<td>" + parsed[i].piz + "</td>");
-            }
-
-          document.write("</tr>" + "<tr>")
-
-          document.write("<td>" + "<h3>" + "The Grill" + "</h3>" + "</td>");
-          for (i = 0; i < 7; i++) {
-              document.write("<td>" + parsed[i].grill + "</td>");
-            }
-
-          document.write("</tr>" + "<tr>")
-
-          document.write("<td>" + "<h3>" + "The Deli" + "</h3>" + "</td>");
-          for (i = 0; i < 7; i++) {
-              document.write("<td>" + parsed[i].deli + "</td>");
-            }
-
-          document.write("</tr>" + "</table>");
-          document.write("</div>")
-</script>
   <div class="meals" id="Lunch" style="display: none;">
     <table>
       <tr>
