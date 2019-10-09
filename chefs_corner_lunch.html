@@ -5,10 +5,7 @@
 <link rel="stylesheet" href="chefs_corner.css">
 <link href="https://fonts.googleapis.com/css?family=Rye|Bitter&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Manjari&display=swap" rel="stylesheet">
-<script
-  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-  crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <!--Forces Cache Clear-->
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -24,7 +21,7 @@
 <section class="chefs_menu">
     <div id="chefs_corner_logo"></div>
 <!--Dynamic Menu Item-->
-  <p id="chefsLunchOfTheDay"></p>
+  <p id="demo"></p>
 </div>
 </section>
 
@@ -37,6 +34,21 @@
 
   <script src="menus/chefs_corner_menu.js"></script>
 </body>
+<script>
+$.ajax({
+    type: 'POST',
+    datatype: 'json',
+    url: '/../ODH/php/get-data.php',
+    success: function(result) {
+        var str = result; //Get-data.php JSON string object
+        var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
+        var data = parsed;
+        console.log(parsed);                    // All data for console.log
+        document.getElementById("demo").innerHTML = parsed[7].piz;
+  }
+});
+
+</script>
 
 <footer>
 </footer>
