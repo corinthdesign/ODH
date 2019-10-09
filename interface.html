@@ -72,7 +72,18 @@
   <input style="width: 49%; border-radius: 0 100000px 100000px 0;" name="soup2" type="text" class="soups" placeholder="Soup 2"></input>
       </div>
       <div>
-        <input id="submit" type="submit" name="submit" value="Update Menu"></input>
+        <script>
+          function toggleSubmitVisibility() {
+            var button = document.getElementById("submit");
+            if (button.style.display === "none") {
+              button.style.display = "block";
+            } else {
+              button.style.display = "none";
+            }
+          }
+        </script>
+        <button>Update Menu</button>
+        <input style="display: none;" id="submit" type="submit" name="submit" value="Update Menu"></input>
       </div>
 
       <div class="preview_table">
