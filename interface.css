@@ -257,10 +257,10 @@ td {
 }
 
 #submit {
-  padding: .25em 2.5vw;
+  padding: .25em 5%;
 	opacity: 0;
-  margin: 2em 1em;
-  width: 25vw;
+  margin: 2em 17.25%;
+  width: 60%;
   background-color: #0090ff;
   font-family: sans-serif;
   font-size: 1.5em;
@@ -274,9 +274,9 @@ td {
 }
 
 #submit:hover {
-  padding: .25em 0em;
-  width: 28vw;
-  margin: 2em 0em;
+  padding: .25em 5%;
+  width: 70%;
+  margin: 2em 12.25%;
   cursor: pointer;
 }
 
