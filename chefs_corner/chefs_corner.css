@@ -58,7 +58,9 @@ p {
 	width: 100vw;
 	text-shadow: 0px 0px 10px #000;
 	z-index: 100;
-	background-color: rgba(0, 0, 0, 0.4);
+	/*background-color: rgba(0, 0, 0, 0.4);*/
+	background-image: url("images/chefs_corner.jpg");
+	background-size: 100%;
 }
 
 #chefs_corner_logo {
@@ -80,7 +82,8 @@ p {
 	position: relative;
 	display: block;
 	background-image: url('images/chefs_corner.jpg');
-	background-size: cover;
+	background-size: 50%;
+	height: auto;
 	top: -100vh;
 	z-index: 0;
 }
