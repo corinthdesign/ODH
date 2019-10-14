@@ -79,6 +79,8 @@ p {
 .background {
 	position: relative;
 	display: block;
+	background-image: url(images/chefs_corner.jpg);
+	background-size: cover;
 	top: -100vh;
 	z-index: 0;
 }
