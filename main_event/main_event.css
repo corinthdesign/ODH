@@ -56,7 +56,9 @@ p {
 	height: 100vh;
 	width: 100vw;
 	z-index: 100;
-	background-color: rgba(0, 0, 0, 0.4);
+	/*background-color: rgba(0, 0, 0, 0.4);*/
+	background-image: url("images/main_event.jpg");
+	background-size: 100%;
 }
 
 #main_event_logo {
