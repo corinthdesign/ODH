@@ -86,7 +86,7 @@ p {
 
 .background video {
 	position: relative;
-	display: block;
+	display: none;
 	width: 200vw;
 	height: auto;
 }
