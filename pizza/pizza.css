@@ -78,6 +78,7 @@ p {
 	width: 200vw;
 	height: auto;
 	overflow: hidden;
+	background-image: url(images/pizza.jpg);
 }
 
 #menu1 {
