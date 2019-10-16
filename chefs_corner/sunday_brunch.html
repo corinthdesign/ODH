@@ -2,9 +2,8 @@
 
 <head>
 <title>Sodexo Menuboard HTML5 Test Page</title>
-<link rel="stylesheet" href="chefs_corner.css">
-<link href="https://fonts.googleapis.com/css?family=Rye|Bitter&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Manjari&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="brunch.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Satisfy&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>setTimeout(function() {location.reload();}, 59000);</script>
 
@@ -19,10 +18,10 @@
   <!--Hidden Menu Button-->
   <a href="index.html" style="display: block; position: absolute; width: 50px; height: 50px; z-index: 200; cursor: default;"></a>
 <!--Body-->
-<section class="chefs_menu">
-    <div id="chefs_corner_logo"></div>
+<section class="entrance_menu">
 <!--Dynamic Menu Item-->
-  <p id="demo"></p>
+  <h1>Lunch</h1>
+  <p id="demo">Demo</p>
 </div>
 </section>
 
@@ -45,7 +44,7 @@ $.ajax({
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
         var data = parsed;
         console.log(parsed);                    // All data for console.log
-        document.getElementById("demo").innerHTML = parsed[22].chefs;
+        document.getElementById("demo").innerHTML = parsed[22].piz;
   }
 });
 
