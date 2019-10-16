@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <link href="mobile.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+    <body>
+      <section class="optionTabs">
+        <div class="tab">
+          <p>Update</p>
+        </div>
+        <div class="tab">
+          <p>Preview</p>
+        </div>
+      </section>
+
+              <!--MAIN FORM-->
+              <section class="menu">
+                <div class="logo"></div>
+              <h1>Menu Update System</h1>
+              <h3>Input the new menuboard item into the appropriate field. Fields left alone will not update on the menuboard. To finish updating the menu, press "Update Menu".
+                Use the menu preview to ensure that the menu was updated properly. (*Note: Menu cannot handle " ' " characters. The menu will return a "null" item).</h3>
+              <p style="padding-top: 1em; margin: 0 auto; text-align: center;">*Please direct any bug-fixes to <a href="mailto:tklopfenstein@augie.edu" target="_blank" style="color: #262626;">tklopfenstein@augie.edu</a></p>
+              </section>
+            <section class="fields">
+              <form action="../php/formHandler.php" method="post">
+                <div class="parameters">
+                  <div class="day_selection">
+                    <label for="day_select">Which Day?</label>
+                    <Select id="day_selector" name="day">
+                       <option disabled selected value> -- select an option -- </option>
+                       <option name="day" value="Monday">Monday</option>
+                       <option name="day" value="Tuesday">Tuesday</option>
+                       <option name="day" value="Wednesday">Wednesday</option>
+                       <option name="day" value="Thursday">Thursday</option>
+                       <option name="day" value="Friday">Friday</option>
+                       <option name="day" value="Saturday">Saturday</option>
+                       <option name="day" value="Sunday">Sunday</option>
+                    </Select>
+                  </div>
+                  <div class="meal_selection" id="otherFieldDiv">
+                      <label>Which Meal?</label>
+                      <select id="meal_selector" name="meal">
+                          <option disabled selected value> -- select an option -- </option><br>
+                          <option name="meal" value="Breakfast"><label> Breakfast</label><br>
+                          <option name="meal" value="Brunch" checked><label> Brunch</label><br>
+                          <option name="meal" value="Lunch"><label> Lunch</label><br>
+                          <option name="meal" value="Dinner"><label> Dinner</label><br>
+                      </select>
+                  </div>
+                  </div>
+              <div class="entrees">
+                  <div>
+              <h3 class="link">Chef's Corner</h3>
+              <input style="border-radius: 100000px;" name="chefs" type="text" placeholder="Menu Item"></input>
+                  </div>
+                  <div>
+              <h3 class="link">The Main Event</h3>
+              <input style="border-radius: 100000px;" name="main" type="text" placeholder="Menu Item"></input>
+                  </div>
+                  <div>
+              <h3 class="veglink">The Vegetarian Option</h3>
+              <input style="border-radius: 100000px;" name="veg" type="text" placeholder="Menu Item"></input>
+                  </div>
+                  <div>
+              <h3 class="pizlink">Pizza Station</h3>
+              <input style="border-radius: 100000px;" name="piz" type="text" placeholder="Menu Item"></input>
+                  </div>
+                  <div>
+              <h3 class="grilllink">The Grill</h3>
+              <input style="border-radius: 100000px;" name="grill" type="text" placeholder="Menu Item"></input>
+                  </div>
+                  <div>
+              <h3 class="link_none">The Deli</h3>
+              <input style="border-radius: 100000px;" name="deli" type="text" placeholder="Menu Item"></input>
+                  </div>
+                  <div>
+              <h3 class="link_none">Soups</h3>
+              <input style="width: 49%; margin: 1em auto; border-radius: 900000px;" name="soup" type="text" class="soups" placeholder="Soup 1"></input>
+              <input style="width: 49%; margin: 1em auto; border-radius: 900000px;" name="soup2" type="text" class="soups" placeholder="Soup 2"></input>
+                  </div>
+                  </div>
+                  <div>
+                    <input id="submit" type="submit" name="submit" value="Update Menu"></input>
+                  </div>
+              </form>
+            </section>
+    </body>
+
+<footer>
+</footer>

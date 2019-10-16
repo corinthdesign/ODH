@@ -1,0 +1,125 @@
+/* {
+  border: 1px black dashed;
+}
+*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 300vw;
+  background-color: rgba(235, 235, 235, 1);
+}
+
+h1 {
+  font-size: 4em;
+  font-family: sans-serif;
+}
+
+.optionTabs {
+  display: block;
+  position: fixed;
+  white-space: nowrap;
+  top: 0;
+  width: 100%;
+  height: 8vh;
+  background-color: #0090ff;
+  z-index: 200;
+}
+
+.tab {
+  display: inline-block;
+  position: relative;
+  font-size: 3em;
+  color: #fff;
+  font-family: sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tab.active {
+  text-decoration: underline;
+}
+
+.logo {
+  display: block;
+  position: relative;
+  background-image: url(images/augie_dining_services_new_color.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 80%;
+  margin: 2em auto 0 auto;
+}
+
+.menu {
+  display: block;
+  position: relative;
+  top: 8vh;
+  z-index: 0;
+  margin: 0 3vw;
+}
+
+.fields {
+  display: block;
+  position: relative;
+  top: 8vh;
+}
+
+.parameters {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.parameters div {
+  display: block;
+  position: relative;
+  margin: 2em auto;
+  text-align: center;
+  font-size: 5em;
+  font-family: sans-serif;
+}
+
+select {
+  display: block;
+  position: relative;
+  margin: 2em auto;
+  font-size: .5em;
+  color: #fff;
+  background-color: rgba(0, 144, 254, 1);
+  padding: 1em;
+  border-radius: 900000px;
+}
+
+.entrees {
+  display: block;
+  position: relative;
+}
+
+.entrees h3 {
+  font-size: 5em;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.entrees input {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  font-size: 4em;
+  text-align: center;
+}
+
+#submit {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  font-size: 5em;
+  color: #fff;
+  width: 100vw;
+  padding: 2em;
+  background-color: #0090ff;
+  text-align: center;
+}

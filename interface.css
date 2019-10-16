@@ -185,6 +185,7 @@ p, label {
   margin: 2em auto;
   position: relative;
   left: -5em;
+	white-space:nowrap;
 }
 
 .parameters div {
@@ -197,7 +198,7 @@ p, label {
   position: relative;
 	margin: 0 auto;
   width: 20vw;
-  padding-left: 29vw;
+  padding-left: 30vw;
 }
 
 .meal_selection {
