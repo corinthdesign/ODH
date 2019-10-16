@@ -20,7 +20,7 @@
   <h1>The Grill</h1>
   <div class="items">
     <!--Dynamic Menu Item-->
-      <p id="grillOfTheDay"></p>
+      <p id="demo"></p>
     <p>Cheese Burgers</p>
     <p>Quesadillas</p>
     <p>Texas Grilled Cheese</p>
@@ -35,7 +35,21 @@
 </section>
 -->
 
-<script src="menus/grillMenu.js"></script>
+<script>
+$.ajax({
+    type: 'POST',
+    datatype: 'json',
+    url: '/../ODH/php/get-data.php',
+    success: function(result) {
+        var str = result; //Get-data.php JSON string object
+        var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
+        var data = parsed;
+        console.log(parsed);                    // All data for console.log
+        document.getElementById("demo").innerHTML = parsed[7].grill;
+  }
+});
+
+</script>
 </body>
 
 <footer>
