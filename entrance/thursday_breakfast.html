@@ -45,10 +45,10 @@ $.ajax({
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
         var data = parsed;
         console.log(parsed);                    // All data for console.log
-        document.getElementById("demo1").innerHTML = parsed[0].chefs;
-        document.getElementById("demo2").innerHTML = parsed[0].main;
-        document.getElementById("demo3").innerHTML = parsed[0].veg;
-        document.getElementById("special").innerHTML = parsed[0].piz;
+        document.getElementById("demo1").innerHTML = parsed[3].chefs;
+        document.getElementById("demo2").innerHTML = parsed[3].main;
+        document.getElementById("demo3").innerHTML = parsed[3].veg;
+        document.getElementById("special").innerHTML = parsed[3].piz;
   }
 });
 
