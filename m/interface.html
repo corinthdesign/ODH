@@ -6,8 +6,8 @@
 
     <body>
       <section class="optionTabs">
-        <div class="tab">
-          <p>Update</p>
+        <div id="top" class="tab">
+          <p>Back to Top</p>
         </div>
         <div class="tab preview">
           <p>Preview</p>
@@ -95,6 +95,13 @@
                   $('.preview').click(function() {
                       $('.preview_table').fadeIn(4000).toggleClass("active");
                   });
+              });
+
+
+                $('#top').click(function(){
+                  $("html, body").animate({ scrollTop: 0 }, 400); 
+                  return false;
+                });
               });
             </script>
     </body>
