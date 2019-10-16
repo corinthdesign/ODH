@@ -2,7 +2,7 @@
 
 <head>
 <title>Sodexo Menuboard HTML5 Test Page</title>
-<link rel="stylesheet" href="dinner.css">
+<link rel="stylesheet" href="lunch.css">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Satisfy&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>setTimeout(function() {location.reload();}, 59000);</script>
@@ -17,7 +17,7 @@
   <a href="index.html" style="display: block; position: absolute; width: 50px; height: 50px; z-index: 200; cursor: default;"></a>
 <!--Body-->
 <section class="entrance_menu">
-  <h1 style="margin: 40px 0 0px 0;">Welcome to Dinner!</h1>
+  <h1 style="margin: 40px 0 0px 0;">Welcome to Lunch!</h1>
   <div class="items">
     <!--Dynamic Menu Item-->
       <h2>Soups</h2>
@@ -47,10 +47,10 @@ $.ajax({
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
         var data = parsed;
         console.log(parsed);                    // All data for console.log
-        document.getElementById("demo1").innerHTML = parsed[14].soup;
-        document.getElementById("demo2").innerHTML = parsed[14].soup2;
-        document.getElementById("demo3").innerHTML = parsed[14].chefs;
-        document.getElementById("demo4").innerHTML = parsed[14].main;
+        document.getElementById("demo1").innerHTML = parsed[10].soup;
+        document.getElementById("demo2").innerHTML = parsed[10].soup2;
+        document.getElementById("demo3").innerHTML = parsed[10].chefs;
+        document.getElementById("demo4").innerHTML = parsed[10].main;
   }
 });
 
