@@ -9,7 +9,7 @@
         <div class="tab">
           <p>Update</p>
         </div>
-        <div class="tab">
+        <div class="tab preview">
           <p>Preview</p>
         </div>
       </section>
@@ -85,6 +85,18 @@
                   </div>
               </form>
             </section>
+
+            <div class="preview_table">
+            <iframe style="position: relative; top: -250vh;" src="../php/dynamic_table.html"></iframe>
+            </div>
+
+            <script>
+              $(function() {
+                  $('.preview').click(function() {
+                      $('.preview_table').toggleClass("active");
+                  });
+              });
+            </script>
     </body>
 
 <footer>
