@@ -102,6 +102,11 @@
                 $(window).scrollTop(0);
               })
             };
+            var fixed = document.getElementById('.preview_table');
+
+            fixed.addEventListener('touchmove', function(e) {
+              e.preventDefault();
+                }, false);
             </script>
     </body>
 
