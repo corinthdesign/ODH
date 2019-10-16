@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
 h1 {
 	font-family: 'Satisfy', sans-serif;
 	font-size: 6em;
-	text-align: left;
+	text-align: center;
 	letter-spacing: auto;
 	line-height: 1em;
 	color: #000;
@@ -30,7 +30,7 @@ h1 {
 h2 {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 7em;
-	text-align: left;
+	text-align: center;
 	font-weight: black;
 	letter-spacing: auto;
 	color: #000;
@@ -40,7 +40,7 @@ p {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 3.75em;
 	font-weight: 100;
-	text-align: left;
+	text-align: center;
 	letter-spacing: auto;
 	text-transform: uppercase;
 	line-height: 0.9em;
