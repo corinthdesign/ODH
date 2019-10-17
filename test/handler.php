@@ -23,7 +23,7 @@ if($_POST['submit'] == "Update Menu")
         // Attempt insert query execution
           $sql = "UPDATE test SET Name = '$var1' WHERE id = '1';
 
-                  if(mysqli_multi_query($link, $sql)){
+                  if(mysqli_query($link, $sql)){
                     echo "Records inserted successfully.";
                   } else{
                     echo "ERROR: Could not execute $sql. " . mysqli_error($link);
