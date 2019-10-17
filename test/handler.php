@@ -1,9 +1,7 @@
 <?php
 if($_POST['submit'] == "Update Menu")
 {
-    $var1 = $_POST['optionone'];
-    $var2 = $_POST['optiontwo'];
-    $var3 = $_POST['optionthree'];
+    $var1 = $_POST['data'];
   }
   if($errorMessage != "")
   {
@@ -24,8 +22,6 @@ if($_POST['submit'] == "Update Menu")
 
         // Attempt insert query execution
           $sql = "UPDATE test SET Name = '$var1' WHERE id = '1';
-                  UPDATE test SET Name = '$var2' WHERE id = '2';
-                  UPDATE test SET Name = '$var3' WHERE id = '3'";
 
                   if(mysqli_multi_query($link, $sql)){
                     echo "Records inserted successfully.";
