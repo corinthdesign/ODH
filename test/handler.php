@@ -2,18 +2,6 @@
 
 $var1 = $_POST['data'];
 
-if($_POST['submit'] == "Update Menu")
-{
-  }
-  if($errorMessage != "")
-  {
-    echo("<p>There was an error:</p>\n");
-    echo("<ul>" . $errorMessage . "</ul>\n");
-  }
-//Write Data to php/datalog.txt Section
-  else
-  {
-
 //mySQLserver connection
     $link = mysqli_connect("localhost", "tim", "password", "test");
 
