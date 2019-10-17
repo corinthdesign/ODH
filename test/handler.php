@@ -24,5 +24,4 @@ $var1 = $_POST['data'];
 
         header("Location: test.html");
         exit;
-          }
 ?>
