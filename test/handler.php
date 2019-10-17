@@ -1,9 +1,9 @@
 <?php
 if($_POST['submit'] == "Update Menu")
 {
-    $var1 = $_POST['one'];
-    $var2 = $_POST['two'];
-    $var3 = $_POST['three'];
+    $var1 = $_POST['optionone'];
+    $var2 = $_POST['optiontwo'];
+    $var3 = $_POST['optionthree'];
   }
   if($errorMessage != "")
   {
@@ -36,7 +36,7 @@ if($_POST['submit'] == "Update Menu")
             // Close connection
               mysqli_close($link);
 
-        header("Location: ../formSubmit.html");
+        header("Location: test.html");
         exit;
           }
 ?>
