@@ -2,6 +2,8 @@
 if($_POST['submit'] == "Update Menu")
 {
     $var1 = $_POST['data'];
+
+    echo = $var1;
   }
   if($errorMessage != "")
   {
