@@ -14,10 +14,10 @@ $var4 = $_POST['datafour'];
       }
 
         // Attempt insert query execution
-          $sql = "UPDATE test SET Name = '$var1' WHERE id = '1'";
-          $sql = "UPDATE test SET Name = '$var2' WHERE id = '2'";
-          $sql = "UPDATE test SET Name = '$var3' WHERE id = '3'";
-          $sql = "UPDATE test SET Name = '$var4' WHERE id = '4'";
+          $sql = "UPDATE test SET Name = '$var1' WHERE id = '1';
+                  UPDATE test SET Name = '$var2' WHERE id = '2';
+                  UPDATE test SET Name = '$var3' WHERE id = '3';
+                  UPDATE test SET Name = '$var4' WHERE id = '4'";
 
                   if(mysqli_multi_query($link, $sql)){
                     echo "Records inserted successfully.";
