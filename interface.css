@@ -1,3 +1,4 @@
+* {border: 1px gray dashed;}
 html, body {
 	margin: 0;
 	padding: 0;
@@ -6,7 +7,6 @@ html, body {
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-attachment: fixed;
-	height: 125vh;
 }
 
 body{
@@ -183,10 +183,8 @@ p, label {
 }
 
 .parameters {
-  background:#fff;
   padding: 0;
-  width: 100vw;
-  margin: 2em auto;
+  width: 30%;
   position: relative;
   left: -5em;
 	white-space:nowrap;
@@ -200,22 +198,21 @@ p, label {
 .day_selection {
   display: inline-block;
   position: relative;
-	margin: 0 auto;
-  width: 20vw;
-  padding-left: 30vw;
+  width: 15vw;
+	padding-left: 5em;
+	text-align: center;
 }
 
 .meal_selection {
   display: inline-block;
   position: relative;
-	margin: 0 auto;
-  width: 20vw;
-  padding-right: 30vw;
+  width: 15vw;
+	text-align: center;
 }
 
 .day_selection label, .meal_selection label {
   position: relative;
-  left: 10.5em;
+	color: #fff;
 }
 
 .day_selection h3, .day_selection select, .meal_selection h3, .meal_selection select {
@@ -230,6 +227,7 @@ p, label {
   position: relative;
   float: left;
   width: 30%;
+	height: 80%;
   padding-bottom: 5em;
   padding-left: 5em;
 }
@@ -339,8 +337,14 @@ form select {
   display: block;
   width: 100%;;
   height: 40vh;
-  top: 200px;
-  left: 100px;
   border: 2px #0090fe 3px;
+}
+
+.preview_table {
+	position: relative;
+	display: block;
+	float: right;
+	top: -80vh;
+	left: 32.5vw;
 }
 /* {border: 1px rgba(0, 0, 0, 0.2) dashed;}
