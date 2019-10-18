@@ -43,14 +43,14 @@ if($_POST['submit'] == "Update Menu")
       }
 
         // Attempt insert query execution
-          $sql = "UPDATE daily SET chefs = '$varChefs' WHERE day = '$varDay' AND meal = '$varMeal';
-                  UPDATE daily SET main = '$varMain' WHERE day = '$varDay' AND meal = '$varMeal';
-                  UPDATE daily SET veg = '$varVeg' WHERE day = '$varDay' AND meal = '$varMeal';
-                  UPDATE daily SET piz = '$varPiz' WHERE day = '$varDay' AND meal = '$varMeal';
-                  UPDATE daily SET grill = '$varGrill' WHERE day = '$varDay' AND meal = '$varMeal';
-                  UPDATE daily SET deli = '$varDeli' WHERE day = '$varDay' AND meal = '$varMeal';
-                  UPDATE daily SET soup = '$varSoup' WHERE day = '$varDay' AND meal = '$varMeal';
-                  UPDATE daily SET soup2 = '$varSoup2' WHERE day = '$varDay' AND meal = '$varMeal'";
+          $sql = "UPDATE daily SET chefs = IF('$varChefs' = '', chefs, '$varChefs') WHERE day = '$varDay' AND meal = '$varMeal';
+                  UPDATE daily SET main = IF('$varMain' = '', main, '$varMain') WHERE day = '$varDay' AND meal = '$varMeal';
+                  UPDATE daily SET veg = IF('$varVeg' = '', veg, '$varVeg') WHERE day = '$varDay' AND meal = '$varMeal';
+                  UPDATE daily SET piz = IF('$varPiz' = '', piz, '$varPiz') WHERE day = '$varDay' AND meal = '$varMeal';
+                  UPDATE daily SET grill = IF('$varGrill' = '', grill, '$varGrill') WHERE day = '$varDay' AND meal = '$varMeal';
+                  UPDATE daily SET deli = IF('$varDeli' = '', deli, '$varDeli') WHERE day = '$varDay' AND meal = '$varMeal';
+                  UPDATE daily SET soup = IF('$varSoup' = '', soup, '$varSoup') WHERE day = '$varDay' AND meal = '$varMeal';
+                  UPDATE daily SET soup2 = IF('$varSoup2' = '', soup2, '$varSoup2') WHERE day = '$varDay' AND meal = '$varMeal'";
 
           if(mysqli_multi_query($link, $sql)){
             echo "Records inserted successfully.";
