@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-	font-family: sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 2.5em;
 	text-align: center;
 	letter-spacing: auto;
@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-	font-family: sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 1.5em;
 	text-align: center;
 	font-weight: black;
@@ -36,7 +36,7 @@ h2 {
 }
 
 p {
-	font-family: sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: .75em;
 	font-weight: 900;
 	text-align: left;
