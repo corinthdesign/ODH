@@ -84,11 +84,11 @@ h3 {
 }
 
 .link a:hover, .veglink a:hover {
-  color: #0090ff;
+  color: #FFF;
 }
 
 .link:hover {
-  color: #949494;
+  color: #FFF;
   width: 20em;
 }
 
@@ -100,17 +100,17 @@ h3 {
 }
 
 .pizlink:hover {
-  color: #949494;
+  color: #FFF;
   width: 25em;
 }
 
 .pizlink a {
-  color: #545454;
+  color: #FFF;
   transition: all 0.2s ease;
 }
 
 .pizlink a:hover {
-  color: #0090ff;
+  color: #FFF;
 }
 
 .grilllink {
@@ -121,17 +121,17 @@ h3 {
 }
 
 .grilllink:hover {
-  color: #949494;
+  color: #FFF;
   width: 25em;
 }
 
 .grilllink a {
-  color: #545454;
+  color: #FFF;
   transition: all 0.2s ease;
 }
 
 .grilllink a:hover {
-  color: #0090ff;
+  color: #FFF;
 }
 
 .veglink {
@@ -142,32 +142,32 @@ h3 {
 }
 
 .veglink:hover {
-  color: #949494;
+  color: #FFF;
   width: 25em;
 }
 
 .veglink a {
-  color: #545454;
+  color: #FFF;
   transition: all 0.2s ease;
 }
 
 .veglink a:hover {
-  color: #0090ff;
+  color: #FFF;
 }
 
 .link a {
-  color: #545454;
+  color: #FFF;
   text-decoration: underline;
 }
 
 .link_none {
-  color: #545454;
+  color: #FFF;
   transition: all 0.2s ease;
   cursor: pointer;
 }
 
 .link_none:hover {
-  color: #0090ff;
+  color: #FFF;
   width: 25em;
 }
 
