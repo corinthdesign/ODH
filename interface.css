@@ -43,7 +43,7 @@ a {
   height: 12%;
 }
 h1 {
-	font-family: sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 2.5em;
 	text-align: left;
 	letter-spacing: auto;
@@ -52,7 +52,7 @@ h1 {
 }
 
 h2 {
-	font-family: sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: 1.5em;
 	text-align: left;
 	font-weight: black;
@@ -62,7 +62,7 @@ h2 {
 }
 
 h3 {
-	font-family: sans-serif;
+	font-family: 'Nunito', sans-serif;
 	color: #545454;
 	text-transform: uppercase;
   transition: all 0.35s ease;
@@ -169,7 +169,7 @@ h3 {
 }
 
 p, label {
-	font-family: sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-size: .75em;
 	font-weight: 900;
 	text-align: left;
@@ -263,7 +263,7 @@ td {
   margin: 2em 17.25%;
   width: 60%;
   background-color: #0090ff;
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 1.2em;
   color: #fff;
   text-transform: uppercase;
@@ -287,7 +287,7 @@ button {
   margin: 2em 22.5%;
   width: 50%;
   background-color: #0090ff;
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: .8em;
   color: #fff;
   text-transform: uppercase;
@@ -316,7 +316,7 @@ form select {
   padding: .5em 2em;
   margin: 2em;
   background-color: #0090ff;
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: .75em;
   color: #fff;
   text-transform: uppercase;
