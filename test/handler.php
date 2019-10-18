@@ -13,8 +13,12 @@ $var4 = $_POST['datafour'];
           die("ERROR: Could not connect. " . mysqli_connect_error());
       }
 
+      if(!empty($_POST['data'])){
+
+      }
+
         // Attempt insert query execution
-          $sql = "UPDATE test SET Name = '$var1' WHERE id = '1';
+          $sql = "UPDATE test SET Name = IF('".$var1."' = '', myAge, ".$var1.") WHERE id = '1';
                   UPDATE test SET Name = '$var2' WHERE id = '2';
                   UPDATE test SET Name = '$var3' WHERE id = '3';
                   UPDATE test SET Name = '$var4' WHERE id = '4'";
