@@ -62,7 +62,15 @@ p {
 }
 
 #demo1 {
+  position: relative;
 	font-size: 5em;
+	top: 1em;
+}
+
+#demo2 {
+  position: relative;
+	font-size: 4em;
+	top: 3em;
 }
 
 .entrance_menu {
