@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+<title>Sodexo Menuboard HTML5 Test Page</title>
+<link rel="stylesheet" href="deli.css">
+<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>setTimeout(function() {location.reload();}, 59000);</script>
+
+<!--Forces Cache Clear-->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<body>
+  <!--Hidden Menu Button-->
+  <a href="index.html" style="display: block; position: absolute; width: 50px; height: 50px; z-index: 200; cursor: default;"></a>
+<!--Body-->
+<section class="entrance_menu">
+  <h1>deli bar</h1>
+  <h3>Choose Your Bread</h3><p>Wheat . Multi-grain . White . Wrap</p>
+  <h3>Choose Your Dressing</h3><p>ranch . ceasar . honey mustard . raspberry vinaigrette . balsamic vinaigrette . buffalo ranch</p>
+  <div class="items">
+
+  <h2>Today's Special</h2>
+  <!--Dynamic Menu Item-->
+    <p id="demo1">Demo1</p>
+</div>
+</section>
+
+<!--Video Background-->
+<section class="background">
+  <video autoplay muted loop>
+    <source src="https://corinthdesign.com/private/HTML_menuboards/media/grill.mp4" type="video/mp4">
+  </video>
+</section>
+
+<script>
+$.ajax({
+    type: 'POST',
+    datatype: 'json',
+    url: '/../ODH/php/get-data.php',
+    success: function(result) {
+        var str = result; //Get-data.php JSON string object
+        var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
+        var data = parsed;
+        console.log(parsed);                    // All data for console.log
+        document.getElementById("demo1").innerHTML = parsed[10].deli;
+  }
+});
+
+</script>
+</body>
+
+<footer>
+</footer>
