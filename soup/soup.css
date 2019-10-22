@@ -84,7 +84,7 @@ p {
 	text-shadow: 0px 0px 0px #000;
 	z-index: 100;
 	background: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/soup.jpg);
-	background-size: 120vw;
+	background-size: 100vw;
 	background-position: bottom center ;
 	background-blend-mode: multiply;
 }
