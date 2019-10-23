@@ -106,8 +106,8 @@ p {
 
 .slideshow {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 120vw;
+  height: 120vh;
   overflow: hidden;
 }
 
