@@ -36,9 +36,18 @@ h2 {
 	color: #000;
 }
 
-p {
+h3 {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 3em;
+	text-align: center;
+	font-weight: black;
+	letter-spacing: auto;
+	color: #000;
+}
+
+p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2em;
 	font-weight: 100;
 	text-align: center;
 	letter-spacing: auto;
