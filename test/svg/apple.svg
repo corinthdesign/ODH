@@ -12,14 +12,6 @@
 <g>
 	<path class="st0" d="M96.5,70.5c0,0,47.7,52.1,99.8,0C196.3,70.5,146.5,20.5,96.5,70.5z"/>
 	<path class="st1" d="M107,69c0,0,48-10,88,2"/>
-
-	<animateTransform attributeName="transform"
-			attributeType="XML"
-			type="rotate"
-			from="0 50 50"
-			to="360 50 50"
-			dur="10s"
-			repeatCount="indefinite" />
 </g>
 <path class="st2" d="M199.5,130.5c0,0-6-112-20-113s10-7,10-7s17.3,67,16.1,118C205.6,128.5,206.5,132.5,199.5,130.5z"/>
 <g>
