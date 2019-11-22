@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #1C221F;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+h1 {
+	font-family: 'Bungee Shade', sans-serif;
+	font-size: 8em;
+	text-align: center;
+	letter-spacing: auto;
+	text-transform: uppercase;
+	line-height: 1em;
+	font-weight: 400;
+	color: #fff;
+}
+
+h2 {
+	font-family: 'Seaweed Script', sans-serif;
+	font-size: 7em;
+	text-align: center;
+	font-weight: black;
+	letter-spacing: auto;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+p {
+	font-family: 'Ibarra Real Nova', sans-serif;
+	font-size: 5em;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	line-height: 1em;
+	color: #fff;
+}
+
+.main_event_menu {
+	padding: 2em;
+	margin: 0;
+	display: block;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	z-index: 100;
+	/*background-color: rgba(0, 0, 0, 0.4);*/
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/thanks.jpg);
+	background-blend-mode: darken;
+	background-size: cover;
+	background-position: left;
+}
+
+#main_event_logo {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background-image: url(images/the_main_event_logo.png);
+	background-repeat:no-repeat;
+	background-size: contain;
+	background-position: center center;
+	width: 75vw;
+	height: 30vh;
+}
+.items {
+	padding: 2em 0 0 0;
+}
+
+.background {
+	position: relative;
+	display: block;
+	top: -100vh;
+	z-index: 0;
+}
+
+.background video {
+	position: relative;
+	display: none;
+	width: 200vw;
+	height: auto;
+}

@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="test.css">
 <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="../js/GreenSock-JS/src/minified/TweenMax.min.js"></script>
-<script src="../js/GreenSock-JS/src/minified/easing/CustomEase.min.js"></script>
+<script src="../js/TweenMax.min.js"></script>
+<script src="../js/CustomEase.min.js"></script>
 <script>setTimeout(function() {location.reload();}, 59000);</script>
 
 <!--Forces Cache Clear-->
@@ -32,10 +32,10 @@
 
 <!--Video Background-->
 <div class="slideshow">
-  <div class="slideshow-image" style="background-image: url('images/1.jpg')"></div>
-  <div class="slideshow-image" style="background-image: url('images/2.jpg')"></div>
-  <div class="slideshow-image" style="background-image: url('images/3.jpg')"></div>
-  <div class="slideshow-image" style="background-image: url('images/4.jpg')"></div>
+  <div id="image1" class="slideshow-image" style="background-image: url('images/1.jpg')"></div>
+  <div id="image2" class="slideshow-image" style="background-image: url('images/2.jpg')"></div>
+  <div id="image3" class="slideshow-image" style="background-image: url('images/3.jpg')"></div>
+  <div id="image4" class="slideshow-image" style="background-image: url('images/4.jpg')"></div>
 </div>
 <section class="background">
   <video autoplay muted loop>
@@ -57,6 +57,19 @@ $.ajax({
   }
 });
 
+</script>
+<script>
+  TweenMax.set("#image1",{autoAlpha:0});
+  TweenMax.set("#image2",{autoAlpha:0});
+  TweenMax.set("#image3",{autoAlpha:0});
+  TweenMax.set("#image4",{autoAlpha:0});
+  TweenMax.to("#image1", 3, {autoAlpha:1, ease: Power1.easeOut, repeat:-1, repeatDelay: 22.5});
+  TweenMax.to("#image1", 7.5, {scaleY:1.1, scaleX:1.1, transformOrigin: "center", ease: Power1.easeOut, repeat:-1, repeatDelay: 22.5});
+  TweenMax.to("#image1", 0, {autoAlpha:0, ease: Power1.easeOut, repeat:-1, delay:10.5, repeatDelay: 19.5});
+
+  TweenMax.to("#image2", 3, {autoAlpha:.5, ease: Power1.easeOut, delay: 7.5, repeat:-1, repeatDelay: 15});
+  TweenMax.to("#image2", 7.5, {scaleY:1.1, scaleX:1.1, transformOrigin: "center", ease: Power1.easeOut,delay: 7.5, repeat:-1, repeatDelay: 15});
+  TweenMax.to("#image2", 0, {autoAlpha:0, ease: Power1.easeOut, repeat:-1, delay:18, repeatDelay: 12});
 </script>
 </body>
 
