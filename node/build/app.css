@@ -20,6 +20,16 @@ html, body {
   background-position: center;
 }
 
+.grill {
+  background-image: url("images/grill.jpg");
+  background-position: center;
+}
+
+.veg {
+  background-image: url("images/lettuce.jpg");
+  background-position: center;
+}
+
 .dynItem {
   display: block;
   position: relative;
