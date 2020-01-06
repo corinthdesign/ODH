@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.pizza {
+  background-image: url("images/pizza.jpg");
+  background-position: center;
+}
+
+.dynItem {
+  display: block;
+  position: relative;
+  z-index: 100;
+  font-family: 'Bitter', sans-serif;
+  font-size: 3.75em;
+  text-align: right;
+  margin: 0 1em;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+
+.titleImage {
+  display: block;
+  position: relative;
+  font-family: 'Rye', sans-serif;
+  font-size: 5em;
+  font-weight: 400;
+  text-align: right;
+  margin: 0 1em;
+  color: #fff;
+  z-index: 100;
+  text-shadow: 0 0 10px #000;
+}
