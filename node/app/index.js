@@ -1,8 +1,8 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
-let App = require('./components/App');
+import App from './components/App.js';
 
 ReactDOM.render(
    <App />,
-   document.getElementByID('app')
+   document.getElementById('app')
 );

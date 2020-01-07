@@ -8,6 +8,7 @@ var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 
 module.exports = {
   entry: __dirname + '/app/index.js',
+  mode: 'development',
   module: {
     rules: [
     {
@@ -19,7 +20,7 @@ module.exports = {
   },
   output: {
     filename: 'transformed.js',
-    path: __dirname + 'build'
+    path: __dirname + '/build'
   },
   plugins: [HTMLWebpackPluginConfig]
 };

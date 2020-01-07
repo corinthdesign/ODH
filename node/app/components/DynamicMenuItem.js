@@ -33,14 +33,14 @@ class DynamicMenuItem extends React.Component {
     console.log("Meal: " + meal());
     let today = d + meal()-1;
     console.log("This meal's index #: " + today);
-
+    return today;
     };
 
     function dynMenu(station) {
     $.ajax({
         type: 'POST',
         datatype: 'json',
-        url: '/../ODH/php/get-data.php',
+        url: './php/get-data.php',
         success: function(result) {
             var str = result; //Get-data.php JSON string object
             var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
@@ -53,8 +53,8 @@ class DynamicMenuItem extends React.Component {
     };
 
     return (
-      <div>
-        <p>{dynMenu(this.props.station)}</p>
+      <div className="dynItem">
+        <p id="demo">{dynMenu(this.props.station)}</p>
       </div>
     )}
   };
