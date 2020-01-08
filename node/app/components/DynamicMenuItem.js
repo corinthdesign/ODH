@@ -53,7 +53,7 @@ class DynamicMenuItem extends React.Component {
     };
 
     return (
-      <div className="dynItem">
+      <div className={["dynItem", this.props.station].join(' type')}>
         <p id="demo">{dynMenu(this.props.station)}</p>
       </div>
     )}

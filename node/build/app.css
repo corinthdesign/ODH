@@ -22,21 +22,20 @@ html, body {
 
 .grill {
   background-image: url("images/grill.jpg");
-  background-position: center;
+  background-position: center; 
 }
 
 .veg {
-  background-image: url("images/lettuce.jpg");
+  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url("images/lettuce.jpg");
   background-position: center;
+  background-blend-mode: multiply;
 }
 
 .dynItem {
   display: block;
   position: relative;
   z-index: 100;
-  font-family: 'Bitter', sans-serif;
   font-size: 3.75em;
-  text-align: right;
   margin: 0 1em;
   color: #fff;
   text-shadow: 0 0 10px #000;
@@ -45,12 +44,21 @@ html, body {
 .titleImage {
   display: block;
   position: relative;
-  font-family: 'Rye', sans-serif;
   font-size: 5em;
+  width: 50%;
   font-weight: 400;
-  text-align: right;
+  text-align: center;
   margin: 0 1em;
   color: #fff;
   z-index: 100;
   text-shadow: 0 0 10px #000;
 }
+
+.typepizza h1 {font-family: 'Rye', sans-serif;}
+.typepizza p {font-family: 'Bitter', sans-serif; text-align: right;}
+
+.typegrill h1 {font-family: 'Trade Winds', sans-serif;}
+.typegrill p {font-family: 'Work Sans', sans-serif; font-weight: 900; text-transform: uppercase; text-align: left;}
+
+.typeveg h1 {font-family: 'Shadows Into Light', sans-serif;}
+.typeveg p {font-family: 'Shadows Into Light', sans-serif; text-transform: uppercase;}
