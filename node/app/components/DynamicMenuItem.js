@@ -6,7 +6,7 @@ class DynamicMenuItem extends React.Component {
 
     let i = new Date();
     let d = i.getDay();
-    let h = 16;
+    let h = i.getHours();
 
     function meal() {
             if (d >= 1 && d <= 5 && h < 11 ) {
@@ -54,6 +54,8 @@ class DynamicMenuItem extends React.Component {
 
     return (
       <div className={["dynItem", this.props.station].join(' type')}>
+	<p>Cheese Pizza</p>
+	<p>Pepperoni Pizza</p>
         <p id="demo">{dynMenu(this.props.station)}</p>
       </div>
     )}

@@ -15,20 +15,23 @@ html, body {
   z-index: 0;
 }
 
-.pizza {
-  background-image: url("images/pizza.jpg");
-  background-position: center;
+.piz {
+ background-image: url("images/pizza.jpg");
+ background-position: center;
+ background-size: cover;
 }
 
 .grill {
   background-image: url("images/grill.jpg");
   background-position: center; 
+  background-size: cover;
 }
 
 .veg {
   background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url("images/lettuce.jpg");
   background-position: center;
   background-blend-mode: multiply;
+  background-size: cover;
 }
 
 .dynItem {
@@ -44,21 +47,29 @@ html, body {
 .titleImage {
   display: block;
   position: relative;
-  font-size: 5em;
-  width: 50%;
+  font-size: 4em;
   font-weight: 400;
   text-align: center;
-  margin: 0 1em;
+  margin: .25em auto;
+  max-width: 70vw;
   color: #fff;
   z-index: 100;
   text-shadow: 0 0 10px #000;
 }
 
-.typepizza h1 {font-family: 'Rye', sans-serif;}
-.typepizza p {font-family: 'Bitter', sans-serif; text-align: right;}
+.titleImage img {
+  display: block;
+  position: relative;
+  top: 1em;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+.typepiz h1 {font-family: 'Rye', sans-serif;}
+.typepiz p {font-family: 'Bitter', sans-serif; text-align: center;}
 
 .typegrill h1 {font-family: 'Trade Winds', sans-serif;}
-.typegrill p {font-family: 'Work Sans', sans-serif; font-weight: 900; text-transform: uppercase; text-align: left;}
+.typegrill p {font-family: 'Work Sans', sans-serif; font-weight: 900; text-transform: uppercase; text-align: center;}
 
 .typeveg h1 {font-family: 'Shadows Into Light', sans-serif;}
-.typeveg p {font-family: 'Shadows Into Light', sans-serif; text-transform: uppercase;}
+.typeveg p {font-family: 'Shadows Into Light', sans-serif; font-size: 1.5em; text-transform: uppercase; text-align: center;}

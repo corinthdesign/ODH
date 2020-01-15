@@ -7,9 +7,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Title image="veg_logo.png" name="The Grill" titleFont="typegrill" />
-        <DynamicMenuItem  station="grill" />
-        <Background type="grill" />
+        <Title image="" name="Pizza Station" titleFont="typepiz" />
+        <DynamicMenuItem  station="piz" />
+        <Background type="piz" />
       </div>
     )}
   };
