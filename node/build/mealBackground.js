@@ -28,5 +28,5 @@ function meal() {
 meal();
 };
 console.log("Meal: " + getMeal());
-document.getElementByClassName('background main').className += (' ' + getMeal());
-document.getElementByClassName('background chefs').className += (' ' + getMeal());
+document.getElementsByClassName('background main').className += (' ' + getMeal());
+document.getElementsByClassName('background chefs').className += (' ' + getMeal());
