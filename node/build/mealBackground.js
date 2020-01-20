@@ -28,9 +28,13 @@ function meal() {
 return meal();
 };
 
+function placeBackground() {
 console.log("Meal: " + getMeal());
 let main = document.getElementById('target');
 main.className = 'background main' + getMeal();
 
 let chefs = document.getElementById('target');
 chefs.className = 'background chefs' + getMeal();
+};
+
+setTimeout(placeBackground(), 1500);
