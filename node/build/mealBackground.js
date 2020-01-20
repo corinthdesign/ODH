@@ -6,27 +6,27 @@ let h = i.getHours();
 
 function meal() {
         if (d >= 1 && d <= 5 && h < 11 ) {
-  return "breakfast";
+  return "Breakfast";
   }
   else if (d >= 1 && d <= 5 && h >= 11 && h <= 15){
-  return "lunch"
+  return "Lunch"
   }
   else if (h > 15){
-  return "dinner"
+  return "Dinner"
   }
   else if (d === 6 && h <= 15){
-  return ("brunch")
+  return ("Brunch")
   }
   else if (d === 0 && h <= 15){
-  return ("brunch")
+  return ("Brunch")
   }
   else {
   return "Meal not found"
   }
 }
 
-meal();
+return meal();
 };
 console.log("Meal: " + getMeal());
-document.getElementsByClassName('background main').className += (' ' + getMeal());
-document.getElementsByClassName('background chefs').className += (' ' + getMeal());
+document.getElementsByClassName('background main').className += ('main' + getMeal() );
+document.getElementsByClassName('background chefs').className += ('chefs' + getMeal());
