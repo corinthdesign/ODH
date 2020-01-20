@@ -21,6 +21,14 @@ html, body {
  background-size: cover;
 }
 
+.main {}
+
+.chefs {}
+
+.deli{}
+
+.entrance{}
+
 .grill {
   background-image: url("images/grill.jpg");
   background-position: center; 
