@@ -23,7 +23,10 @@ function meal() {
   else {
   return "Meal not found"
   }
-}};
+}
+
+meal();
+};
 console.log("Meal: " + getMeal());
 document.getElementById('background main').className += (' ' + getMeal());
 document.getElementById('background chefs').className += (' ' + getMeal());
