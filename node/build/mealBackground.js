@@ -30,7 +30,7 @@ return meal();
 
 console.log("Meal: " + getMeal());
 let main = document.getElementById('target');
-main.className = ' main' + getMeal();
+main.className = 'background main' + getMeal();
 
 let chefs = document.getElementById('target');
-chefs.className = ' chefs' + getMeal();
+chefs.className = 'background chefs' + getMeal();
