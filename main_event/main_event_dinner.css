@@ -57,7 +57,7 @@ p {
 	width: 100vw;
 	z-index: 100;
 	/*background-color: rgba(0, 0, 0, 0.4);*/
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/thanks.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/main_event.jpg);
 	background-blend-mode: darken;
 	background-size: cover;
 	background-position: left;
