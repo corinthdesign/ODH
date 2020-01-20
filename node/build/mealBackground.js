@@ -25,8 +25,8 @@ function meal() {
   }
 }
 console.log("Meal: " + meal());
-const main = document.getElementByClassName('main');
-const chefs = document.getElementByClassName('chefs');
-main.classList.add('main' + meal());
-chefs.classList.add('chefs' + meal());
+const main = document.getElementByClassName('background main');
+const chefs = document.getElementByClassName('background chefs');
+main.classList.add('background main' + meal());
+chefs.classList.add('background chefs' + meal());
 };
