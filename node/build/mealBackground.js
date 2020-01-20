@@ -31,10 +31,10 @@ return meal();
 function placeBackground() {
 console.log("Meal: " + getMeal());
 let main = document.getElementById('target');
-main.className = 'background main' + getMeal();
+setTimeout((main.className = 'background main' + getMeal()), 1500);
 
 let chefs = document.getElementById('target');
 chefs.className = 'background chefs' + getMeal();
 };
 
-setTimeout(placeBackground(), 1500);
+placeBackground();
