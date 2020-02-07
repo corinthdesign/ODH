@@ -2,7 +2,7 @@ export function getMeal() {
 
 let i = new Date();
 let d = i.getDay();
-let h = 16;
+let h = i.getHours();
 
 function meal() {
         if (d >= 1 && d <= 5 && h < 11 ) {
@@ -31,7 +31,3 @@ let today = d + meal()-1;
 console.log("This meal's index #: " + today);
 
 };
-
-
-
-

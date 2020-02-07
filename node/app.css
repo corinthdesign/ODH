@@ -21,9 +21,33 @@ html, body {
  background-size: cover;
 }
 
+.main {
+  background-image: url("images/mainEventBackground.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.chefs {
+  background-image: url("images/chefsCornerBackground.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.deli{
+  background-image: url("images/deli.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.entrance{
+  background-image: url("images/grill.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 .grill {
   background-image: url("images/grill.jpg");
-  background-position: center; 
+  background-position: center;
   background-size: cover;
 }
 
