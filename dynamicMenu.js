@@ -32,7 +32,6 @@ console.log("This meal's index #: " + today);
 return today;
 };
 
-function dynMenu(station) {
 $.ajax({
     type: 'POST',
     datatype: 'json',
@@ -42,10 +41,7 @@ $.ajax({
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
         var data = parsed;
         console.log(parsed);                    // All data for console.log
-        console.log(station);
-        document.getElementById("demo").innerHTML = parsed[getMeal()][station];
+        console.log("piz");
+        document.getElementById("demo").innerHTML = parsed[getMeal()].piz;
   }
 });
-};
-
-dynMenu(piz);
