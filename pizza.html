@@ -84,7 +84,7 @@ $.ajax({
     datatype: 'json',
     url: '/php/get-data.php',
     success: function(result) {
-        var menu = "chefs";
+        var menu = "piz";
         var str = result; //Get-data.php JSON string object
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
         var data = parsed;
