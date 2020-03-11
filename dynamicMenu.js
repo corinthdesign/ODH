@@ -43,7 +43,7 @@ $.ajax({
         var data = parsed;
         console.log(parsed);                    // All data for console.log
         console.log(station);
-        document.getElementById("demo").innerHTML = parsed[getMeal()][station];
+        document.getElementById("demo").innerHTML = parsed[getMeal()].piz;
   }
 });
 };
