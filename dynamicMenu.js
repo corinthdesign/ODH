@@ -36,7 +36,7 @@ function dynMenu(station) {
 $.ajax({
     type: 'POST',
     datatype: 'json',
-    url: './php/get-data.php',
+    url: '/php/get-data.php',
     success: function(result) {
         var str = result; //Get-data.php JSON string object
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
