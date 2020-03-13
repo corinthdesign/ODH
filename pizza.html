@@ -47,9 +47,9 @@
 <script>
 function getMeal() {
 
-let i = new Date();
-let d = i.getDay();
-let h = i.getHours();
+var i = new Date();
+var d = i.getDay();
+var h = i.getHours();
 
 function meal() {
         if (d >= 1 && d <= 5 && h < 11 ) {
@@ -74,7 +74,7 @@ function meal() {
 console.log("Day: " + d);
 console.log("Hour: " + h);
 console.log("Meal: " + meal());
-let today = d + meal()-1;
+var today = d + meal()-1;
 console.log("This meal's index #: " + today);
 return today;
 };
