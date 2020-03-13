@@ -30,8 +30,6 @@
 </div>
 
 <script>
-function getMeal() {
-
 var i = new Date();
 var d = i.getDay();
 var h = 15;
@@ -57,6 +55,8 @@ function meal() {
   }
 }
 
+function getMeal() {
+
 console.log("Day: " + d);
 console.log("Hour: " + h);
 console.log("Meal: " + meal());
@@ -65,7 +65,6 @@ console.log("This meal's index #: " + today);
 return today;
 };
 
-console.log(getMeal());
 $.ajax({
     type: 'POST',
     datatype: 'json',
