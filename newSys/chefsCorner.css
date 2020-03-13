@@ -1,0 +1,151 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #1C221F;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+h1 {
+	font-family: 'Satisfy', sans-serif;
+	font-size: 6em;
+	text-align: center;
+	letter-spacing: auto;
+	line-height: 1em;
+}
+
+h2 {
+	font-family: 'Satisfy', sans-serif;
+	font-size: 4em;
+	text-align: center;
+	font-weight: black;
+	letter-spacing: auto;
+}
+
+p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2.75em;
+	font-weight: 100;
+	text-align: center;
+	letter-spacing: auto;
+	text-transform: uppercase;
+	line-height: 0.9em;
+}
+
+.main_event_menu {
+	padding: 2em;
+	margin: 0;
+	display: block;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	z-index: 0;
+	/*background-color: rgba(0, 0, 0, 0.4);*/
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/main_event.jpg);
+	background-blend-mode: darken;
+	background-size: 100%;
+}
+
+.chefs_corner_logo {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	background-image: url(images/chefs_corner_logo.png);
+	background-repeat:no-repeat;
+	background-size: contain;
+	background-position: center center;
+	width: 75vw;
+	height: 40vh;
+	z-index: 1000;
+}
+.items {
+	padding: 2em 0 0 0;
+}
+
+.none {
+	display: none;
+}
+/*BACKGROUNDS*/
+
+.breakfast {
+	z-index: -100;
+	width: 100vw;
+	height: 100vh;
+	padding: 2em 5em;
+	margin: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: black;
+	background: radial-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/breakfast.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-blend-mode: screen;
+}
+
+.brunch {
+	z-index: -100;
+	width: 100vw;
+	height: 100vh;
+	padding: 2em 5em;
+	margin: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: black;
+  background: radial-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/brunch.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-blend-mode: screen;
+}
+
+.lunch {
+	z-index: -100;
+	width: 100vw;
+	height: 100vh;
+	padding: 2em 5em;
+	margin: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/lunch.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-blend-mode: multiply;
+}
+
+.lunch p, .dinner p {
+		font-size: 4em;
+}
+
+.dinner {
+	z-index: -100;
+	width: 100vw;
+	height: 100vh;
+	padding: 2em 5em;
+	margin: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/dinner.jpg);
+	background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-blend-mode: multiply;
+}
