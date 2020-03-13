@@ -16,7 +16,7 @@
   <!--Hidden Menu Button-->
   <a href="index.html" style="display: block; position: absolute; width: 50px; height: 50px; z-index: 200; cursor: default;"></a>
 <!--Body-->
-<section class="entrance_menu">
+<div id="menu">
   <h1 style="margin-top: 40px;">Welcome to Breakfast!</h1>
   <div class="items">
     <!--Dynamic Menu Item-->
@@ -28,22 +28,18 @@
     <p id="demo1">Demo3</p>
     <p id="demo2">Demo4</p>
 </div>
-</section>
-
-<!--Video Background-->
-<div class="background">
 </div>
 
 <script>
 function getMeal() {
 
-let i = new Date();
-let d = i.getDay();
-let h = 15;
+var i = new Date();
+var d = i.getDay();
+var h = 7;
 
 function meal() {
         if (d >= 1 && d <= 5 && h < 11 ) {
-  return 0;
+  return 0
   }
   else if (d >= 1 && d <= 5 && h >= 11 && h <= 15){
   return 7
@@ -61,6 +57,7 @@ function meal() {
   return "Meal not found"
   }
 }
+
 console.log("Day: " + d);
 console.log("Hour: " + h);
 console.log("Meal: " + meal());
@@ -89,6 +86,31 @@ $.ajax({
         document.getElementById("demo4").innerHTML = parsed[getMeal()][menu4];
   }
 });
+</script>
+<script>
+
+var i = new Date();
+var d = i.getDay();
+var h = i.getHours();
+
+if (d >= 1 && d <= 5 && h < 11 ) {
+  $( "#menu" ).addClass("breakfast");
+  }
+  else if (d >= 1 && d <= 5 && h >= 11 && h <= 15){
+  $( "#menu" ).addClass("lunch");
+  }
+  else if (h > 15){
+  $( "#menu" ).addClass("dinner");
+  }
+  else if (d === 6 && h <= 15){
+  $( "#menu" ).addClass("brunch");
+  }
+  else if (d === 0 && h <= 15){
+  $( "#menu" ).addClass("brunch");
+  }
+  else {
+  $( "#menu" ).addClass("");
+};
 </script>
 </body>
 

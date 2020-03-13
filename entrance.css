@@ -8,12 +8,6 @@ html, body {
 	background-color: #FFF;
 }
 
-body{
-	overflow-x: hidden;
-	width: 960px;
-	height: 1080px;
-}
-
 body::-webkit-scrollbar {
 	display: none;
 }
@@ -24,7 +18,6 @@ h1 {
 	text-align: center;
 	letter-spacing: auto;
 	line-height: 1em;
-	color: #000;
 }
 
 h2 {
@@ -33,7 +26,6 @@ h2 {
 	text-align: center;
 	font-weight: black;
 	letter-spacing: auto;
-	color: #000;
 }
 
 p {
@@ -44,18 +36,6 @@ p {
 	letter-spacing: auto;
 	text-transform: uppercase;
 	line-height: 0.9em;
-	color: #000;
-}
-
-.entrance_menu {
-	padding: 2em 5em;
-	margin: 0;
-	display: block;
-	position: relative;
-	height: 100vh;
-	width: 100vw;
-	text-shadow: 0px 0px 0px #000;
-	z-index: 100;
 }
 
 .items {
@@ -72,17 +52,71 @@ p {
 
 /*BACKGROUNDS*/
 
-.background {
-	position: absolute;
-	display: block;
-	float: left;
-	top: 0;
-	left: 0;
+.breakfast {
 	z-index: -100;
 	width: 100vw;
 	height: 100vh;
+	padding: 2em 5em;
+	margin: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: black;
 	background: radial-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/breakfast.jpg);
 	background-size: cover;
 	background-position: center center;
 	background-blend-mode: screen;
+}
+
+.brunch {
+	z-index: -100;
+	width: 100vw;
+	height: 100vh;
+	padding: 2em 5em;
+	margin: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: black;
+  background: radial-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/brunch.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-blend-mode: screen;
+}
+
+.lunch {
+	z-index: -100;
+	width: 100vw;
+	height: 100vh;
+	padding: 2em 5em;
+	margin: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/lunch.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-blend-mode: multiply;
+}
+
+.dinner {
+	z-index: -100;
+	width: 100vw;
+	height: 100vh;
+	padding: 2em 5em;
+	margin: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/dinner.jpg);
+	background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-blend-mode: multiply;
 }
