@@ -20,11 +20,11 @@
   <h1 style="margin-top: 40px;">Welcome to <span id="title">Breakfast!</span></h1>
   <div class="items">
     <!--Dynamic Menu Item-->
-    <h2>Chef's Corner</h2>
+    <h2 class="header">Chef's Corner</h2>
     <p id="demo1">Demo1</p>
-    <h2>The Main Event</h2>
+    <h2 class="header">The Main Event</h2>
     <p id="demo2">Demo2</p>
-    <h2>Soups</h2>
+    <h2 class="header">Soups</h2>
     <p id="Demo3">Demo3</p>
     <p id="demo4">Demo4</p>
 </div>
@@ -96,6 +96,7 @@ var h = i.getHours();
 if (d >= 1 && d <= 5 && h < 11 ) {
   $( "#menu" ).addClass("breakfast");
   document.getElementById("title").innerHTML = "Breakfast";
+  $( ".header" ).addClass("hide");
   }
   else if (d >= 1 && d <= 5 && h >= 11 && h <= 15){
   $( "#menu" ).addClass("lunch");
