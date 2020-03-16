@@ -85,7 +85,7 @@ p {
 	top: 0;
 	left: 0;
 	color: black;
-	background: radial-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/breakfastLine1.jpg);
+	background: radial-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url(images/breakfastLine1.jpg);
 	background-size: cover;
 	background-position: center center;
 	background-blend-mode: screen;
