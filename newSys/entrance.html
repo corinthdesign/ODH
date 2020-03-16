@@ -106,18 +106,21 @@ if (d >= 1 && d <= 5 && h < 11 ) {
   $( "#menu" ).addClass("breakfast");
   document.getElementById("title").innerHTML = "Breakfast";
   $( ".header" ).addClass("hide");
+  $( "#demo7" ).addClass("hide");
   }
   else if (d >= 1 && d <= 5 && h >= 11 && h <= 15){
   $( "#menu" ).addClass("lunch");
   document.getElementById("title").innerHTML = "Lunch";
   $( "#demo3" ).addClass("hide");
   $( "#demo4" ).addClass("hide");
+  $( "#demo7" ).addClass("hide");
   }
   else if (h > 15){
   $( "#menu" ).addClass("dinner");
   document.getElementById("title").innerHTML = "Dinner";
   $( "#demo3" ).addClass("hide");
   $( "#demo4" ).addClass("hide");
+  $( "#demo7" ).addClass("hide");
   }
   else if (d === 6 && h <= 15){
   $( "#menu" ).addClass("brunch");
