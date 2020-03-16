@@ -98,26 +98,31 @@ var h = i.getHours();
 if (d >= 1 && d <= 5 && h < 11 ) {
   $( "#menu" ).addClass("breakfast");
   document.getElementById("title").innerHTML = "Breakfast";
+  console.log("Current Meal Time: Breakfast");
   }
   else if (d >= 1 && d <= 5 && h >= 11 && h <= 15){
   $( "#menu" ).addClass("lunch");
   document.getElementById("title").innerHTML = "Lunch";
+  console.log("Current Meal Time: Lunch");
   $( "#logo" ).addClass("chefs_corner_logo");
   $( "#phrase" ).addClass("none");
   }
   else if (h > 15){
   $( "#menu" ).addClass("dinner");
   document.getElementById("title").innerHTML = "Dinner";
+  console.log("Current Meal Time: Dinner");
   $( "#logo" ).addClass("chefs_corner_logo");
   $( "#phrase" ).addClass("none");
   }
   else if (d === 6 && h <= 15){
   $( "#menu" ).addClass("brunch");
   document.getElementById("title").innerHTML = "Brunch";
+  console.log("Current Meal Time: Brunch");
   }
   else if (d === 0 && h <= 15){
   $( "#menu" ).addClass("brunch");
   document.getElementById("title").innerHTML = "Brunch";
+  console.log("Current Meal Time: Brunch");
   }
   else {
   $( "#menu" ).addClass("");
