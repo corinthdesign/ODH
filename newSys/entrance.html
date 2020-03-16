@@ -37,8 +37,8 @@
 function getMeal() {
 
 var i = new Date();
-var d = 0;
-var h = 11;
+var d = i.getDay();
+var h = i.getHours();
 
 function meal() {
         if (d >= 1 && d <= 5 && h < 11 ) {
@@ -99,8 +99,8 @@ $.ajax({
 <script>
 
 var i = new Date();
-var d = 0;
-var h = 11;
+var d = i.getDay();
+var h = i.getHours();
 
 if (d >= 1 && d <= 5 && h < 11 ) {
   $( "#menu" ).addClass("breakfast");
