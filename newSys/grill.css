@@ -60,7 +60,7 @@ p {
 	width: 100vw;
 	text-shadow: 0px 0px 10px #000;
 	z-index: 100;
-	background: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url(images/grill.jpg);
+	background: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.8)), url(images/grill.jpg);
 	background-size: cover;
 }
 
