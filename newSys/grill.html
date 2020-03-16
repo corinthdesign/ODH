@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
 <head>
-<title>Sodexo Menuboards v.2.2</title>
-<link rel="stylesheet" href="vegetarian.css">
-<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<title>Sodexo Menuboard HTML5 Test Page</title>
+<link rel="stylesheet" href="grill.css">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:900|Trade+Winds&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>setTimeout(function() {location.reload();}, 59000);</script>
 
@@ -12,17 +12,19 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
 
-</head>
-
 <body>
-<!--Hidden Menu Button-->
-<a href="index.html" style="display: block; position: absolute; width: 50px; height: 50px; z-index: 200; cursor: default;"></a>
+  <!--Hidden Menu Button-->
+  <a href="index.html" style="display: block; position: absolute; width: 50px; height: 50px; z-index: 200; cursor: default;"></a>
 <!--Body-->
-<section class="vegetarian_menu">
+<section class="grill_menu">
+  <h1>The Grill</h1>
   <div class="items">
-  <div id="vegetarian_logo"></div>
-<!--Dynamic Menu Item-->
-  <p id="demo1"></p>
+    <!--Dynamic Menu Item-->
+    <p>Cheese Burgers</p>
+    <p>Quesadillas</p>
+    <p>Texas Grilled Cheese</p>
+    <h2>Today's Special</h2>
+      <p id="demo1"></p>
 </div>
 </section>
 
@@ -67,7 +69,7 @@ $.ajax({
     datatype: 'json',
     url: '/php/get-data.php',
     success: function(result) {
-        var menu1 = "veg";
+        var menu1 = "grill";
         var str = result; //Get-data.php JSON string object
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
         var data = parsed;
