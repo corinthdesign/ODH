@@ -68,9 +68,6 @@ p {
 	height: 40vh;
 	z-index: 1000;
 }
-.items {
-	padding: 2em 0 0 0;
-}
 
 .none {
 	display: none;
