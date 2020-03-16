@@ -31,6 +31,7 @@ h1 {
 h2 {
 	font-family: 'Trade Winds', sans-serif;
 	font-size: 4em;
+	text-decoration: underline;
 	line-height: 0.25em;
 	text-align: left;
 	font-weight: black;
