@@ -24,9 +24,11 @@
     <p id="demo1">Demo1</p>
     <h2 class="header">The Main Event</h2>
     <p id="demo2">Demo2</p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
     <h2 class="header">Soups</h2>
-    <p id="Demo3">Demo3</p>
-    <p id="demo4">Demo4</p>
+    <p id="demo5">Demo5</p>
+    <p id="demo6">Demo6</p>
 </div>
 </div>
 
@@ -73,8 +75,10 @@ $.ajax({
     success: function(result) {
         var menu1 = "chefs";
         var menu2 = "main";
-        var menu3 = "soup";
-        var menu4 = "soup2";
+        var menu3 = "veg";
+        var menu4 = "piz"
+        var menu5 = "soup";
+        var menu6 = "soup2";
         var str = result; //Get-data.php JSON string object
         var parsed = jQuery.parseJSON(str); // Parse the JSON string object to create a JS object
         var data = parsed;
@@ -84,6 +88,8 @@ $.ajax({
         document.getElementById("demo2").innerHTML = parsed[getMeal()][menu2];
         document.getElementById("demo3").innerHTML = parsed[getMeal()][menu3];
         document.getElementById("demo4").innerHTML = parsed[getMeal()][menu4];
+        document.getElementById("demo5").innerHTML = parsed[getMeal()][menu5];
+        document.getElementById("demo6").innerHTML = parsed[getMeal()][menu6];
   }
 });
 </script>
@@ -101,10 +107,14 @@ if (d >= 1 && d <= 5 && h < 11 ) {
   else if (d >= 1 && d <= 5 && h >= 11 && h <= 15){
   $( "#menu" ).addClass("lunch");
   document.getElementById("title").innerHTML = "Lunch";
+  $( "#demo3" ).addClass("hide");
+  $( "#demo4" ).addClass("hide");
   }
   else if (h > 15){
   $( "#menu" ).addClass("dinner");
   document.getElementById("title").innerHTML = "Dinner";
+  $( "#demo3" ).addClass("hide");
+  $( "#demo4" ).addClass("hide");
   }
   else if (d === 6 && h <= 15){
   $( "#menu" ).addClass("brunch");
